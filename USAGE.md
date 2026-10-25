@@ -46,6 +46,12 @@ jobfilter serve --port 9000     # another port
 Inbox keys: `J` / `K` (or the arrows) move, `A` applied, `M` maybe, `S` skip, `O` opens
 the posting in a new tab. Pressing the mark a posting already has clears it.
 
+![The Inbox page](docs/images/inbox.png)
+
+Explore has every stored posting, with the filters down the left side:
+
+![The Explore page: totals at the top, filters on the left, a table of postings with labels and evidence](docs/images/explore.png)
+
 **Filters (Explore).** Search across title, company and evidence; label checkboxes with
 live counts; regions (**United States**, **Outside the US**, **Unknown / remote only**)
 and a place finder ("USA", "California", "abu dhabi"); a company finder (Enter hides a
@@ -69,6 +75,8 @@ the **Posted** header to sort newest first, again for oldest first.
 **Interview**, **Offer**, **Rejected**, each dated when pressed) and the resume you sent
 (**Upload…** a PDF or DOCX, or pick one uploaded before). The Applications page shows
 where each application stands and, per resume, how many reached each step.
+
+![The Applications page: four applications with their resume and steps, and a per-resume table of replies](docs/images/applications.png)
 
 **Calendar.** **Applied** counts a posting on the day you marked it Applied. **Added**
 counts postings on the day jobfilter first found them, narrowed to **Passed the rules**,
@@ -134,6 +142,8 @@ Reports new, edited, relabeled, closed and reopened jobs. Nothing is deleted: a 
 left its board is tagged `closed`. The **Refresh boards** button on the Companies page
 does the same, and each company row has its own ↻.
 
+![The Companies page: one row per company with platform, counts by label, and a refresh button](docs/images/companies.png)
+
 ## Role screening (optional)
 
 ```bash
@@ -176,6 +186,8 @@ make sync-rules                   # copy rules.json into the extension, then rel
 
 The popup's **Local server** and **Save postings I view** settings need `jobfilter serve`
 running. With the second one on, every posting you view lands in the database.
+
+![The extension's badge expanded on a job page, quoting the export-control sentence](docs/images/extension-badge.png)
 
 ## A typical session
 

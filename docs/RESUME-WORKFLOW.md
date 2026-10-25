@@ -122,6 +122,8 @@ the versions that emphasize one area keep getting replies and another emphasis n
 does, that tells you which variants to lead with, and whether some kinds of role are a
 better match than you assumed.
 
+![The Applications page, with a table of resumes showing how many applications each was sent with and how many got a reply](images/applications.png)
+
 ---
 
 ## Setting up your own
