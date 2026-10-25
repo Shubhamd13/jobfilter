@@ -1,0 +1,608 @@
+{
+  "version": 1,
+  "note": "Cross-language golden corpus. The Python RuleClassifier and the JavaScript engine in extension/src/classifier.js both run every case here and must agree -- this file is what stops the two implementations drifting apart. Add a case here, not to one language's tests. `rule` is the expected primary matched_rule where it is load-bearing; omit it where several rules legitimately match.",
+  "cases": [
+    {
+      "id": "citizen/us-citizens-only",
+      "text": "This position is open to U.S. citizens only.",
+      "label": "RESTRICTED_CITIZEN",
+      "rule": "us-citizens-only"
+    },
+    {
+      "id": "citizen/must-be",
+      "text": "Applicants must be a US citizen.",
+      "label": "RESTRICTED_CITIZEN",
+      "rule": "must-be-us-citizen"
+    },
+    {
+      "id": "citizen/required",
+      "text": "U.S. citizenship is required for this role.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "citizen/only",
+      "text": "Only United States citizens may apply.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "citizen/restricted-to",
+      "text": "This role is restricted to U.S. citizens.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "citizen/sole",
+      "text": "Sole U.S. citizenship is required.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "citizen/of-the-us",
+      "text": "You must be a citizen of the United States.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "usperson/us-person",
+      "text": "Applicants must be a U.S. person as defined by ITAR.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "usperson/lpr",
+      "text": "Must be a lawful permanent resident of the United States.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "usperson/green-card",
+      "text": "Open to green card holders and citizens alike.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "usperson/itar-eligibility",
+      "text": "This role requires ITAR eligibility.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "usperson/subject-to-itar",
+      "text": "This position is subject to ITAR.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "usperson/export-control",
+      "text": "Due to export control requirements, applicants must be U.S. persons.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "usperson/refugee-asylee",
+      "text": "Candidates must qualify as a refugee or an asylee under federal law.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "usperson/itar-spelled-out",
+      "text": "Governed by the International Traffic in Arms Regulations.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "usperson/ear",
+      "text": "Subject to the EAR and related regulations.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "usperson/deemed-export",
+      "text": "Deemed export rules apply to this position.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "clearance/active-tssci",
+      "text": "An active TS/SCI clearance is required.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/must-hold",
+      "text": "You must currently hold a security clearance.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/requires",
+      "text": "This position requires a security clearance.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/top-secret",
+      "text": "Candidates need a Top Secret clearance for this work.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/clearable",
+      "text": "Applicants must be clearable.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "nosponsor/unable",
+      "text": "We are unable to sponsor visas for this role.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "nosponsor/no-sponsorship",
+      "text": "No visa sponsorship is offered.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "nosponsor/do-not-offer",
+      "text": "We do not offer visa sponsorship at this time.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "nosponsor/not-available",
+      "text": "Sponsorship is not available for this position.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "unclear/itar-as-a-skill",
+      "text": "Familiarity with ITAR regulations is a plus.",
+      "label": "UNCLEAR",
+      "rule": "itar-mention"
+    },
+    {
+      "id": "clearance/able-to-obtain",
+      "text": "You should be able to obtain a security clearance.",
+      "label": "RESTRICTED_CLEARANCE",
+      "rule": "able-to-obtain-clearance"
+    },
+    {
+      "id": "unclear/export-control-mention",
+      "text": "Please note our export control policy.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "unclear/citizenship-mention",
+      "text": "Questions about citizenship can be raised with HR.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "open/authorized-to-work",
+      "text": "You must be authorized to work in the United States.",
+      "label": "OPEN"
+    },
+    {
+      "id": "open/plain",
+      "text": "We are hiring a robotics engineer in Los Angeles.",
+      "label": "OPEN"
+    },
+    {
+      "id": "open/duties",
+      "text": "You will write Python and deploy to real robots.",
+      "label": "OPEN"
+    },
+    {
+      "id": "open/empty",
+      "text": "",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "boundary/military-not-itar",
+      "text": "Experience with military robotics platforms.",
+      "label": "OPEN"
+    },
+    {
+      "id": "boundary/solitary-not-itar",
+      "text": "We build solitary autonomous systems.",
+      "label": "OPEN"
+    },
+    {
+      "id": "boundary/ear-the-body-part",
+      "text": "Keep an ear to the ground for new research.",
+      "label": "OPEN"
+    },
+    {
+      "id": "boundary/clear-not-clearance",
+      "text": "We value clear written communication.",
+      "label": "OPEN"
+    },
+    {
+      "id": "boundary/clearing-not-clearance",
+      "text": "Responsible for clearing the build queue.",
+      "label": "OPEN"
+    },
+    {
+      "id": "boundary/personal-not-us-person",
+      "text": "Show us personal projects you are proud of.",
+      "label": "OPEN"
+    },
+    {
+      "id": "negation/no-clearance-required",
+      "text": "No security clearance required.",
+      "label": "OPEN"
+    },
+    {
+      "id": "negation/clearance-not-required",
+      "text": "A security clearance is not required for this role.",
+      "label": "OPEN"
+    },
+    {
+      "id": "negation/does-not-require",
+      "text": "This position does not require a security clearance.",
+      "label": "OPEN"
+    },
+    {
+      "id": "negation/without-clearance",
+      "text": "Work is performed without a clearance.",
+      "label": "OPEN"
+    },
+    {
+      "id": "negation/citizenship-not-required",
+      "text": "U.S. citizenship is not required.",
+      "label": "OPEN"
+    },
+    {
+      "id": "negation/no-citizenship-requirement",
+      "text": "There is no citizenship requirement for this role.",
+      "label": "OPEN"
+    },
+    {
+      "id": "negation/regardless-of",
+      "text": "We hire regardless of citizenship or immigration status.",
+      "label": "OPEN"
+    },
+    {
+      "id": "negation/is-sentence-local",
+      "text": "No security clearance required for the internship.\nThe full-time role requires U.S. citizenship.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "eeo/full-block",
+      "text": "We provide equal employment opportunities to all employees and applicants for employment and prohibit discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state or local laws.",
+      "label": "OPEN"
+    },
+    {
+      "id": "eeo/citizenship-status",
+      "text": "We do not discriminate on the basis of citizenship status.",
+      "label": "OPEN"
+    },
+    {
+      "id": "eeo/national-origin",
+      "text": "Applicants are considered without regard to national origin.",
+      "label": "OPEN"
+    },
+    {
+      "id": "eeo/employer",
+      "text": "We are an equal opportunity employer.",
+      "label": "OPEN"
+    },
+    {
+      "id": "eeo/protected-veteran",
+      "text": "Protected veteran status is considered.",
+      "label": "OPEN"
+    },
+    {
+      "id": "eeo/does-not-mask-a-restriction",
+      "text": "We are an equal opportunity employer.\n\nThis position requires U.S. citizenship.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "eeo/sentence-carrying-a-bar-is-unclear",
+      "text": "We are an equal opportunity employer, but this role is open to U.S. citizens only.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "eeo/regardless-is-not-an-open-signal",
+      "text": "Applicants are considered without regard to race, national origin or citizenship status.\n\nAn active TS/SCI clearance is required.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "supersede/citizen-only-stays-citizen",
+      "text": "Must be a U.S. citizen.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "supersede/citizen-plus-lpr-is-us-person",
+      "text": "Must be a U.S. citizen or lawful permanent resident.",
+      "label": "RESTRICTED_US_PERSON",
+      "rule": "lawful-permanent-resident"
+    },
+    {
+      "id": "supersede/across-sentences-citizen-wins",
+      "text": "Some roles are open to U.S. persons.\nThis particular role is open to U.S. citizens only.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "severity/clearance-outranks-all",
+      "text": "We do not offer visa sponsorship.\nApplicants must be U.S. persons.\nAn active Top Secret clearance is required.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "severity/restriction-outranks-no-sponsorship",
+      "text": "We cannot sponsor visas.\nU.S. citizenship is required.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "severity/definite-outranks-unclear",
+      "text": "Familiarity with ITAR is a plus.\nMust be a U.S. citizen.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "conflict/clearance",
+      "text": "An active security clearance is required.\nNo security clearance is required for this role.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "conflict/citizenship",
+      "text": "This role is open to U.S. citizens only.\nWe welcome applicants regardless of citizenship.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "conflict/sponsorship",
+      "text": "We do not offer visa sponsorship.\nVisa sponsorship is available for exceptional candidates.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "hedge/real-greenhouse-posting",
+      "text": "Must be authorized to work in the U.S.; note this role may require access to information subject to U.S. export control regulations",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "hedge/may-be-itar",
+      "text": "This position may be subject to ITAR.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "hedge/might-be-required",
+      "text": "Candidates might be required to meet export control requirements.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "hedge/could-require",
+      "text": "This role could require ITAR eligibility.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "hedge/unhedged-still-fires",
+      "text": "This role is subject to ITAR.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "hedge/elsewhere-does-not-excuse",
+      "text": "Applicants must be U.S. persons; we may require a background check.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "evidence/ground-truth",
+      "text": "In order to comply with the export regulations of the United States Government, it is required that the applicant must fall under one of the following categories: (i) U.S. citizen or national, (ii) U.S. lawful permanent resident (i.e. current green card holder), (iii) Refugee under 8 U.S.C. 1157, or (iv) Asylee under 8 U.S.C. 1158.",
+      "label": "RESTRICTED_US_PERSON",
+      "rule": "lawful-permanent-resident"
+    },
+    {
+      "id": "evidence/bullet-marker-stripped",
+      "text": "- Must be a U.S. citizen.",
+      "label": "RESTRICTED_CITIZEN",
+      "rule": "must-be-us-citizen"
+    },
+    {
+      "id": "evidence/picks-the-sentence-not-the-heading",
+      "text": "Export Control Requirements\n\nThe applicant must be a U.S. citizen or lawful permanent resident.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "split/abbreviation-not-a-boundary",
+      "text": "Acme Inc. requires U.S. citizenship for this job.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "split/normal-sentences-do-split",
+      "text": "We value experience. Only U.S. citizens may apply. Benefits include equity.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "boundary/public-trust-team",
+      "text": "Collaborate closely with Product, Legal and Public Trust teams to develop acceptance criteria.",
+      "label": "OPEN"
+    },
+    {
+      "id": "clearance/public-trust-level",
+      "text": "An active Public Trust clearance is required.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "boundary/creepage-and-clearance",
+      "text": "Experience with thermal analysis, power integrity, grounding, creepage and clearance, and high-current PCB layout",
+      "label": "OPEN"
+    },
+    {
+      "id": "boundary/customs-clearance",
+      "text": "Own inbound logistics: shipping terms and customs clearance, with proactive exception handling.",
+      "label": "OPEN"
+    },
+    {
+      "id": "boundary/flight-clearance",
+      "text": "Experience with airworthiness processes, flight clearance, and configuration control for aircraft systems.",
+      "label": "OPEN"
+    },
+    {
+      "id": "boundary/tool-clearance",
+      "text": "Drive design for manufacturability: access, fastener reach, tool clearance, and testability.",
+      "label": "OPEN"
+    },
+    {
+      "id": "clearance/personnel-clearance-beside-a-physical-one",
+      "text": "Experience with flight clearance; ability to obtain a security clearance.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "unclear/clearance-desired",
+      "text": "TS/SCI clearance desired.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "unclear/clearance-a-plus",
+      "text": "Security Clearance: Active U.S. Secret clearance is a plus.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "unclear/clearance-preferred",
+      "text": "Active Secret or Top Secret clearance preferred.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "clearance/required-higher-preferred",
+      "text": "Secret Clearance Required, TS Preferred.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/holds-higher-preferred",
+      "text": "Currently possesses an active U.S. Secret security clearance (Top Secret clearance preferred).",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/required-short",
+      "text": "Active Secret Clearance Required",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "unclear/clearance-if-required",
+      "text": "Eligibility to obtain a U.S. security clearance if required by the program.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "unclear/clearance-as-required-by-customer",
+      "text": "Ability to possess a Secret DoD security clearance as required by customers.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "clearance/travel-as-required-then-obtain",
+      "text": "Ability to travel as required, and to obtain and maintain a U.S. security clearance.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "usperson/clearance-eligibility-hedged",
+      "text": "Must be a U.S. Person due to required access to export-controlled information; U.S. clearance eligibility may be required depending on program.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "unclear/itar-compliance-duty",
+      "text": "Familiarity with FAR, DFARS, ITAR, and export compliance requirements.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "unclear/export-control-duty",
+      "text": "Ensure logistics activities meet contract requirements, export control requirements, and company processes.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "unclear/ear-mention",
+      "text": "Familiarity with U.S. export-control regimes (ITAR, EAR).",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "usperson/itar-as-qualification",
+      "text": "U.S. Citizenship or ability to comply with ITAR requirements.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "citizen/us-citizen-required-short",
+      "text": "U.S. Citizen Required",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "citizen/required-beside-export-control",
+      "text": "US Citizen is required as this position needs to access export controlled data.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "citizen/qualification-line",
+      "text": "U.S. citizenship and a willingness to travel.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "unclear/citizenship-preferred",
+      "text": "U.S. citizenship preferred.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "usperson/required-does-not-cross-semicolon",
+      "text": "Ability to work with ITAR data is required; U.S. citizenship or other authorization for ITAR access is expected.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "clearance/eligible-to-obtain-secret",
+      "text": "Eligible to obtain and maintain an active U.S. Secret security clearance",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/possesses-and-maintains-us-secret",
+      "text": "Currently possesses and is able to maintain an active U.S. Secret security clearance",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/able-to-obtain-ts",
+      "text": "Ability to obtain and maintain a U.S. TS clearance",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/eligible-to-receive",
+      "text": "Must be eligible to receive a US Security Clearance",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/eligible-for",
+      "text": "Security Clearance: Must be eligible for a US security clearance.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/active-secret-or-ts",
+      "text": "Active U.S. Secret or TS clearance and ability to maintain clearance",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "clearance/citizenship-and-able-to-obtain",
+      "text": "U.S. citizenship and ability to obtain a security clearance.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "unclear/obtain-clearance-desired",
+      "text": "Ability to obtain a S//SAR level security clearance desired.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "unclear/obtain-clearance-may-be-required",
+      "text": "The ability to obtain a security clearance may be required for some programs.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "open/no-need-to-obtain-clearance",
+      "text": "You do not need to be able to obtain a clearance: no security clearance is required.",
+      "label": "OPEN"
+    },
+    {
+      "id": "open/eligible-for-benefits",
+      "text": "Employees are eligible for medical, dental and vision benefits.",
+      "label": "OPEN"
+    },
+    {
+      "id": "open/legally-authorized",
+      "text": "Legally authorized to work in the United States.",
+      "label": "OPEN"
+    },
+    {
+      "id": "open/current-authorization",
+      "text": "Applicants must have current authorization to work in the United States.",
+      "label": "OPEN"
+    },
+    {
+      "id": "info/authorized-without-sponsorship",
+      "text": "At this time, we are only considering candidates who are authorized to work in the U.S. without the need for current or future visa sponsorship.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "info/authorized-and-cannot-sponsor",
+      "text": "Candidates must be authorized to work in the U.S. We cannot sponsor visas for this role.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "unclear/ongoing-work-authorization",
+      "text": "Must have authorization to work in the United States and maintain ongoing work authorization from time of hire through the duration of employment.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "citizen/authorized-does-not-hide-citizenship",
+      "text": "Must be authorized to work in the United States. This position is open to U.S. citizens only.",
+      "label": "RESTRICTED_CITIZEN"
+    }
+  ]
+}

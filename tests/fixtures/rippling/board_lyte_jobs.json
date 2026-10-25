@@ -1,0 +1,67 @@
+[
+ {
+  "uuid": "aaad5fd1-0d77-405f-819e-de9cc7a0b3c0",
+  "name": "Assembly and Mechanical Lead",
+  "department": {
+   "id": "Operations",
+   "label": "Operations"
+  },
+  "url": "https://ats.rippling.com/lyte/jobs/aaad5fd1-0d77-405f-819e-de9cc7a0b3c0",
+  "workLocation": {
+   "label": "Taiwan",
+   "id": "Taiwan"
+  }
+ },
+ {
+  "uuid": "aaad5fd1-0d77-405f-819e-de9cc7a0b3c0",
+  "name": "Assembly and Mechanical Lead",
+  "department": {
+   "id": "Operations",
+   "label": "Operations"
+  },
+  "url": "https://ats.rippling.com/lyte/jobs/aaad5fd1-0d77-405f-819e-de9cc7a0b3c0",
+  "workLocation": {
+   "label": "Sunnyvale, CA",
+   "id": "Sunnyvale, CA"
+  }
+ },
+ {
+  "uuid": "a1864149-350b-4210-8ced-635f21a02b01",
+  "name": "Assembly and Packaging Process Engineer",
+  "department": {
+   "id": "Operations",
+   "label": "Operations"
+  },
+  "url": "https://ats.rippling.com/lyte/jobs/a1864149-350b-4210-8ced-635f21a02b01",
+  "workLocation": {
+   "label": "Remote (Taiwan)",
+   "id": "Remote (Taiwan)"
+  }
+ },
+ {
+  "uuid": "a1864149-350b-4210-8ced-635f21a02b01",
+  "name": "Assembly and Packaging Process Engineer",
+  "department": {
+   "id": "Operations",
+   "label": "Operations"
+  },
+  "url": "https://ats.rippling.com/lyte/jobs/a1864149-350b-4210-8ced-635f21a02b01",
+  "workLocation": {
+   "label": "Remote (Singapore)",
+   "id": "Remote (Singapore)"
+  }
+ },
+ {
+  "uuid": "6d781383-02f4-47e5-bcf8-6d398590d476",
+  "name": "Robotics Engineer (Algorithms & Software)",
+  "department": {
+   "id": "Physical AI Labs",
+   "label": "Physical AI Labs"
+  },
+  "url": "https://ats.rippling.com/lyte/jobs/6d781383-02f4-47e5-bcf8-6d398590d476",
+  "workLocation": {
+   "label": "Sunnyvale, CA",
+   "id": "Sunnyvale, CA"
+  }
+ }
+]

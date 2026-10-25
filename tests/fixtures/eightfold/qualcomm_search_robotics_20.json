@@ -1,0 +1,241 @@
+{
+ "status": 200,
+ "error": {
+  "message": "",
+  "body": ""
+ },
+ "data": {
+  "positions": [
+   {
+    "id": 446716245843,
+    "displayJobId": "3084018",
+    "name": "Sr. ADAS Software Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1790812800,
+    "solrScore": null,
+    "stars": 0,
+    "department": "ADAS R&D Software",
+    "creationTs": 1766361600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": "flexible_within_country",
+    "atsJobId": "3084018",
+    "positionUrl": "/careers/job/446716245843"
+   },
+   {
+    "id": 446720988289,
+    "displayJobId": "3096146",
+    "name": "Machine Learning / Computer Vision Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Video Systems, HW Architecture",
+    "creationTs": 1788307200,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3096146",
+    "positionUrl": "/careers/job/446720988289"
+   },
+   {
+    "id": 446720930270,
+    "displayJobId": "3095536",
+    "name": "Senior Staff Engineer, Diagnostics and AI",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789689600,
+    "solrScore": null,
+    "stars": 0,
+    "department": "ASICS Engineering",
+    "creationTs": 1787184000,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3095536",
+    "positionUrl": "/careers/job/446720930270"
+   },
+   {
+    "id": 446718780272,
+    "displayJobId": "3092136",
+    "name": "Sr. Staff/Principal Engineer - Low Power Chip Architect / System Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "ASICS Engineering",
+    "creationTs": 1779926400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": "flexible_within_country",
+    "atsJobId": "3092136",
+    "positionUrl": "/careers/job/446718780272"
+   },
+   {
+    "id": 446721197055,
+    "displayJobId": "3096671",
+    "name": "Senior Staff Engineer, Machine Learning Engineering ( On-device SW )",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1790726400,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Machine Learning Engineering",
+    "creationTs": 1789430400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3096671",
+    "positionUrl": "/careers/job/446721197055"
+   },
+   {
+    "id": 446721161405,
+    "displayJobId": "3096887",
+    "name": "#Wireless Subsystem Test and Software Tools Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789689600,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Cellular Technologies Software",
+    "creationTs": 1789689600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3096887",
+    "positionUrl": "/careers/job/446721161405"
+   },
+   {
+    "id": 446721161408,
+    "displayJobId": "3096885",
+    "name": "#Wireless Software Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1790812800,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Cellular Technologies Software",
+    "creationTs": 1789689600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3096885",
+    "positionUrl": "/careers/job/446721161408"
+   },
+   {
+    "id": 446721161553,
+    "displayJobId": "3096888",
+    "name": "#Wireless Firmware Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789689600,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Cellular Technologies Software",
+    "creationTs": 1789689600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3096888",
+    "positionUrl": "/careers/job/446721161553"
+   },
+   {
+    "id": 446721373024,
+    "displayJobId": "3097092",
+    "name": "Modem Software Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1790899200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Modem Software Engineering",
+    "creationTs": 1790121600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3097092",
+    "positionUrl": "/careers/job/446721373024"
+   },
+   {
+    "id": 446717859953,
+    "displayJobId": "3089336",
+    "name": "Machine Learning Engineer - College Graduate",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Machine Learning Engineering",
+    "creationTs": 1775606400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3089336",
+    "positionUrl": "/careers/job/446717859953"
+   }
+  ],
+  "count": 44,
+  "sortBy": "relevance",
+  "appliedFilters": {
+   "includeRemote": [
+    "0"
+   ],
+   "includeRelocation": [
+    "0"
+   ]
+  },
+  "debug": {},
+  "savedSearchMetadata": {
+   "savedSearchParamsHash": null,
+   "isSavedSearchActive": false
+  },
+  "resultsMetaData": {
+   "usedFuzzSearch": false,
+   "mocTitle": null
+  }
+ },
+ "metadata": null
+}

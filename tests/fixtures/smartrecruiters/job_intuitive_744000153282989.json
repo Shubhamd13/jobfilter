@@ -1,0 +1,123 @@
+{
+ "id": "744000153282989",
+ "name": "Program Manager",
+ "uuid": "93e76336-a08e-4ee8-a65e-5c8d7d8c439d",
+ "jobId": "f422fcf3-42ca-4e08-b6d0-8df151881798",
+ "jobAdId": "901cfcc5-491d-4ccd-823f-808b2fc608dd",
+ "defaultJobAd": true,
+ "refNumber": "REF25157E",
+ "company": {
+  "name": "Intuitive",
+  "identifier": "Intuitive"
+ },
+ "location": {
+  "city": "Mexicali",
+  "region": "B.C.",
+  "country": "mx",
+  "remote": false,
+  "hybrid": false,
+  "latitude": "32.6249284",
+  "longitude": "-115.4435754",
+  "fullLocation": "Mexicali, B.C., Mexico"
+ },
+ "customField": [
+  {
+   "fieldId": "61211c9b1fa63c2955669260",
+   "fieldLabel": "Req Type",
+   "valueId": "d57eba28-f339-4d9e-afa0-29e44ccf638d",
+   "valueLabel": "Sourcing/ Pipeline"
+  },
+  {
+   "fieldId": "6121170e1fa63c295566925d",
+   "fieldLabel": "Company Name",
+   "valueId": "00001",
+   "valueLabel": "SOURCING/PIPELINE ONLY"
+  },
+  {
+   "fieldId": "COUNTRY",
+   "fieldLabel": "Country/Region",
+   "valueId": "mx",
+   "valueLabel": "Mexico"
+  },
+  {
+   "fieldId": "612116747c9ac71cd5f99171",
+   "fieldLabel": "Business Unit",
+   "valueId": "MX",
+   "valueLabel": "Mexico BU"
+  },
+  {
+   "fieldId": "612117b30bb2e12534f85548",
+   "fieldLabel": "Job code",
+   "valueId": "10111",
+   "valueLabel": "10111"
+  },
+  {
+   "fieldId": "61211d107c9ac71cd5f99177",
+   "fieldLabel": "Career Site Category",
+   "valueId": "cb3f576f-7736-4ef9-a133-9f39cb232cbe",
+   "valueLabel": "Manufacturing & Operations"
+  },
+  {
+   "fieldId": "612111e01fa63c295566925a",
+   "fieldLabel": "Posting Type",
+   "valueId": "0750fadd-8943-4911-865a-0b5f4870b34a",
+   "valueLabel": "Public - Internal & External"
+  },
+  {
+   "fieldId": "612108ea7c9ac71cd5f9916c",
+   "fieldLabel": "Brands",
+   "valueId": "default",
+   "valueLabel": "Intuitive"
+  }
+ ],
+ "releasedDate": "2026-10-02T23:41:49.451Z",
+ "creator": {
+  "name": "Redacted"
+ },
+ "postingUrl": "https://jobs.smartrecruiters.com/Intuitive/744000153282989-program-manager",
+ "applyUrl": "https://jobs.smartrecruiters.com/Intuitive/744000153282989-program-manager?oga=true",
+ "referralUrl": "https://jobs.smartrecruiters.com/external-referrals/company/Intuitive/publication/93e76336-a08e-4ee8-a65e-5c8d7d8c439d?dcr_ci=Intuitive",
+ "jobAd": {
+  "sections": {
+   "companyDescription": {
+    "title": "Company Description",
+    "text": "<p>At Intuitive, we are united behind our mission: we believe that minimally invasive care is life-enhancing care. Through ingenuity and intelligent technology, we expand the potential of physicians to heal without constraints.<br>\n<br>\nAs a pioneer and market leader in robotic-assisted surgery, we strive to foster an inclusive and diverse team, committed to making a difference. For more than 25 years, we have worked with hospitals and care teams around the world to help solve some of healthcare's hardest challenges and advance what is possible.<br>\n<br>\nIntuitive has been built by the efforts of great people from diverse backgrounds. We believe great ideas can come from anywhere. We strive to foster an inclusive culture built around diversity of thought and mutual respect. We lead with inclusion and empower our team members to do their best work as their most authentic selves.<br>\n<br>\nPassionate people who want to make a difference drive our culture. Our team members are grounded in integrity, have a strong capacity to learn, the energy to get things done, and bring diverse, real world experiences to help us think in new ways. We actively invest in our team members to support their long-term growth so they can continue to advance our mission and achieve their highest potential.<br>\n<br>\nJoin a team committed to taking big leaps forward for a global community of healthcare professionals and their patients. Together, let's advance the world of minimally invasive care.</p>"
+   },
+   "jobDescription": {
+    "title": "Job Description",
+    "text": "<p><strong><u>Primary Function of Position:</u></strong></p><p>The Program Manager’s function is to plan, organize and lead programs and the series of projects it entails to successful completion as required by company defined key initiatives. It is also expected for this function to participate in strategic planning for the programs this position may be leading.</p><p><strong><u>Roles and Responsibilities:</u></strong></p><ul><li>Creates and manages long term goals and translates them into shorter projects to achieve the program success.</li><li>Prepares justification for the programs he/she is managing, such as ROI, etc., to achieve buy in from top management.</li><li>Plans, organizes and leads high scope projects.</li><li>Leads and organizes project reviews affecting the Mexicali site.</li><li>Prepares status reports for the projects and programs he/she is leading and be able to present at an executive level.</li><li>Maintains budget control for projects and programs.</li><li>Assures that proper documentation is prepared and updated to meet standards and regulations as required in a Medical device environment (FDA/ISO).</li><li>Ability to influence others to perform needed tasks in order to ensure project completion on time and within budget.</li><li>May require coaching other engineers in project management tools.</li><li>Ability to lead cross functional, multisite and multicultural (both US and MX) teams.</li><li>Create budget estimates for projects and programs.</li><li>Performs other duties as required.</li><li>Travel: Position may require 10-30% travel depending on the project, primarily within U.S.</li></ul>"
+   },
+   "qualifications": {
+    "title": "Qualifications",
+    "text": "<p><strong><u>Skill/Job Requirements:</u></strong><u> </u></p><p>Competency Requirements: (Competency is based on: education, training, skills and experience.)</p><p>In order to adequately perform the responsibilities of this position the individual must:</p><p><strong>Required:</strong></p><ul><li>Be of high character and energy with regard for detail.</li><li>Schedule oriented and demonstrate results based on such schedules (Plans / Gantt charts)</li><li>Highly organized with his/her tasks and tasks related to his/her programs.</li><li>Excellent communication skills, both written and verbal. Able to communicate eloquently up, down, and sideways.&#xa0;</li><li>Demonstrate strong leadership skills to coordinate cross functional and/or multisite/multicultural teams for his/her program.</li><li>Demonstrate site bring up and site transfer knowledge and experience.</li><li>BS degree in an engineering discipline.</li><li>Minimum 4 years in a Project/Program Manager role or an engineering leading role.</li><li>Minimum 6 years mechanical, manufacturing or process engineering experience with Mid/high volume complex mechanism manufacturing.</li><li>Possess strong communication skills to interact with suppliers and other departments within the company (product development, planning, purchasing, regulatory, quality, etc…)</li></ul><p><strong>Preferred:</strong></p><ul><li>MS in an engineering or administration discipline.</li><li>Project Management Certification.</li><li>Prior responsibility for process, equipment or product validation/verification.</li><li>Prior experience with automated equipment, complex mechanism manufacturing, or robotics.</li><li>Experience in Just-In-Time, Demand Flow Technology, and Lean Manufacturing techniques.</li><li>Demonstrate equipment and process validation knowledge.</li><li>Prior experience working in an FDA/ISO regulated environment.</li></ul><p><strong><u>Language requirements:</u></strong></p><ul><li>High English Level (+ 90 %).</li></ul>"
+   },
+   "additionalInformation": {
+    "title": "Additional Information",
+    "text": "<div sr-tagline=\"\"></div><p>Intuitive es un empleador que brinda igualdad de oportunidades de empleo. Proporcionamos igualdad de oportunidades de empleo a todos los solicitantes y empleados cualificados, y prohibimos cualquier tipo de discriminación y acoso, independientemente de su raza, sexo, condición de embarazo, orientación sexual, identidad de género, origen nacional, color, edad, religión, condición de veterano protegido o de discapacidad, información genética o cualquier otra condición protegida por las leyes federales, estatales o locales aplicables.</p><p><strong>Aviso sobre los Controles de Exportación de EE. UU.:</strong> De acuerdo con las Regulaciones de Administración de Exportaciones de EE. UU. (15 CFR §743.13(b)), algunos puestos en Intuitive Surgical pueden estar sujetos a controles de exportación de EE. UU. para candidatos que sean nacionales de países actualmente bajo embargo o sanciones.</p><p>Cierta información que usted proporcione como parte de la solicitud será utilizada para determinar si Intuitive Surgical necesitará (i) obtener una licencia de exportación del gobierno de EE. UU. en su nombre (nota: el proceso de obtención de la licencia puede tardar entre 3 y más de 6 meses) o (ii) implementar un Plan de Control de Tecnología (“TCP”, por sus siglas en inglés) (nota: normalmente este paso agrega 2 semanas al proceso de contratación).<br>\nPara cualquier puesto en Intuitive sujeto a controles de exportación, las ofertas finales están condicionadas a la obtención de una licencia de exportación aprobada y/o a la ejecución de un TCP antes de la fecha de inicio del empleado potencial, la cual puede o no ser flexible, y dentro de un plazo que no obstaculice de manera irrazonable la necesidad de contratación. Si aplica, los candidatos serán notificados e instruidos sobre cualquier requisito relacionado con estos fines.</p><p>Este puesto puede cubrirse con un nivel de puesto diferente al indicado aquí, según las necesidades del negocio y/o la experiencia, los conocimientos y las habilidades del candidato o la candidata seleccionado. La compensación se basará principalmente en el nivel del puesto en el que se cubra el rol y en las cualificaciones del candidato o la candidata, de conformidad con la legislación aplicable.</p>"
+   }
+  }
+ },
+ "active": true,
+ "visibility": "PUBLIC",
+ "industry": {
+  "id": "medical_device",
+  "label": "Medical Device"
+ },
+ "function": {
+  "id": "information_technology",
+  "label": "Information Technology"
+ },
+ "experienceLevel": {
+  "id": "mid_senior_level",
+  "label": "Mid-Senior Level"
+ },
+ "typeOfEmployment": {
+  "id": "permanent",
+  "label": "Full-time"
+ },
+ "language": {
+  "code": "en",
+  "label": "English",
+  "labelNative": "English (US)"
+ }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jobfilter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <span class="brand">jobfilter</span>
+    <span id="rules-version" class="muted"></span>
+  </header>
+
+  <section id="verdict" class="card" aria-live="polite">
+    <p class="muted">Looking at this tab…</p>
+  </section>
+
+  <div class="actions">
+    <button id="scan" type="button">Scan this page</button>
+  </div>
+
+  <section class="card settings">
+    <h2>Verdict from</h2>
+    <label><input type="radio" name="mode" value="local"> Bundled rules <span class="muted">(offline, instant)</span></label>
+    <label><input type="radio" name="mode" value="server"> Local server <span class="muted">(falls back to rules)</span></label>
+    <label class="check"><input type="checkbox" id="record"> Save postings I view to my database</label>
+    <label class="url">Server
+      <input id="server-url" type="url" spellcheck="false" placeholder="http://127.0.0.1:8000">
+    </label>
+    <p id="server-status" class="muted"></p>
+  </section>
+
+  <details class="dev">
+    <summary>Developer</summary>
+    <p class="muted">Save this page's HTML to refresh the test fixtures when a site changes its layout.
+      It may contain your name and other personal details, so scrub it before committing.</p>
+    <button id="snapshot" type="button" class="secondary">Download page HTML</button>
+  </details>
+
+  <script src="../src/labels.js"></script>
+  <script src="../src/transport.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

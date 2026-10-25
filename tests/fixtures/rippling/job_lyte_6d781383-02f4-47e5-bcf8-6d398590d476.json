@@ -1,0 +1,209 @@
+{
+ "uuid": "6d781383-02f4-47e5-bcf8-6d398590d476",
+ "name": "Robotics Engineer (Algorithms & Software)",
+ "description": {
+  "company": "<meta><p style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;\"><b><strong style=\"font-size:18pt;white-space:pre-wrap;\">About Lyte</strong></b></p><p style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:12pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;\"><span style=\"font-size:12pt;white-space:pre-wrap;\">Lyte builds&nbsp;perception&nbsp;systems for Physical AI&nbsp;operating&nbsp;in complex environments. The company combines custom silicon, integrated sensors, and software into a unified platform for robotics, mobility, and next-generation automation. Lyte is headquartered in Sunnyvale, California, with a global presence. For more information, visit </span><a href=\"http://www.lyte.ai\" target=\"_blank\" class=\"css-173makr-linkStyle\" style=\"color:rgb(30,74,169);cursor:pointer;\"><span style=\"font-size:12pt;white-space:pre-wrap;\">www.lyte.ai</span></a></p><p style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:12pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;\"><br></p><p style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:12pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:center;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">If&nbsp;you’re&nbsp;excited about building impactful technology in a dynamic, hands-on environment,&nbsp;we’d&nbsp;love to hear from you!</strong></b></p>",
+  "role": "<meta><p style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;\"><b><strong style=\"font-size:18pt;white-space:pre-wrap;\">About the role</strong></b></p><ul data-pattern=\"discCircleSquare\" data-depth=\"1\" style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;\"><li style=\"color:rgb(0,0,0);font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;\"><span style=\"color:rgb(0,0,0);white-space:pre-wrap;\">We are looking for a Robotics Engineer with a strong focus on algorithms, ML, and software to build intelligent robotic systems on top of diverse robot platforms. This role centers on developing and integrating perception, state estimation, planning, and learning-based behaviors while deploying them across AMRs, robotic arms, quadrupeds, and humanoids.</span><br><span style=\"color:rgb(0,0,0);background-color:rgb(255,255,255);white-space:pre-wrap;\">You will work closely with perception, ML, and software teams to integrate multi-sensor data into robust autonomy stacks and deploy them on real robotic platforms used for internal development, demos, and customer-facing systems. This is a hands-on software and algorithms role with high system-level impact.</span></li></ul><p style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;\"><b><strong style=\"font-size:18pt;white-space:pre-wrap;\">What you'll do</strong></b></p><ul data-pattern=\"discCircleSquare\" data-depth=\"1\" style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;\"><li style=\"color:rgb(0,0,0);font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"color:rgb(0,0,0);white-space:pre-wrap;\">Develop and integrate robotics algorithms and ML-based systems for perception, state estimation, planning, and control</span></li><li style=\"color:rgb(0,0,0);font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"color:rgb(0,0,0);white-space:pre-wrap;\">Integrate multi-sensor perception outputs (camera, LiDAR, IMU) into autonomy and decision-making stacks</span></li><li style=\"color:rgb(0,0,0);font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"color:rgb(0,0,0);white-space:pre-wrap;\">Build and maintain robot software stacks for diverse platforms (AMR, arm, quadruped, humanoid)</span></li><li style=\"color:rgb(0,0,0);font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"color:rgb(0,0,0);white-space:pre-wrap;\">Implement and tune algorithms for localization, mapping, and sensor fusion; motion planning and trajectory optimization; learning-based behaviors and policies</span></li><li style=\"color:rgb(0,0,0);font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"color:rgb(0,0,0);white-space:pre-wrap;\">Work closely with perception and vision teams to consume and validate ML-based outputs (detection, depth, tracking)</span></li><li style=\"color:rgb(0,0,0);font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"color:rgb(0,0,0);white-space:pre-wrap;\">Deploy and optimize robotics software on embedded and edge compute platforms</span></li><li style=\"color:rgb(0,0,0);font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"color:rgb(0,0,0);white-space:pre-wrap;\">Support integration of autonomy stacks into real robots for demos, testing, and customer use</span></li><li style=\"color:rgb(0,0,0);font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"color:rgb(0,0,0);white-space:pre-wrap;\">Debug system-level autonomy issues spanning sensors, algorithms, and software interactions</span></li></ul><p style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;\"><b><strong style=\"font-size:18pt;white-space:pre-wrap;\">Required Qualifications</strong></b></p><ul data-pattern=\"discCircleSquare\" data-depth=\"1\" style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;\"><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Bachelor's degree or higher in Robotics, Computer Science, or a related field</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">6+ years of experience in robotics algorithms, autonomy, or robotics software engineering</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Strong foundation in core robotics algorithms, including state estimation and sensor fusion; motion planning and control; localization and mapping</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Strong software engineering skills in C++ and/or Python</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Experience deploying robotics algorithms on real robotic platforms</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Ability to work effectively with cross-functional teams in fast-paced environments</span></li></ul><p style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;\"><b><strong style=\"font-size:18pt;white-space:pre-wrap;\">Preferred Qualifications</strong></b></p><ul data-pattern=\"discCircleSquare\" data-depth=\"1\" style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;\"><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Experience with ROS / ROS 2 and modern robotics middleware</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Background in learning-based robotics, reinforcement learning, or imitation learning</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Experience integrating ML models into real-time robotic systems</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Familiarity with simulation tools and workflows (Gazebo, Isaac Sim, Mujoco, etc.)</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Experience working across multiple robot morphologies (mobile, manipulation, legged)</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:start;\"><span style=\"white-space:pre-wrap;\">Comfort working in a startup environment with ambiguity and rapid iteration</span></li></ul><p style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;\"><b><strong style=\"font-size:18pt;white-space:pre-wrap;\">Benefits </strong></b><span style=\"font-size:12pt;white-space:pre-wrap;\">(subject to location and local regulations)</span></p><ul data-pattern=\"discCircleSquare\" data-depth=\"1\" style=\"font-family:&quot;Basel Grotesk&quot;,Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;\"><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:left;\"><span style=\"font-size:12pt;white-space:pre-wrap;\">Competitive salary and equity&nbsp;</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:left;\"><span style=\"font-size:12pt;white-space:pre-wrap;\">Comprehensive medical, dental, and vision coverage&nbsp;</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:left;\"><span style=\"font-size:12pt;white-space:pre-wrap;\">401(k) retirement plan&nbsp;</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:left;\"><span style=\"font-size:12pt;white-space:pre-wrap;\">Flexible vacation and time-off policy&nbsp;</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:left;\"><span style=\"font-size:12pt;white-space:pre-wrap;\">Collaborative, fast-paced, and inclusive work environment&nbsp;</span></li><li style=\"font-size:12pt;margin:3px 0px;letter-spacing:0.25px;line-height:1.6;text-align:left;\"><span style=\"font-size:12pt;white-space:pre-wrap;\">Opportunity to work on&nbsp;cutting-edge&nbsp;technologies with a highly cross-functional team&nbsp;</span></li></ul>"
+ },
+ "workLocations": [
+  "Sunnyvale, CA"
+ ],
+ "department": {
+  "name": "Physical AI Labs",
+  "base_department": "Physical AI Labs",
+  "department_tree": [
+   "Physical AI Labs"
+  ]
+ },
+ "employmentType": {
+  "label": "SALARIED_FT",
+  "id": "Salaried, full-time"
+ },
+ "createdOn": "2026-01-04T14:16:53.098000-08:00",
+ "activeJobApplication": {
+  "additionalQuestions": [
+   {
+    "form": {
+     "questions": [
+      {
+       "uniqueKey": "e49bf003-dfd4-48ae-bc08-0a567a6599af",
+       "title": "Are you legally authorized to work in the country where this position is located without employer sponsorship?",
+       "description": "",
+       "tags": [],
+       "dataType": "select",
+       "questionType": "KNOCKOUT",
+       "isRequired": true,
+       "allowComments": false,
+       "canEdit": false,
+       "isPrivate": false,
+       "strChoices": [
+        "Yes",
+        "No",
+        "Authorization is limited to a term of less than one year"
+       ],
+       "intChoices": [],
+       "isMultiSelectEnabled": true,
+       "isOtherEnabled": false
+      },
+      {
+       "uniqueKey": "890ba672-3dd8-4023-b740-57bee3f0d53f",
+       "title": "Are you currently located in the job location, or are you willing to relocate?",
+       "tags": [],
+       "dataType": "enum",
+       "questionType": "SINGLE_SELECT_RADIO",
+       "isRequired": true,
+       "allowComments": false,
+       "canEdit": false,
+       "isPrivate": false,
+       "strChoices": [
+        "Yes",
+        "No, but willing to relocate",
+        "No"
+       ],
+       "intChoices": [],
+       "isMultiSelectEnabled": false,
+       "isOtherEnabled": false
+      },
+      {
+       "uniqueKey": "6ee66615-1210-40ed-99ae-39952c3f9871",
+       "title": "Will you require relocation assistance?",
+       "tags": [],
+       "dataType": "enum",
+       "questionType": "SINGLE_SELECT_RADIO",
+       "isRequired": false,
+       "allowComments": false,
+       "canEdit": false,
+       "isPrivate": false,
+       "strChoices": [
+        "Yes",
+        "No"
+       ],
+       "intChoices": [],
+       "isMultiSelectEnabled": false,
+       "isOtherEnabled": false
+      }
+     ],
+     "deletedQuestions": [],
+     "sections": [],
+     "deletedSections": [],
+     "skipLogic": []
+    },
+    "name": "Work Authorization and Job Location",
+    "id": "6a03a5546bf79d864017286a"
+   }
+  ],
+  "basicQuestions": [
+   {
+    "oid": "first_name",
+    "fieldType": "SHORT_ANSWER",
+    "title": "First name",
+    "required": true
+   },
+   {
+    "oid": "last_name",
+    "fieldType": "SHORT_ANSWER",
+    "title": "Last name",
+    "required": true
+   },
+   {
+    "oid": "email",
+    "fieldType": "SHORT_ANSWER",
+    "title": "Email",
+    "required": true
+   },
+   {
+    "oid": "pronouns",
+    "fieldType": "PRONOUN",
+    "title": "Pronouns",
+    "required": false
+   },
+   {
+    "oid": "current_company",
+    "fieldType": "SHORT_ANSWER",
+    "title": "Current company",
+    "required": false
+   },
+   {
+    "oid": "phone_number",
+    "fieldType": "PHONE_NUMBER",
+    "title": "Phone number",
+    "required": true
+   },
+   {
+    "oid": "location",
+    "fieldType": "SHORT_ANSWER",
+    "title": "Location (city only)",
+    "required": true
+   },
+   {
+    "oid": "linkedin_link",
+    "fieldType": "SHORT_ANSWER",
+    "title": "LinkedIn link",
+    "required": false
+   },
+   {
+    "oid": "website_link",
+    "fieldType": "SHORT_ANSWER",
+    "title": "Website link",
+    "required": false
+   },
+   {
+    "oid": "resume",
+    "fieldType": "FILE",
+    "title": "Resume",
+    "required": true
+   },
+   {
+    "oid": "cover_letter",
+    "fieldType": "FILE",
+    "title": "Cover letter",
+    "required": false
+   }
+  ]
+ },
+ "eeocQuestionnaireEnabled": true,
+ "eeocQuestionnaireEnabledForJobPost": true,
+ "url": "https://ats.rippling.com/lyte/jobs/6d781383-02f4-47e5-bcf8-6d398590d476",
+ "board": {
+  "boardType": "RIPPLING",
+  "slug": "lyte",
+  "logo": {
+   "name": "0621BL_Lyte_Logo_Identity.jpg",
+   "url": "https://secured-assets.ripplingcdn.com/us1/ats/6458e8b9845ef785df00ce9c/ats/00918a5cd6a24eaf8abcb34da61a2545?Expires=1791005395&Signature=IEpVyr8NjaA8OA2fhJFPKhvNuZJhglKEWcPPIIlZsgiXKNWu0wnSzDq0dlrT89U4OhxlqFHCe0RG2G5UrvrN383BJrKNROzJWiKo-tHVdUg9mGYo6Lr2njwVDZDZn1C2VbZySnUFN5n4ZJwbDLg23w7gst1i6a9KhWXxGmfe-zwfH6UeAouMwj0nfaYrkUl6UY4rxZkxVd4UVLZfimfzgE~nTxunNV7ADRrcUyj37JXtdivc9xjP~W4hDMqn5FS1wgTAEg-Dxs59PnD8c~86xWLhJKtaOiicqLdeUk06sn3WYARZpHpmOgkt2Gz6SkAwZuAng463yd99BiOxwXclGQ__&Key-Pair-Id=K2SM3GXN9F9XGM",
+   "type": "image/jpeg"
+  },
+  "banner": {
+   "name": "",
+   "url": null,
+   "type": ""
+  },
+  "title": "Careers",
+  "subtitle": null,
+  "boardURL": "https://ats.rippling.com/lyte/jobs",
+  "fontType": null,
+  "linkColor": null,
+  "buttonColor": null,
+  "buttonTextColor": null,
+  "legalNotice": null,
+  "noOpeningsMessage": null,
+  "groupJobsByLocation": true,
+  "showBoardLogoOnJobPost": true,
+  "showCompanyInfoUnderJobPost": true,
+  "companyName": "Lyte AI"
+ },
+ "payRangeDetails": [
+  {
+   "location": "Bay Area, CA",
+   "currency": "USD",
+   "frequency": "YEAR",
+   "rangeStart": 150000.0,
+   "rangeEnd": 300000.0,
+   "isRemote": false
+  }
+ ],
+ "applicationConfirmationTemplate": "69597919867bd28fa68e9bf6",
+ "hasAIEvaluationsEnabled": true,
+ "companyName": "Lyte AI",
+ "unlistedFromSearch": false,
+ "jsonLd": null
+}

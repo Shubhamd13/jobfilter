@@ -1,0 +1,181 @@
+{
+ "id": "744000153272759",
+ "name": "Vice President, Talent Acquisition",
+ "uuid": "9543f690-62cb-4f9a-8972-bbad54f216bb",
+ "jobId": "06061ef2-00fb-4b62-83af-5bb3080cb6b6",
+ "jobAdId": "5e541f10-339a-42e8-9912-41805eb73d39",
+ "defaultJobAd": true,
+ "refNumber": "JOB219471",
+ "company": {
+  "name": "Intuitive",
+  "identifier": "Intuitive"
+ },
+ "location": {
+  "city": "Sunnyvale",
+  "region": "CA",
+  "country": "us",
+  "remote": false,
+  "hybrid": true,
+  "hybridDescription": "3 days/week onsite in Sunnyvale, CA Headquarters",
+  "fullLocation": "Sunnyvale, CA, United States"
+ },
+ "customField": [
+  {
+   "fieldId": "61211c9b1fa63c2955669260",
+   "fieldLabel": "Req Type",
+   "valueId": "9b759e44-2d55-4506-a9ce-d575851c480e",
+   "valueLabel": "Professional"
+  },
+  {
+   "fieldId": "6121170e1fa63c295566925d",
+   "fieldLabel": "Company Name",
+   "valueId": "3100",
+   "valueLabel": "Intuitive Surgical OPS"
+  },
+  {
+   "fieldId": "61211320bc01bb71bbfc4a1a",
+   "fieldLabel": "Fixed/ Variable",
+   "valueId": "f108189e-76a0-4a13-9074-efcc3a12c5ab",
+   "valueLabel": "Fixed"
+  },
+  {
+   "fieldId": "61211d107c9ac71cd5f99177",
+   "fieldLabel": "Career Site Category",
+   "valueId": "c4bcdc25-3e60-449d-a131-9f02a5e47e0e",
+   "valueLabel": "Human Resources"
+  },
+  {
+   "fieldId": "61dbc8e386045b73323f2e92",
+   "fieldLabel": "Ways of Working",
+   "valueId": "8500fc2b-5c36-4d89-b6e9-ebab6be4ab5d",
+   "valueLabel": "Set Schedule - This job will be onsite weekly, the percentage of onsite work will be defined by the leader."
+  },
+  {
+   "fieldId": "612111e01fa63c295566925a",
+   "fieldLabel": "Posting Type",
+   "valueId": "0750fadd-8943-4911-865a-0b5f4870b34a",
+   "valueLabel": "Public - Internal & External"
+  },
+  {
+   "fieldId": "6410bb26309ea26650581aaa",
+   "fieldLabel": "Min. Salary Region 1",
+   "valueId": "296000 USD",
+   "valueLabel": "296000 USD"
+  },
+  {
+   "fieldId": "612116e2bc01bb71bbfc4a1c",
+   "fieldLabel": "Shift",
+   "valueId": "d5adea7f-e29a-4609-9de6-f7b7a0cf285a",
+   "valueLabel": "Day"
+  },
+  {
+   "fieldId": "COUNTRY",
+   "fieldLabel": "Country/Region",
+   "valueId": "us",
+   "valueLabel": "United States"
+  },
+  {
+   "fieldId": "6121193bfb73b03a3f26c476",
+   "fieldLabel": "Functional Area (HCM)",
+   "valueId": "Human Resources",
+   "valueLabel": "Human Resources"
+  },
+  {
+   "fieldId": "612116747c9ac71cd5f99171",
+   "fieldLabel": "Business Unit",
+   "valueId": "US",
+   "valueLabel": "United States BU"
+  },
+  {
+   "fieldId": "612117b30bb2e12534f85548",
+   "fieldLabel": "Job code",
+   "valueId": "10022",
+   "valueLabel": "10022"
+  },
+  {
+   "fieldId": "6410bb936ab3004eaed0458f",
+   "fieldLabel": "Max. Salary Region 1",
+   "valueId": "444000 USD",
+   "valueLabel": "444000 USD"
+  },
+  {
+   "fieldId": "6410b3786ab3004eaed0458e",
+   "fieldLabel": "Job Family Code (HCM)",
+   "valueId": "Human Resources",
+   "valueLabel": "Human Resources"
+  },
+  {
+   "fieldId": "612118931fa63c295566925f",
+   "fieldLabel": "Employee Type",
+   "valueId": "EMP1",
+   "valueLabel": "Employee"
+  },
+  {
+   "fieldId": "6121137e0bb2e12534f85545",
+   "fieldLabel": "Global Job Level (HCM)",
+   "valueId": "E7",
+   "valueLabel": "Executive 7, VP (19)"
+  },
+  {
+   "fieldId": "612108ea7c9ac71cd5f9916c",
+   "fieldLabel": "Brands",
+   "valueId": "default",
+   "valueLabel": "Intuitive"
+  },
+  {
+   "fieldId": "6121133f7c9ac71cd5f99170",
+   "fieldLabel": "Finance TBH#",
+   "valueLabel": "TBHB0353677"
+  }
+ ],
+ "releasedDate": "2026-10-02T21:13:29.551Z",
+ "creator": {
+  "name": "Redacted"
+ },
+ "postingUrl": "https://jobs.smartrecruiters.com/Intuitive/744000153272759-vice-president-talent-acquisition",
+ "applyUrl": "https://jobs.smartrecruiters.com/Intuitive/744000153272759-vice-president-talent-acquisition?oga=true",
+ "referralUrl": "https://jobs.smartrecruiters.com/external-referrals/company/Intuitive/publication/9543f690-62cb-4f9a-8972-bbad54f216bb?dcr_ci=Intuitive",
+ "jobAd": {
+  "sections": {
+   "companyDescription": {
+    "title": "Company Description",
+    "text": "<p>It started with a simple idea: what if surgery could be less invasive and recovery less painful? Nearly 30 years later, that question still fuels everything we do at <strong>Intuitive</strong>. As a global leader in <strong>robotic-assisted surgery</strong> and <strong>minimally invasive care</strong>, our technologies—like the <strong>da Vinci surgical system</strong> and <strong>Ion</strong>—have transformed how care is delivered for millions of patients worldwide.</p><p>We’re a team of engineers, clinicians, and innovators united by one purpose: to make surgery smarter, safer, and more human. Every day, our work helps care teams perform with greater precision and patients recover faster, improving outcomes around the world.</p><p>The problems we solve demand creativity, rigor, and collaboration. The work is challenging, but deeply meaningful—because every improvement we make has the potential to change a life.</p><p>If you’re ready to contribute to something bigger than yourself and help <strong>transform the future of healthcare</strong>, you’ll find your purpose here.</p>"
+   },
+   "jobDescription": {
+    "title": "Job Description",
+    "text": "<p><strong>The opportunity: </strong></p><p>Making robotic surgery accessible to every patient starts with exceptional people. As Intuitive grows globally, the Vice President, Talent Acquisition will help us attract and hire the talent to advance that ambition—and build a TA organization ready to deliver at greater scale.</p><p>We’re looking for someone who takes the time to understand the business and its people, earns trust through honest conversations and follow-through, and brings fresh perspective to how we work. A leader who listens closely, challenges thoughtfully, and gives people a clear reason to embrace change.</p><p>Working closely with executives, Finance, and HR, you’ll help shape the talent decisions behind our growth. You’ll build on the team’s strengths while making the changes needed to simplify hiring, strengthen our global capabilities, and deliver consistently across markets.</p><p><strong>What you’ll lead:</strong><br>\nThis individual must be passionate about building a strong team in support of a great company.&#xa0; We’re looking for a leader who is deeply curious about the business, builds trusted relationships across teams and across regions, and sees opportunities to rethink how we attract and hire talent globally. Someone who brings fresh perspectives, turns ideas into results, and inspires a global team to do its best work. This is an opportunity to shape the future of TA at a defining moment in Intuitive’s growth.<br>\n<strong>What this looks like:</strong>&#xa0; &#xa0;</p><ul><li><strong>Shape talent strategy with the business.</strong> Engage executives and our HR function early in business planning. Translate growth priorities into a multi-year talent acquisition strategy, bringing informed advice on talent availability, location, and hiring trade-offs.</li><li><strong>Connect workforce plans to delivery.</strong> Build a regular planning rhythm with Finance, the business, and HR that aligns hiring priorities, timing, investment, and recruiting capacity. Own global hiring performance and the TA budget, making commitments clear and addressing gaps early.</li><li><strong>Build a truly global function.</strong> Strengthen regional leadership and recruiting capabilities, particularly outside the US. Involve regional teams in designing shared systems and processes so they work across markets, with clear accountability and room for local judgment.</li><li><strong>Bring fresh thinking to how we hire.</strong> Question processes that add work without adding value. Introduce technology, automation, and new approaches where they improve hiring outcomes, and help teams adopt changes that make a lasting difference.</li><li><strong>Make data meaningful.</strong> Bring together hiring performance, talent market intelligence, and workforce trends to explain what’s changing, why it matters, and what we should do next. Help leaders use those insights to make better decisions about priorities, investment, and risk.</li><li><strong>Develop an exceptional team.</strong> Give leaders and recruiters clear direction, meaningful development, and the support to become trusted talent advisors. Invite different perspectives, coach candidly, and follow through on commitments. Lead change in a way that helps people understand the purpose and take ownership of the outcome.</li><li><strong>Lead as one HR team.</strong> Work closely with HR Business Leaders and Partners and Centers of Excellence—including Talent Management, Total Rewards, People Analytics, People Services, and Inclusion &amp; Diversity—to solve talent challenges together. Connect hiring with broader talent priorities and share accountability for an inclusive, effective hiring experience and compliant practices across markets.</li></ul>"
+   },
+   "qualifications": {
+    "title": "Qualifications",
+    "text": "<p><strong>What you’ll bring:</strong></p><ul><li><strong>Global TA leadership at scale:</strong>&#xa0;15+ years of demonstrated TA leadership experience, including 10+ years leading people and managing TA leaders across regions. This is a role where that global depth truly matters. This is a centralized, global function with significant growth ahead, and you've been here before: scaling TA functions through periods of rapid growth, building and leading recruiting across APAC, EMEA, and the Americas, and standing up teams in new markets from the ground up. You understand what it takes to hire effectively in diverse geographies — local labor markets, regulatory environments, cultural nuances in candidate experience, and how to design shared systems that actually work across regions without sacrificing local judgment. Ideally, you've lived or worked in-region, not just managed from headquarters — giving you firsthand perspective on what global recruiting really requires on the ground.</li><li><strong>Industry depth:</strong>&#xa0;Background recruiting in&#xa0;<strong>hardware manufacturing, technology manufacturing, or similarly complex, highly technical environments</strong>&#xa0;<strong>desired </strong>— with a strong grasp of the talent landscape, competitive dynamics, and specialized hiring challenges those industries demand.</li><li><strong>Talent magnet:</strong>&#xa0;A reputation for building organizations and employer brands that top talent wants to join. You know how to position a company compellingly in competitive markets and create candidate experiences that convert.</li><li><strong>Deep partnership and influence:</strong>&#xa0;A highly collaborative approach, with the credibility to advise executives and build strong partnerships with Finance, HR Business Leaders and Partners, and Centers of Excellence to deliver shared outcomes.</li><li><strong>Exceptional people leadership and team development:</strong>&#xa0;An open, transparent style that builds trust across cultures. You invest deeply in developing strong leaders, create clear expectations and accountability, and leave teams meaningfully better than you found them.</li><li><strong>Problem solving and business judgment:</strong>&#xa0;A natural problem solver who cuts through complexity, connects the dots across competing priorities, and brings practical, high-impact solutions. Strong business and HR acumen, with the ability to translate data into a clear story — connecting insights to business priorities, investment decisions, and action.</li><li><strong>Innovation and operational results:</strong>&#xa0;Demonstrated success modernizing TA through technology, automation, and simpler processes, while managing competing priorities and delivering measurable improvements in hiring quality, speed, and cost.</li><li>Bachelor’s degree or equivalent experience.</li><li>Ability to <strong>travel </strong>approximately 30% of the time.</li></ul>"
+   },
+   "additionalInformation": {
+    "title": "Additional Information",
+    "text": "<div sr-tagline=\"\"></div><p>Due to the nature of our business and the role, please note that Intuitive and/or your customer(s) may require that you show current proof of vaccination against certain diseases including COVID-19.&#xa0; Details can vary by role.</p><p>Intuitive is an Equal Opportunity Employer.&#xa0;We provide equal employment opportunities to all qualified applicants and employees, and prohibit discrimination and harassment of any type, without regard to race, sex, pregnancy, sexual orientation, gender identity, national origin, color, age, religion, protected veteran or disability status, genetic information or any other status protected under federal, state, or local applicable laws.</p><p><a href=\"https://careers.intuitive.com/en/eeo-and-aap/\" rel=\"noopener noreferrer\">Mandatory Notices</a></p><p>U.S. Export Controls Disclaimer:&#xa0;&#xa0;In accordance with the U.S. Export Administration Regulations (15 CFR §743.13(b)), some roles at Intuitive Surgical may be subject to U.S. export controls for prospective employees who are nationals from countries currently on embargo or sanctions status.</p><p>Certain information you provide as part of the application will be used for purposes of determining whether Intuitive Surgical will need to (i) obtain an export license from the U.S. Government on your behalf (note: the government’s licensing process can take 3 to 6+ months) or (ii) implement a Technology Control Plan (“TCP”) (note: typically adds 2 weeks to the hiring process).&#xa0;&#xa0;</p><p>For any Intuitive role subject to export controls, final offers are contingent upon obtaining an approved export license and/or an executed TCP prior to the prospective employee’s start date, which may or may not be flexible, and within a timeframe that does not unreasonably impede the hiring need. If applicable, candidates will be notified and instructed on any requirements for these purposes.&#xa0;</p><p>We will consider for employment qualified applicants with arrest and conviction records in accordance with fair chance laws.</p><p>Preference will be given to qualified candidates who do not reside, or plan to reside, in Alabama, Arkansas, Delaware, Florida, Indiana, Iowa, Louisiana, Maryland, Mississippi, Missouri, Oklahoma, Pennsylvania, South Carolina, or Tennessee.</p><p>This position may be filled at a different job level than listed here depending on<br>\nbusiness need and/or on the selected candidate’s experience, knowledge and skills.<br>\nCompensation will be based primarily on the job level at which the role is filled and the<br>\ncandidate’s qualifications, consistent with applicable law.</p><p>Accommodation &amp; Accessibility Notice:</p><p>Intuitive is committed to providing reasonable accommodations to qualified individuals with disabilities. If you require assistance or an accommodation during any part of the application or interview process, please contact People Services at HRHelpNow@intusurg.com.</p><p>We provide market-competitive compensation packages, inclusive of base pay, incentives, benefits, and equity. It would not be typical for someone to be hired at the top end of range for the role, as actual pay will be determined based on several factors, including experience, skills, and qualifications. The target compensation ranges are listed.</p>"
+   }
+  }
+ },
+ "active": true,
+ "visibility": "PUBLIC",
+ "industry": {
+  "id": "medical_device",
+  "label": "Medical Device"
+ },
+ "function": {
+  "id": "human_resources",
+  "label": "Human Resources"
+ },
+ "experienceLevel": {
+  "id": "executive",
+  "label": "Executive"
+ },
+ "typeOfEmployment": {
+  "id": "permanent",
+  "label": "Full-time"
+ },
+ "language": {
+  "code": "en",
+  "label": "English",
+  "labelNative": "English (US)"
+ }
+}

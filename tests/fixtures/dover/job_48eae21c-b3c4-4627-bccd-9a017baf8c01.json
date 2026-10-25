@@ -1,0 +1,145 @@
+{
+ "id": "48eae21c-b3c4-4627-bccd-9a017baf8c01",
+ "client_id": "f68b464a-4241-42fb-aecc-c9e6364b9bc9",
+ "client_name": "Alloy Robotics",
+ "client_logo": "https://dover-django.t3.tigrisbucket.io/client-logos/f68b464a-4241-42fb-aecc-c9e6364b9bc9-1776150568-logo.png",
+ "client_domain": "usealloy.ai",
+ "title": "Pitch Your Own Role 🤖",
+ "location": null,
+ "require_linkedin_profile_url": false,
+ "user_provided_description": "<p><strong>About Alloy Robotics</strong></p><p>We believe robotics is the industry of our lifetime, and data is its lifeblood.</p><p>Alloy is the AI-native data platform for robotics teams. Robot fleets generate enormous volumes of logs, video, telemetry, and mission data, and most of it ends up in silos where nobody can use it. Alloy turns it into one queryable layer with AI agents on top: engineers ask questions in natural language, get automated mission reports, and catch failures before they compound. The point is simple. Your robot breaks, you find out why, and your best people spend their time building the next robot instead of digging through the last one.</p><p>We've raised $16m, backed by Square Peg, Blackbird, and Airtree, with angels including senior leaders from OpenAI, Anthropic, Tesla, Waymo, and Halter. We partner with robotics teams across defence, agriculture, maritime, humanoids, construction, and medical, including Advanced Navigation, DroneForge, Breaker Industries, and Puralink. We're a lean team building from Sydney, and are adding our first US hires.</p><p></p><p><strong>Why this one exists</strong></p><p>The best people we've met rarely arrived through a job description that happened to fit them, and we'd rather hear from you than pretend our org chart is finished.</p><p></p><p><strong>Who this is for</strong></p><p>You've looked at what we're building and you can see something we're missing. Design, developer relations, robotics, security, finance, or something we haven't thought of. You don't want to apply for a role. You want to own a problem.</p><p></p><p><strong>What a good pitch looks like</strong></p><ul><li><p>The problem you'd own, in one sentence</p></li><li><p>Why it matters to us now, not in two years</p></li><li><p>What you'd ship in your first 90 days</p></li><li><p>Evidence you've done something like it before</p></li><li><p>Anything we can look at: work, repos, companies, writing</p></li><li><p>Half a page that's specific beats three pages that aren't.</p></li></ul><p></p><p><strong>How we work</strong></p><p>We're building the company we always wanted to join: small, fast, and serious about the craft. The bar is work you'll be proud of in five years, shipped this week. Everyone owns outcomes end to end: the interesting problems don't come with instructions, and nobody will hand you a playbook. We question requirements, delete what shouldn't exist, and spend our energy where customers feel it. If you want clear lanes and a manager to set your week, we'll frustrate you. If you want real problems, real pace, and the best work of your career, you'll fit right in.</p><p></p><p>There's no checklist here. Make the case.</p>",
+ "compensation_details": null,
+ "application_questions": [
+  {
+   "id": "cae32e9c-a144-4aa5-b6d5-b7008208703d",
+   "question": "LinkedIn Profile URL",
+   "input_type": "SHORT_ANSWER",
+   "required": true,
+   "question_type": "LINKEDIN_URL",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 0
+  },
+  {
+   "id": "27e7fed2-b2a7-4852-921c-aeec4f0f20c0",
+   "question": "Phone Number",
+   "input_type": "SHORT_ANSWER",
+   "required": false,
+   "question_type": "PHONE_NUMBER",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 1
+  },
+  {
+   "id": "51855086-3ce8-4107-8245-7eda12e98cb0",
+   "question": "Areas of Interest",
+   "input_type": "MULTIPLE_CHOICE",
+   "required": true,
+   "question_type": "CUSTOM",
+   "multiple_choice_options": [
+    "Engineering (Software)",
+    "Engineering (Robotics)",
+    "GTM / Sales / Marketing",
+    "Operations / Finance"
+   ],
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 2
+  },
+  {
+   "id": "bae29701-d4f5-4fa9-92d9-e309e8ed94ee",
+   "question": "Link us to something you've built, and tell us briefly what it is and why you're proud of it.",
+   "input_type": "LONG_ANSWER",
+   "required": false,
+   "question_type": "CUSTOM",
+   "multiple_choice_options": [
+    "Yes",
+    "No"
+   ],
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 3
+  },
+  {
+   "id": "64bbfbe0-6d85-426f-b849-b955a52eaab3",
+   "question": "What makes this role exciting to you? And why robotics?",
+   "input_type": "SHORT_ANSWER",
+   "required": true,
+   "question_type": "CUSTOM",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 4
+  },
+  {
+   "id": "4c78416b-9a04-4424-abf9-41654e729634",
+   "question": "Where are you based?",
+   "input_type": "SHORT_ANSWER",
+   "required": true,
+   "question_type": "CUSTOM",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 5
+  },
+  {
+   "id": "b1e3a049-0feb-4bf3-8706-a1035aec0af2",
+   "question": "Anything else you'd like to share? Surprises welcome.",
+   "input_type": "LONG_ANSWER",
+   "required": false,
+   "question_type": "CUSTOM",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 6
+  },
+  {
+   "id": "d817ec28-079b-498d-814b-c2b0e7895aae",
+   "question": "Resume Upload",
+   "input_type": "FILE_UPLOAD",
+   "required": true,
+   "question_type": "RESUME",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": null
+  }
+ ],
+ "public_interview_plan_preview": [],
+ "locations": [
+  {
+   "location_type": "HYBRID",
+   "location_option": {
+    "id": "9bcba4ca-ed85-4c5d-bf7f-a612e5e9f574",
+    "display_name": "Sydney, Australia",
+    "location_type": "CITY",
+    "city": "Sydney",
+    "state": "New South Wales",
+    "country": "AU"
+   },
+   "name": "Sydney, Australia",
+   "is_primary": true
+  }
+ ],
+ "workplace_type": "HYBRID",
+ "compensation": {
+  "upper_bound": null,
+  "lower_bound": null,
+  "currency_code": "USD",
+  "open_to_sharing_comp": false,
+  "equity_lower_bound": null,
+  "equity_upper_bound": null,
+  "open_to_sharing_equity": false,
+  "offers_equity": false,
+  "salary_range_type": "YEARLY",
+  "employment_type": "FULL_TIME"
+ },
+ "visa_support": true,
+ "created": "2026-04-14T07:10:45.544477Z",
+ "active": true,
+ "is_private": false,
+ "allow_docx_resumes_in_applications": false,
+ "is_notifiable_source": false
+}

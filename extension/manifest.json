@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "jobfilter: citizenship & clearance checker",
+  "version": "0.1.0",
+  "description": "Flags job postings restricted to U.S. citizens, U.S. persons or clearance holders, and quotes the sentence that says so.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["http://127.0.0.1/*", "http://localhost/*"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_title": "jobfilter",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/*",
+        "https://*.indeed.com/*",
+        "https://*.myworkdayjobs.com/*"
+      ],
+      "js": [
+        "src/labels.js",
+        "src/extract.js",
+        "src/transport.js",
+        "src/badge.js",
+        "src/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

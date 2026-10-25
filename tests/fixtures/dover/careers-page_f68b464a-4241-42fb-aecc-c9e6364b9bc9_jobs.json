@@ -1,0 +1,205 @@
+{
+ "count": 9,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "e4df2e1f-4c11-443f-8c88-ec556bdef62d",
+   "title": "Account Executive",
+   "locations": [
+    {
+     "location_type": "HYBRID",
+     "location_option": {
+      "id": "bbf5a2da-ebc9-4fc5-943d-09cee1ecda67",
+      "display_name": "San Francisco, CA",
+      "location_type": "CITY",
+      "city": "San Francisco",
+      "state": "California",
+      "country": "US"
+     },
+     "name": "San Francisco, CA",
+     "is_primary": true
+    }
+   ],
+   "workplace_type": "HYBRID",
+   "is_published": true,
+   "is_sample": false
+  },
+  {
+   "id": "974253d5-5cdb-4dd9-8949-36a20c3f2bcb",
+   "title": "Chief of Staff",
+   "locations": [
+    {
+     "location_type": "IN_OFFICE",
+     "location_option": {
+      "id": "9bcba4ca-ed85-4c5d-bf7f-a612e5e9f574",
+      "display_name": "Sydney, Australia",
+      "location_type": "CITY",
+      "city": "Sydney",
+      "state": "New South Wales",
+      "country": "AU"
+     },
+     "name": "Sydney, Australia",
+     "is_primary": true
+    }
+   ],
+   "workplace_type": "ONSITE",
+   "is_published": true,
+   "is_sample": false
+  },
+  {
+   "id": "8c782ebb-49ae-4bc9-9491-924ba4d53ac7",
+   "title": "Forward-Deployed Engineer",
+   "locations": [
+    {
+     "location_type": "HYBRID",
+     "location_option": {
+      "id": "bbf5a2da-ebc9-4fc5-943d-09cee1ecda67",
+      "display_name": "San Francisco, CA",
+      "location_type": "CITY",
+      "city": "San Francisco",
+      "state": "California",
+      "country": "US"
+     },
+     "name": "San Francisco, CA",
+     "is_primary": true
+    }
+   ],
+   "workplace_type": "HYBRID",
+   "is_published": true,
+   "is_sample": false
+  },
+  {
+   "id": "6c17ab88-b7e0-4687-879b-e9ad76392dcc",
+   "title": "Forward-Deployed Engineer (AU)",
+   "locations": [
+    {
+     "location_type": "HYBRID",
+     "location_option": {
+      "id": "9bcba4ca-ed85-4c5d-bf7f-a612e5e9f574",
+      "display_name": "Sydney, Australia",
+      "location_type": "CITY",
+      "city": "Sydney",
+      "state": "New South Wales",
+      "country": "AU"
+     },
+     "name": "Sydney, Australia",
+     "is_primary": true
+    }
+   ],
+   "workplace_type": "HYBRID",
+   "is_published": true,
+   "is_sample": false
+  },
+  {
+   "id": "17d1ec74-6445-41c8-9517-3b2b0231f56f",
+   "title": "Fullstack Engineer",
+   "locations": [
+    {
+     "location_type": "IN_OFFICE",
+     "location_option": {
+      "id": "9bcba4ca-ed85-4c5d-bf7f-a612e5e9f574",
+      "display_name": "Sydney, Australia",
+      "location_type": "CITY",
+      "city": "Sydney",
+      "state": "New South Wales",
+      "country": "AU"
+     },
+     "name": "Sydney, Australia",
+     "is_primary": true
+    }
+   ],
+   "workplace_type": "ONSITE",
+   "is_published": true,
+   "is_sample": false
+  },
+  {
+   "id": "690f14f2-624a-4fd7-875b-6e0a36013769",
+   "title": "Growth Marketer",
+   "locations": [
+    {
+     "location_type": "IN_OFFICE",
+     "location_option": {
+      "id": "9bcba4ca-ed85-4c5d-bf7f-a612e5e9f574",
+      "display_name": "Sydney, Australia",
+      "location_type": "CITY",
+      "city": "Sydney",
+      "state": "New South Wales",
+      "country": "AU"
+     },
+     "name": "Sydney, Australia",
+     "is_primary": true
+    }
+   ],
+   "workplace_type": "ONSITE",
+   "is_published": true,
+   "is_sample": false
+  },
+  {
+   "id": "dd950bff-c7be-441b-9b15-62b68913964c",
+   "title": "Growth Operations",
+   "locations": [
+    {
+     "location_type": "IN_OFFICE",
+     "location_option": {
+      "id": "9bcba4ca-ed85-4c5d-bf7f-a612e5e9f574",
+      "display_name": "Sydney, Australia",
+      "location_type": "CITY",
+      "city": "Sydney",
+      "state": "New South Wales",
+      "country": "AU"
+     },
+     "name": "Sydney, Australia",
+     "is_primary": true
+    }
+   ],
+   "workplace_type": "ONSITE",
+   "is_published": true,
+   "is_sample": false
+  },
+  {
+   "id": "884f8ce8-2f06-43db-8e87-0289226a7bf4",
+   "title": "ML Engineer",
+   "locations": [
+    {
+     "location_type": "IN_OFFICE",
+     "location_option": {
+      "id": "9bcba4ca-ed85-4c5d-bf7f-a612e5e9f574",
+      "display_name": "Sydney, Australia",
+      "location_type": "CITY",
+      "city": "Sydney",
+      "state": "New South Wales",
+      "country": "AU"
+     },
+     "name": "Sydney, Australia",
+     "is_primary": true
+    }
+   ],
+   "workplace_type": "ONSITE",
+   "is_published": true,
+   "is_sample": false
+  },
+  {
+   "id": "48eae21c-b3c4-4627-bccd-9a017baf8c01",
+   "title": "Pitch Your Own Role 🤖",
+   "locations": [
+    {
+     "location_type": "HYBRID",
+     "location_option": {
+      "id": "9bcba4ca-ed85-4c5d-bf7f-a612e5e9f574",
+      "display_name": "Sydney, Australia",
+      "location_type": "CITY",
+      "city": "Sydney",
+      "state": "New South Wales",
+      "country": "AU"
+     },
+     "name": "Sydney, Australia",
+     "is_primary": true
+    }
+   ],
+   "workplace_type": "HYBRID",
+   "is_published": true,
+   "is_sample": false
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+  "note": "Copy to profile.json (git-ignored) and edit. Category ids come from role_rules.json. Remove a category from skip_categories to let those postings through to the model. Left out on purpose: 'senior' (the model judges by the years asked for), 'internship' and 'trades_technician' (kept).",
+  "locations": [
+    "us",
+    "remote",
+    "unknown"
+  ],
+  "locations_note": "Kinds: us, remote, unknown, outside_us. 'unknown' is a place the location rules could not read (\"Reframe Systems HQ\"); keeping it avoids dropping US jobs by accident.",
+  "labels": [
+    "OPEN",
+    "UNCLEAR",
+    "INFO_NO_SPONSORSHIP"
+  ],
+  "skip_categories": [
+    "hr_recruiting",
+    "finance_accounting",
+    "legal",
+    "sales_marketing",
+    "supply_ops",
+    "admin_support",
+    "business_other",
+    "people_management",
+    "staff_plus",
+    "phd_title",
+    "mechanical",
+    "electrical_hardware",
+    "chip_design",
+    "manufacturing"
+  ],
+  "focus": [
+    "robotics"
+  ],
+  "focus_note": "Focus groups from role_rules.json a posting must be about. Use [] to keep every engineering role.",
+  "fit": {
+    "want": [
+      "robotics_software",
+      "ml_ai",
+      "software_general"
+    ],
+    "stretch": [
+      "embedded_firmware",
+      "test_quality",
+      "systems_integration",
+      "technician_ops",
+      "research_science"
+    ],
+    "max_years": 3,
+    "stretch_years": 5,
+    "highest_degree": "masters"
+  },
+  "fit_note": "How a model's reading of a posting becomes a verdict. Work in 'want' is a fit, work in 'stretch' is a stretch, anything else (mechanical, hardware_electrical, chip_design, manufacturing, non_engineering) is skipped. A posting asking for more than max_years is a stretch, for more than stretch_years a skip, and one requiring a degree above highest_degree a skip. Categories are listed in jobfilter/roles/reader.py.",
+  "skills": [
+    {
+      "name": "ROS / ROS 2",
+      "pattern": "\\bros\\s?2?\\b|\\brclcpp\\b|\\brclpy\\b",
+      "weight": 3
+    },
+    {
+      "name": "Simulators",
+      "pattern": "\\bgazebo\\b|\\bisaac\\s?(?:sim|lab|gym)\\b|\\bcarla\\b|\\bunity\\b|\\bmujoco\\b|\\bomniverse\\b",
+      "weight": 3
+    },
+    {
+      "name": "Motion / path planning",
+      "pattern": "\\b(?:motion|path|trajectory)\\s+planning\\b|\\brrt\\*?\\b|\\ba\\*\\s",
+      "weight": 2
+    },
+    {
+      "name": "PyTorch",
+      "pattern": "\\bpytorch\\b",
+      "weight": 2
+    },
+    {
+      "name": "C++",
+      "pattern": "\\bc\\+\\+",
+      "weight": 1
+    },
+    {
+      "name": "Python",
+      "pattern": "\\bpython\\b",
+      "weight": 1
+    }
+  ],
+  "best_fit_score": 8,
+  "skills_note": "Your own tools and topics. Each is a name, a regular expression (matched ignoring case, in the title or the description) and a weight; a skill counts once however often it is mentioned. A posting's score is the sum of the weights found. It orders the Inbox within each verdict, and a fit scoring at least best_fit_score becomes a 'best fit'. List what you actually work with: heavier for what you want to do more of."
+}

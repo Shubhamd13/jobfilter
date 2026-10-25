@@ -1,0 +1,245 @@
+{
+ "status": 200,
+ "error": {
+  "message": "",
+  "body": ""
+ },
+ "data": {
+  "positions": [
+   {
+    "id": 446721345133,
+    "displayJobId": "3097310",
+    "name": "Sr. Director, AI Technology & Manufacturing",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1791331200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Hardware Engineering",
+    "creationTs": 1790640000,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3097310",
+    "positionUrl": "/careers/job/446721345133"
+   },
+   {
+    "id": 446720709390,
+    "displayJobId": "3095583",
+    "name": "Wireless Senior Firmware Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Cellular Technologies Software",
+    "creationTs": 1787270400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3095583",
+    "positionUrl": "/careers/job/446720709390"
+   },
+   {
+    "id": 446720878249,
+    "displayJobId": "3095753",
+    "name": "System Level Test Engineer - Staff",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Hardware Engineering",
+    "creationTs": 1787616000,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3095753",
+    "positionUrl": "/careers/job/446720878249"
+   },
+   {
+    "id": 446718054596,
+    "displayJobId": "3089569",
+    "name": "Senior AI Research Quantization Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Machine Learning Engineering",
+    "creationTs": 1775779200,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3089569",
+    "positionUrl": "/careers/job/446718054596"
+   },
+   {
+    "id": 446717981472,
+    "displayJobId": "3089357",
+    "name": "Computer Vision Systems Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1791849600,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Video Systems, HW Architecture",
+    "creationTs": 1775606400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3089357",
+    "positionUrl": "/careers/job/446717981472"
+   },
+   {
+    "id": 446721301026,
+    "displayJobId": "3097233",
+    "name": "Sr. Software Integration Engineer, AI Accelerators",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1790553600,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Software Engineering",
+    "creationTs": 1790553600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3097233",
+    "positionUrl": "/careers/job/446721301026"
+   },
+   {
+    "id": 446720737089,
+    "displayJobId": "3095732",
+    "name": "Embedded Engineering Internship - Summer 2027",
+    "locations": [
+     "San Diego, California, United States of America",
+     "Boxborough, Massachusetts, United States of America",
+     "Santa Clara, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US",
+     "Boxborough, MA, US",
+     "Santa Clara, CA, US"
+    ],
+    "postedTs": 1789948800,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Interim Engineering Intern - SW",
+    "creationTs": 1789689600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3095732",
+    "positionUrl": "/careers/job/446720737089"
+   },
+   {
+    "id": 446720740540,
+    "displayJobId": "3095745",
+    "name": "Qualcomm Government Technologies (QGOV) Engineering Internship \u2013 Summer 2027 (San Diego or Boulder) | US CITIZENSHIP REQUIRED",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789689600,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Interim Engineering Intern - SW",
+    "creationTs": 1789689600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3095745",
+    "positionUrl": "/careers/job/446720740540"
+   },
+   {
+    "id": 446720740553,
+    "displayJobId": "3095747",
+    "name": "Automotive Engineering Internship \u2013 Summer 2027",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789689600,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Interim Engineering Intern - SW",
+    "creationTs": 1789689600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3095747",
+    "positionUrl": "/careers/job/446720740553"
+   },
+   {
+    "id": 446721246663,
+    "displayJobId": "3097141",
+    "name": "Modular Engineering Internship \u2013 Summer 2027",
+    "locations": [
+     "Los Altos, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "Los Altos, CA, US"
+    ],
+    "postedTs": 1790899200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Interim Engineering Intern - SW",
+    "creationTs": 1790208000,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3097141",
+    "positionUrl": "/careers/job/446721246663"
+   }
+  ],
+  "count": 44,
+  "sortBy": "relevance",
+  "appliedFilters": {
+   "includeRemote": [
+    "0"
+   ],
+   "includeRelocation": [
+    "0"
+   ]
+  },
+  "debug": {},
+  "savedSearchMetadata": {
+   "savedSearchParamsHash": null,
+   "isSavedSearchActive": false
+  },
+  "resultsMetaData": {
+   "usedFuzzSearch": false,
+   "mocTitle": null
+  }
+ },
+ "metadata": null
+}

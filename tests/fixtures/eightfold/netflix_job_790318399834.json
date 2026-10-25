@@ -1,0 +1,48 @@
+{
+    "status": 200,
+    "error": {
+        "message": "",
+        "body": ""
+    },
+    "data": {
+        "id": 790318399834,
+        "displayJobId": "JR42475",
+        "name": "Creative Tech Researcher 4",
+        "locations": [
+            "Los Angeles,California,United States of America"
+        ],
+        "standardizedLocations": [
+            "Los Angeles, CA, US"
+        ],
+        "postedTs": 1789344000,
+        "stars": 0,
+        "department": "Data & Insights",
+        "creationTs": 1788825600,
+        "jobDescription": "<p>At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what\u2019s next.</p><p><span>The Creative Technology Research team focuses on solving high-impact technical challenges in filmmaking through the building of foundational video generation models. Having recently joined Netflix through the acquisition of Interpositive, we operate with the agility of a startup, backed by the immense resources and global reach of Netflix. We offer a unique opportunity to see research translate directly into impactful real-world applications within a highly focused, research-intensive environment.</span></p><p></p><h2>The Role</h2><p><span>We are seeking a Machine Learning Researcher to define the next generation of creative technology. In this role, you will be responsible for integrating groundbreaking research into Netflix's massive global production ecosystem. You will solve critical technical challenges to ensure Netflix maintains its edge in delivering world-class entertainment through innovative content production tools.</span></p><p></p><h2>Responsibilities</h2><ul><li><p>Foundational Modeling:<span> Develop and optimize model architectures for image and video generation and editing.</span></p></li><li><p>Data Strategy:<span> Prepare and organize data for training large-scale image and video generation models.</span></p></li><li><p>Large-Scale Training:<span> Implement efficient distributed training and data loading infra to support training on large-scale clusters.</span></p></li><li><p>Evaluation Frameworks:<span> Conduct cross-team evaluations to gather feedback and build representative benchmarks to ensure quality across model outputs.</span><br>\u00a0</p></li></ul><h2>About You (Requirements)</h2><ul><li><p>Research Expertise:<span> Deep understanding of fundamentals in deep learning, such as Transformers, Diffusion, etc.</span></p></li><li><p>Data-Centric Mindset:<span> Skilled in data preparation and curation.</span></p></li><li><p>Distributed Systems:<span> Proven experience in training and inferring large-scale models distributively on large clusters.</span></p></li><li><p>Impact-Oriented:<span> Ability to operate in a fast-paced, innovative culture while focusing on high-visibility problems.</span></p></li></ul><p></p><h3>Bonus Experience</h3><ul><li><p><span>Experience in delivering high-impact products or open-source projects.</span></p></li></ul><p>\u00a0</p>Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $300,000.00 - $537,000.00.<p></p><p>Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits <a target=\"_blank\" href=\"https://jobs.netflix.com/work-life-philosophy\"><span style=\"color:#005cb9\"><u>here</u></span></a>. </p><p></p><p>Netflix is a unique culture and environment. Learn more <a target=\"_blank\" href=\"https://jobs.netflix.com/culture\"><span style=\"color:#005cb9\"><u>here</u></span></a>.</p><p></p><p><a target=\"_blank\" href=\"https://about.netflix.com/en/inclusion\"><span style=\"color:#005cb9\"><u>Inclusion</u></span></a> is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.</p><p></p><p>We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.</p>",
+        "location": "Los Angeles,California,United States of America",
+        "isHot": 0,
+        "workLocationOption": "onsite",
+        "locationFlexibility": null,
+        "atsJobId": "JR42475",
+        "positionUrl": "/careers/job/790318399834",
+        "publicUrl": "https://explore.jobs.netflix.net/careers/job/790318399834",
+        "jdHighlight": [],
+        "positionExtraDetails": {
+            "videos": [],
+            "blogs": [],
+            "perks": [],
+            "pymww": {
+                "people": [],
+                "count": 0
+            },
+            "customContent": []
+        },
+        "positionUserActions": {
+            "isSaved": false,
+            "applyAction": {
+                "status": "allowed"
+            }
+        }
+    },
+    "metadata": null
+}

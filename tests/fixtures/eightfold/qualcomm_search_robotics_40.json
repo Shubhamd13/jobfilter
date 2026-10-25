@@ -1,0 +1,115 @@
+{
+ "status": 200,
+ "error": {
+  "message": "",
+  "body": ""
+ },
+ "data": {
+  "positions": [
+   {
+    "id": 446720417040,
+    "displayJobId": "3095103",
+    "name": "Staff Product Manager \u2013 Linux Platforms and Ecosystem",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Product Management",
+    "creationTs": 1786406400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": "flexible_within_country",
+    "atsJobId": "3095103",
+    "positionUrl": "/careers/job/446720417040"
+   },
+   {
+    "id": 446719744913,
+    "displayJobId": "3093740",
+    "name": "Sr Engineer, Machine Learning Engineering (ML Apps)",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1791244800,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Machine Learning Engineering",
+    "creationTs": 1783468800,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3093740",
+    "positionUrl": "/careers/job/446719744913"
+   },
+   {
+    "id": 446721326151,
+    "displayJobId": "3097302",
+    "name": "Sr Hardware Design Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1790812800,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Hardware Engineering",
+    "creationTs": 1790640000,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3097302",
+    "positionUrl": "/careers/job/446721326151"
+   },
+   {
+    "id": 446718686256,
+    "displayJobId": "3091790",
+    "name": "Computer Vision System Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Video Systems, HW Architecture",
+    "creationTs": 1779321600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3091790",
+    "positionUrl": "/careers/job/446718686256"
+   }
+  ],
+  "count": 44,
+  "sortBy": "relevance",
+  "appliedFilters": {
+   "includeRemote": [
+    "0"
+   ],
+   "includeRelocation": [
+    "0"
+   ]
+  },
+  "debug": {},
+  "savedSearchMetadata": {
+   "savedSearchParamsHash": null,
+   "isSavedSearchActive": false
+  },
+  "resultsMetaData": {
+   "usedFuzzSearch": false,
+   "mocTitle": null
+  }
+ },
+ "metadata": null
+}

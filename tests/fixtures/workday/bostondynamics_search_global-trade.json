@@ -1,0 +1,112 @@
+{
+ "total": 5,
+ "jobPostings": [
+  {
+   "title": "Global Trade Compliance Specialist",
+   "externalPath": "/job/Waltham-MA/Staff-Global-Trade-Compliance-Specialist_R3130",
+   "locationsText": "Waltham, MA",
+   "bulletFields": [
+    "R3130"
+   ]
+  },
+  {
+   "title": "Senior Technical Team Lead, Mechanical Engineering",
+   "externalPath": "/job/Waltham-MA/Senior-Technical-Team-Lead--Mechanical-Engineering_R3014-1",
+   "locationsText": "Waltham, MA",
+   "bulletFields": [
+    "R3014"
+   ]
+  },
+  {
+   "title": "Senior Staff Robotics Simulation Engineer - Thermal & Fluids Analysis",
+   "externalPath": "/job/Waltham-MA/Senior-Staff-Mechanical-Engineer---Atlas_R3013",
+   "locationsText": "Waltham, MA",
+   "bulletFields": [
+    "R3013"
+   ]
+  },
+  {
+   "title": "Principal Product Manager - Atlas Logistics Robotics",
+   "externalPath": "/job/Waltham-Office-POST/Principal-Product-Manager---Atlas-Logistics-Robotics_R3145",
+   "locationsText": "Waltham Office (POST)",
+   "bulletFields": [
+    "R3145"
+   ]
+  },
+  {
+   "title": "Sr. Staff Electrical Manufacturing Test Engineer - Atlas",
+   "externalPath": "/job/Waltham-Office-POST/Sr-Staff-Electrical-Manufacturing-Test-Engineer---Atlas_R3002",
+   "locationsText": "Waltham Office (POST)",
+   "bulletFields": [
+    "R3002"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facetParameter": "jobFamily",
+   "descriptor": "Job Family",
+   "values": [
+    {
+     "descriptor": "Hardware",
+     "id": "946911fa99881001b2b061dc32b20000",
+     "count": 2
+    },
+    {
+     "descriptor": "Import/Export",
+     "id": "946911fa99881001b2b1812c35900000",
+     "count": 1
+    },
+    {
+     "descriptor": "Product Management",
+     "id": "946911fa99881001b2b072bf3d950000",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "workerSubType",
+   "descriptor": "Job Type",
+   "values": [
+    {
+     "descriptor": "Regular",
+     "id": "94b44667d8eb01113483ddaebc003906",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "facetParameter": "timeType",
+   "descriptor": "Time Type",
+   "values": [
+    {
+     "descriptor": "Full time",
+     "id": "2ea36fadc45601e65397a3a4024b5800",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "facetParameter": "locationMainGroup",
+   "values": [
+    {
+     "facetParameter": "locations",
+     "descriptor": "Locations",
+     "values": [
+      {
+       "descriptor": "Waltham, MA",
+       "id": "4e7c915141071000b4e5c69d35840000",
+       "count": 3
+      },
+      {
+       "descriptor": "Waltham Office (POST)",
+       "id": "94b44667d8eb01465fcf3edabd006468",
+       "count": 1
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "userAuthenticated": false
+}

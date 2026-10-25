@@ -1,0 +1,66 @@
+{
+ "name": "Octavian Robotics",
+ "description": null,
+ "jobs": [
+  {
+   "title": "Full Stack Robotics Software Engineer",
+   "shortcode": "3FF60B88A4",
+   "code": "",
+   "employment_type": "Full-time",
+   "telecommuting": false,
+   "department": null,
+   "url": "https://apply.workable.com/j/3FF60B88A4",
+   "shortlink": "https://apply.workable.com/j/3FF60B88A4",
+   "application_url": "https://apply.workable.com/j/3FF60B88A4/apply",
+   "published_on": "2026-09-16",
+   "created_at": "2026-09-15",
+   "country": "United States",
+   "city": "Los Angeles",
+   "state": "California",
+   "education": "Bachelor's Degree",
+   "experience": "Mid-Senior level",
+   "function": "",
+   "industry": "",
+   "locations": [
+    {
+     "country": "United States",
+     "countryCode": "US",
+     "city": "Los Angeles",
+     "region": "California",
+     "hidden": false
+    }
+   ],
+   "description": "<p><strong>Overview</strong></p><p></p><p>Octavian Robotics is solving the #1 complication in the $3T surgical industry. We are building robots for the sterilization of surgical tools. Only now with generalized robotics models have we been able to tackle this problem and save lives.</p><p>This company is a spin-out from Sorting Robotics and we are inheriting a decade of robotics infrastructure and know-how. <strong>The role is for the first robotics software engineer at the company.</strong> You'll be working directly with the founders and learning from the previous team on how to build a robotics company. You'll need to be scrappy, a jack of all trades and a master of one, be able to communicate your ideas quickly and effectively, adapt to changing dynamics, have experience with robotics, and be able to push through the journey of building a new company.</p><p></p><p>This role is not for the faint of heart. You should expect to work 60+ hours a week, expect for there to be more problems than solutions, expect for you to have very little hand-holding, invent technology that didn't exist 6 months ago, expect to feel the pressure of performance when everyone in the room is depending on you and there are millions of dollars on the line. All this will be true, but you will also be in a room of people that respect you; where everyone is rowing together to achieve the noble goal of saving lives with our robotic systems.</p><p></p><p><strong>Responsibilities</strong></p><p></p><ul><li>Design, develop, and implement software to control machines developed by Octavian Robotics.</li><li>Build and implement the initial infrastructure of the company.</li><li>Work closely with mechanical and electrical engineers and guide design decisions based on what software can effectively accomplish.</li><li>Work closely with customer success and sales staff to translate customer and company needs into software solutions.</li><li>Train entry/mid-level software developers in the development lifecycle of the product lines you're working on.</li><li>Work with engineers and customer success staff to remote and debug logs in the machine and understand customer problems.</li><li>This is an on-site position. You're expected to work on-site with the other team members five days a week. We are based in Los Angeles.</li></ul><p></p><p>Sometimes, nothing will work, and you'll need to conduct experiments until the problem's root cause (hardware or software-related) is fully understood.</p><p></p><p>Before writing any code, you must deeply understand complex topics and communicate proposed solutions to a highly technical team. Ideally, you write the minimum number of lines that solve the problem (\"spin lock? Why not? It solves this problem\" - \"I'll just use a JSON file for now as a database so anyone can easily modify it\").</p><p></p><p>Your work will be focused more on clear communication and business impact than on lines of code you can write or cool tech you can use.</p><p></p><p><strong>Preferred Qualifications</strong></p><p></p><ul><li>Familiarity with Python</li><li>Familiarity with Git</li><li>Familiarity with CI/CD pipelines, AWS services</li><li>Familiarity with web standards, RESTful APIs, OAuth</li></ul><p></p><p>You will work on different parts of the stack at various times. We expect you to understand where everything goes and why, and we expect you to add to the stack to make the development process more robust.</p><p><strong>Requirements</strong></p><ul><li>Must be AI-Native in all workflows</li><li>Degree in Computer Science, Computer Engineering, or related fields.</li><li>Experience with Linux (systemd, journalctl, network manager, permissions).</li><li>Experience in training VLA or inference models for motor control</li><li>Experience working with Hardware.</li><li>Strong analytical and problem-solving skills.</li><li>Strong communication and collaboration skills.</li></ul><p><strong>Benefits</strong></p><ul><li>$170,000 - $190,000 per year full-time salary.</li><li>401(k), health, dental and vision insurance, flexible spending account, paid time off, parental leave.</li><li>Schedule: 12-hour shift, Monday - Saturday. This job is not for the weak of heart.</li><li>In person, Van Nuys or Los Angeles, CA. Relocation package available.</li></ul>"
+  },
+  {
+   "title": "Mechatronics Engineer (Lead)",
+   "shortcode": "C3BF121EEB",
+   "code": "",
+   "employment_type": "Full-time",
+   "telecommuting": false,
+   "department": null,
+   "url": "https://apply.workable.com/j/C3BF121EEB",
+   "shortlink": "https://apply.workable.com/j/C3BF121EEB",
+   "application_url": "https://apply.workable.com/j/C3BF121EEB/apply",
+   "published_on": "2026-09-25",
+   "created_at": "2026-09-22",
+   "country": "United States",
+   "city": "Los Angeles",
+   "state": "California",
+   "education": "Bachelor's Degree",
+   "experience": "Mid-Senior level",
+   "function": "Engineering",
+   "industry": "Medical Devices",
+   "locations": [
+    {
+     "country": "United States",
+     "countryCode": "US",
+     "city": "Los Angeles",
+     "region": "California",
+     "hidden": false
+    }
+   ],
+   "description": "<p><strong>Overview</strong></p><p>Octavian Robotics is solving the #1 complication in the $3T surgical industry. We are building robots for the sterilization of surgical tools. Only now with generalized robotics models have we been able to tackle this problem and save lives.</p><p>This company is a spin-out from Sorting Robotics and we are inheriting a decade of robotics infrastructure and know-how. We are hiring the Cognizant Engineer (CogE) to own our flagship: a VLA-powered (Vision-Language-Action) gripping and manipulation system for surgical instruments. You will lead this product from the rig on the bench to machines running inside hospital Sterile Processing Departments, and you will own its technical success end to end.</p><p>This is a hands-on technical leadership seat. You will design the end-effector and mechatronics, integrate vision and force and tactile sensing into a 6DOF arm, and operationalize learned manipulation policies (VLA models) so the system reliably grips, sorts, and handles surgical instruments in the real world. You work directly with the founders. Expect to learn a lot fast, hit days where nothing works, and ship a product that saves lives in a room full of people who appreciate you.</p><p></p><p><strong>What you will own</strong></p><ul><li>Own the VLA gripping and manipulation system cradle to grave: concept, design, build, bring-up, deployment, and field reliability. You are accountable for its technical success.</li><li>Design the gripper and mechatronics: end-effector design, actuation, GD&amp;T drawings, mass, cost and manufacturability tradeoffs, rapid prototyping (3D print, laser, CNC, PCB), and production-ready designs.</li><li>Integrate perception and sensing into the manipulation loop: cameras and vision, force, torque and tactile feedback, and the 6DOF arm.</li><li>Operationalize VLA and learned manipulation policies: stand up the data pipeline (teleop and demonstration collection), wire policy inference into real-time control, evaluate grasp and handling success, and close the sim-to-real and on-robot iteration loop.</li><li>Optimize with modeling and test: analytical and physical simulation, then validate on hardware.</li><li>Interface with suppliers to build supply chain and vendor qualification for manufacturing feasibility, validation, and assigned commodities; deliver world-class fit, finish, and craftsmanship for launch.</li><li>Support deployment: help assemble and install systems at hospital sites as needed. Travel is approximately 1 to 5 percent.</li></ul><p></p><p><strong>Ideal candidate skills</strong></p><ul><li>B.S. in Mechanical Engineering, Electrical Engineering, Mechatronics, or Robotics (M.S. a plus).</li><li>Real experience taking a robotic system from concept to delivery on an R&amp;D team.</li><li>Manipulation and gripping experience: end-effector or gripper design, grasping, pick-and-place, or assembly automation.</li><li>6DOF and cobot arm integration, including low-level programming and motion control.</li><li>Comfortable at the hardware and ML boundary: you do not have to train VLA models from scratch, but you can integrate learned policies, run inference on a robot, collect and curate demonstration data, and debug why a policy fails on real hardware. Familiarity with modern manipulation stacks (ROS or ROS 2, OpenVLA or pi-0 style policies, RT-style models, imitation learning, sim-to-real) is a strong plus.</li><li>Strong Python; working knowledge of real-time or embedded control.</li><li>Fluent with prototyping tools: CAD, 3D printing, laser cutter, CNC, PCB.</li><li>Takes initiative across whatever the company needs to win. Able to work extended hours and weekends as needed.</li></ul><p><strong>Requirements</strong></p><ul><li>B.S. in Mechanical Engineering, Electrical Engineering, Robotics, Mechatronics, or similar.</li><li>Strong understanding of AI tools. We're looking for an \"AI native\" engineer.</li><li>Technical depth in robotics, automation, or a related field; has shipped from concept to delivery.</li><li>Demonstrated work on 6DOF or similar cobot arms.</li><li>Working knowledge of Python or a similar language.</li><li>Minimum 10 years of full-time on the job experience.</li><li>Bonus: hands-on with manipulation or grasping, or with learned policies (VLA, imitation learning, ROS).</li><li>Not currently enrolled in a college or graduate program.</li><li>Free to work without visa sponsorship.</li><li>On-site in Van Nuys or Los Angeles (reliable commute or willing to relocate). Some travel to hospital sites will be required.</li></ul><p><strong>Benefits</strong></p><p></p><ul><li>$170,000 - $190,000 per year full-time salary.</li><li>401(k), health, dental and vision insurance, flexible spending account, paid time off, parental leave.</li><li>Schedule: 12-hour shift, Monday - Saturday. This job is not for the weak of heart.</li><li>In person, Van Nuys or Los Angeles, CA. Relocation package available.</li></ul>"
+  }
+ ]
+}

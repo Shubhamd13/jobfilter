@@ -1,0 +1,271 @@
+{
+ "status": 200,
+ "error": {
+  "message": "",
+  "body": ""
+ },
+ "data": {
+  "positions": [
+   {
+    "id": 446720139087,
+    "displayJobId": "3094564",
+    "name": "Lead Roboticist Systems Integration and Test Engineer - Qualcomm Advanced Robotics Team",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Multimedia Systems",
+    "creationTs": 1785110400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3094564",
+    "positionUrl": "/careers/job/446720139087"
+   },
+   {
+    "id": 446718461177,
+    "displayJobId": "3090987",
+    "name": "Sr. Staff Engineer / Principal Robotics SLAM and Positioning Lead",
+    "locations": [
+     "Santa Clara, California, United States of America",
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "Santa Clara, CA, US",
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Multimedia Systems",
+    "creationTs": 1777939200,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3090987",
+    "positionUrl": "/careers/job/446718461177"
+   },
+   {
+    "id": 446715232211,
+    "displayJobId": "3080926",
+    "name": "Staff Robotics Motion Control Engineer",
+    "locations": [
+     "Santa Clara, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "Santa Clara, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Multimedia Systems",
+    "creationTs": 1761177600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3080926",
+    "positionUrl": "/careers/job/446715232211"
+   },
+   {
+    "id": 446720880729,
+    "displayJobId": "3095960",
+    "name": "Software Engineer, Robotics Simulation & AI Infrastructure",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Multimedia Systems",
+    "creationTs": 1788134400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3095960",
+    "positionUrl": "/careers/job/446720880729"
+   },
+   {
+    "id": 446718461094,
+    "displayJobId": "3090985",
+    "name": "Principal / Director \u2013 Robotics System Architecture Lead",
+    "locations": [
+     "Santa Clara, California, United States of America",
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "Santa Clara, CA, US",
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1789603200,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Multimedia Systems",
+    "creationTs": 1777939200,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": "flexible_within_country",
+    "atsJobId": "3090985",
+    "positionUrl": "/careers/job/446718461094"
+   },
+   {
+    "id": 446721402787,
+    "displayJobId": "3097361",
+    "name": "Support Engineer (Lab Support and Mechanical Engineering)",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1791244800,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Support Engineering",
+    "creationTs": 1790726400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3097361",
+    "positionUrl": "/careers/job/446721402787"
+   },
+   {
+    "id": 446720740525,
+    "displayJobId": "3095746",
+    "name": "Machine Learning & Artificial Intelligence Engineering Internship \u2013 Summer 2027",
+    "locations": [
+     "San Diego, California, United States of America",
+     "Austin, Texas, United States of America",
+     "Boxborough, Massachusetts, United States of America",
+     "New Jersey, United States of America",
+     "New York City, New York, United States of America",
+     "Raleigh, North Carolina, United States of America",
+     "Santa Clara, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US",
+     "Austin, TX, US",
+     "Boxborough, MA, US",
+     "NJ,US",
+     "New York, NY, US",
+     "Raleigh, NC, US",
+     "Santa Clara, CA, US"
+    ],
+    "postedTs": 1789689600,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Interim Engineering Intern - SW",
+    "creationTs": 1789689600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3095746",
+    "positionUrl": "/careers/job/446720740525"
+   },
+   {
+    "id": 446720740529,
+    "displayJobId": "3095748",
+    "name": "Software Engineering Internship - Summer 2027",
+    "locations": [
+     "San Diego, California, United States of America",
+     "Austin, Texas, United States of America",
+     "Boxborough, Massachusetts, United States of America",
+     "New Jersey, United States of America",
+     "Tempe, Arizona, United States of America",
+     "Irvine, California, United States of America",
+     "Louisville, Kentucky, United States of America",
+     "New York City, New York, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US",
+     "Austin, TX, US",
+     "Boxborough, MA, US",
+     "NJ,US",
+     "Tempe, AZ, US",
+     "Irvine, CA, US",
+     "Louisville, KY, US",
+     "New York, NY, US"
+    ],
+    "postedTs": 1789689600,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Interim Engineering Intern - SW",
+    "creationTs": 1789689600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3095748",
+    "positionUrl": "/careers/job/446720740529"
+   },
+   {
+    "id": 446719364433,
+    "displayJobId": "3092877",
+    "name": "Camera Firmware Engineer",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1782777600,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Camera Engineering",
+    "creationTs": 1782691200,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3092877",
+    "positionUrl": "/careers/job/446719364433"
+   },
+   {
+    "id": 446721402785,
+    "displayJobId": "3097362",
+    "name": "Support Engineer (Lab Support and Automation)",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1791244800,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Support Engineering",
+    "creationTs": 1790726400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3097362",
+    "positionUrl": "/careers/job/446721402785"
+   }
+  ],
+  "count": 44,
+  "sortBy": "relevance",
+  "appliedFilters": {
+   "includeRemote": [
+    "0"
+   ],
+   "includeRelocation": [
+    "0"
+   ]
+  },
+  "debug": {},
+  "savedSearchMetadata": {
+   "savedSearchParamsHash": null,
+   "isSavedSearchActive": false
+  },
+  "resultsMetaData": {
+   "usedFuzzSearch": false,
+   "mocTitle": null
+  }
+ },
+ "metadata": null
+}

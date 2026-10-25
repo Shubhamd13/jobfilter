@@ -1,0 +1,36 @@
+{
+ "jobPostingInfo": {
+  "id": "2ecda71fdddd10015cd6c89372020000",
+  "title": "Staff Full Stack Software Engineer",
+  "jobDescription": "<p>As a <b>Full Stack Software Engineer </b>on the <b>Spot </b>team at Boston Dynamics, you’ll be responsible for improving and maintaining our custom robot fleet management software. Your work will help define how our customers - internal and external - manage their ever growing numbers and species of robots across multiple industries.</p><p></p><p>Recent and upcoming projects for this team include: integrating factory asset management data with our internal robot fleet management application; 3D worldbuilding using point cloud data collected by our robots; building and visualizing panospheres from visual and thermal images; developing new strategies for recording maps and missions for the robot to traverse.</p><p></p><p>To thrive in this role, you’ll enjoy working collaboratively with a variety of peers in a dynamic, fast-moving organization. Ideal candidates will have strong full-stack web skills, a demonstrated ability to communicate about complex technical topics, and a flexible mindset. </p><p></p><p>Boston Dynamics is a world leader in mobile robots, tackling some of the toughest robotics challenges. For years, our awe-inspiring<a href=\"https://www.youtube.com/BostonDynamics\" target=\"_blank\"><u> viral videos on YouTube</u></a> have shown the world what remarkably capable robots can do. Now we are quickly becoming a recognized leader in automation solutions for industrial applications and warehouse logistics.  </p><p></p><p><b>Day-to-Day Activities will include:</b></p><ul><li><p>Rapidly develop and deploy new features for our fleet management system, while still preserving a high quality and maintainability bar.</p></li><li><p>Collaborate with peers - other engineers, product, and operations - to understand key pain points and develop possible solutions.</p></li><li><p>Assess incoming work and proactively identify potential solutions for the root problem. </p></li><li><p>Debug and resolve issues as they arise, and perform post-mortem analysis to reduce likelihood of future problems.</p></li><li><p>Document and communicate new work to help get it widely adopted.</p></li></ul><p></p><p><b>Desired Experience:</b></p><ul><li><p>Bachelors in Computer Science or equivalent.</p></li><li><p>Experience in some or all of the expected tech stack: C&#43;&#43;, Typescript, node.js, React, Three.js, SQL, Python, Linux, AWS/GCP, protobuf. Android experience a strong plus. </p></li><li><p>Experience with 3D rendering, mapping systems, complex data structures is beneficial.</p></li><li><p>Demonstrated project work, whether hobbyist or professional. You should be able to talk about decisions made during projects in detail.</p></li><li><p>Experience delivering complete software products - from feature requirements through support in the field.</p></li><li><p>Prior experience working with hardware, IoT, and/or 3D engines is ideal, but not necessary for this role.</p></li></ul><p></p><p><i>We are interested in every qualified candidate who is eligible to work in the United States. However, we are not able to sponsor visas for this position.</i></p><p></p><p>The base pay range for this position is between $130,000 to $170,000 annually. Base pay will depend on multiple individualized factors including, but not limited to internal equity, job related knowledge, skills and experience.  This range represents a good faith estimate of compensation at the time of posting. Boston Dynamics offers a generous Benefits package including medical, dental vision, 401(k), paid time off and an annual bonus structure.  Additional details regarding these benefit plans will be provided if an employee receives an offer for employment.</p><p></p>",
+  "location": "Waltham, MA",
+  "postedOn": "Posted 30+ Days Ago",
+  "startDate": "2026-08-05",
+  "timeType": "Full time",
+  "jobReqId": "R2879",
+  "jobPostingId": "Staff-Full-Stack-Software-Engineer_R2879",
+  "jobPostingSiteId": "Boston_Dynamics",
+  "country": {
+   "descriptor": "United States of America",
+   "id": "bc33aa3152ec42d4995f4791a106ed09"
+  },
+  "canApply": true,
+  "posted": true,
+  "includeResumeParsing": true,
+  "jobRequisitionLocation": {
+   "descriptor": "Waltham Office (POST)",
+   "country": {
+    "descriptor": "United States of America",
+    "id": "bc33aa3152ec42d4995f4791a106ed09",
+    "alpha2Code": "US"
+   }
+  },
+  "externalUrl": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Staff-Full-Stack-Software-Engineer_R2879",
+  "questionnaireId": "7028ac54a42f01a936e8991aa301cb3f"
+ },
+ "hiringOrganization": {
+  "name": "Boston Dynamics, Inc.",
+  "url": ""
+ },
+ "userAuthenticated": false
+}

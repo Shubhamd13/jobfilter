@@ -1,0 +1,59 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f6f7f9;
+  --ink: #1a202c;
+  --muted: #5a6472;
+  --line: #d5dae1;
+  --accent: #2c6fbb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171a21;
+    --surface: #1f2430;
+    --ink: #e2e8f0;
+    --muted: #a0aab8;
+    --line: #394150;
+    --accent: #6ea8e8;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; width: 360px; padding: 12px;
+  background: var(--bg); color: var(--ink);
+  font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+.brand { font-weight: 700; font-size: 15px; }
+.muted { color: var(--muted); font-size: 12px; }
+h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0 0 6px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; }
+.card p { margin: 0; }
+.label { display: inline-flex; align-items: center; gap: 7px; font-weight: 650; font-size: 14px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.job { margin-top: 6px; font-weight: 600; }
+blockquote {
+  margin: 8px 0 6px; padding: 6px 10px; border-left: 3px solid var(--tone, var(--line));
+  background: var(--bg); border-radius: 0 6px 6px 0; white-space: pre-wrap;
+}
+.meta { color: var(--muted); font-size: 11px; }
+.warn { color: #975a16; font-size: 12px; margin-top: 6px; }
+@media (prefers-color-scheme: dark) { .warn { color: #f6ad55; } }
+.actions { margin-bottom: 10px; }
+button {
+  font: inherit; cursor: pointer; border-radius: 7px; padding: 6px 12px;
+  border: 1px solid var(--accent); background: var(--accent); color: #fff;
+}
+button.secondary { background: transparent; color: var(--accent); }
+button:disabled { opacity: .6; cursor: default; }
+.settings label { display: block; margin: 4px 0; }
+.settings .url { margin-top: 8px; }
+.settings input[type="url"] {
+  width: 100%; margin-top: 3px; font: inherit; padding: 5px 7px;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink);
+}
+#server-status { margin-top: 6px; }
+.ok { color: #2f855a; }
+.bad { color: #c0392b; }
+@media (prefers-color-scheme: dark) { .ok { color: #68d391; } .bad { color: #fc8181; } }
+.dev summary { cursor: pointer; color: var(--muted); font-size: 12px; }
+.dev p { margin: 6px 0; }

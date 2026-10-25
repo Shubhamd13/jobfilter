@@ -1,0 +1,96 @@
+{
+ "id": "974253d5-5cdb-4dd9-8949-36a20c3f2bcb",
+ "client_id": "f68b464a-4241-42fb-aecc-c9e6364b9bc9",
+ "client_name": "Alloy Robotics",
+ "client_logo": "https://dover-django.t3.tigrisbucket.io/client-logos/f68b464a-4241-42fb-aecc-c9e6364b9bc9-1776150568-logo.png",
+ "client_domain": "usealloy.ai",
+ "title": "Chief of Staff",
+ "location": null,
+ "require_linkedin_profile_url": false,
+ "user_provided_description": "<p><strong>About Alloy Robotics</strong></p><p>We believe robotics is the industry of our lifetime, and data is its lifeblood.</p><p>Alloy is the AI-native data platform for robotics teams. Robot fleets generate enormous volumes of logs, video, telemetry, and mission data, and most of it ends up in silos where nobody can use it. Alloy turns it into one queryable layer with AI agents on top: engineers ask questions in natural language, get automated mission reports, and catch failures before they compound. The point is simple. Your robot breaks, you find out why, and your best people spend their time building the next robot instead of digging through the last one.</p><p>We've raised $16m, backed by Square Peg, Blackbird, and Airtree, with angels including senior leaders from OpenAI, Anthropic, Tesla, Waymo, and Halter. We partner with robotics teams across defence, agriculture, maritime, humanoids, construction, and medical, including Advanced Navigation, DroneForge, Breaker Industries, and Puralink. We're a lean team building from Sydney, and are adding our first US hires.</p><p></p><p><strong>Where we are, and where we're heading</strong></p><p>We just raised our seed and the company is stretching: expanding in the US, customers on both sides of the Pacific, bigger moments ahead. The founder's agenda is growing faster than any one calendar. This role turns it into finished work.</p><p></p><p><strong>About the role</strong></p><p>You'll work directly with our founder as leverage for the whole company: owning special projects end to end, carrying work that has no owner yet, and being the stability that keeps decisions moving when the founder is heads-down or on the road.</p><p>The role sits horizontally across the company, so a single week might run from a commercial question to an operational one to a product one. That breadth is the job. It also means you need enough technical fluency to hold your own: our customers are engineers debugging robot fleets, and if you can't follow the reality they work in, you lose credibility with them and with our team.</p><p></p><p><strong>What you'll do</strong></p><ul><li><p>Own special projects: scope, drive, land</p></li><li><p>Keep the founder's agenda moving: preparation, follow-through, decisions teed up</p></li><li><p>Run first-pass technical customer and partner meetings, and come back with an accurate synthesis, the open questions, the risks, and a recommendation</p></li><li><p>Write memos people act on, separating facts, assumptions, tradeoffs and recommendation</p></li><li><p>Take new problems to working, then hand them to a long-term owner</p></li></ul><p></p><p><strong>What you must have</strong></p><ul><li><p>Based in Australia, working regularly with the team in Sydney</p></li><li><p>6+ years of exceptional professional experience. We will flex for unusually strong builders earlier in their careers</p></li><li><p>2+ years operating inside a startup or scale-up, not advising one from the outside</p></li><li><p>Ownership of difficult, ambiguous work from problem definition through delivery</p></li><li><p>Writing that people act on: memos that separate facts, assumptions, tradeoffs and recommendation</p></li><li><p>Strong quantitative and commercial judgment, and complete discretion</p></li><li><p>Enough technical fluency to be credible with engineers and customers. That might come from building or shipping a product, technical or quantitative training, leading delivery alongside engineers, running technical discovery or implementation, or deep experience in robotics, autonomy, developer tools, data infrastructure or AI</p></li></ul><p></p><p><strong>Evidence you are exceptional</strong></p><p>We are looking for outlier performance, not a credential. Founding or materially scaling a company, product or function. Shipping something technically or operationally hard. Delivering an outcome that looked unlikely. Earning much greater responsibility, fast. Performing at a high level in research, engineering, sport, the military, or another demanding field. Being the person trusted with the work that matters most when things get difficult.</p><p>Be ready to explain exactly what you owned, what made it hard, and what changed because of your work.</p><p></p><p><strong>Backgrounds that fit</strong></p><p>Technical founders and early startup operators. Product, engineering, technical program management, solutions engineering. Deep-tech commercialisation or technical operations. Founder's office or Chief of Staff inside a technical startup. Consulting followed by at least two years operating in a startup.</p><p>Consulting, banking or corporate strategy on its own is not enough. If you come from MBB or similar, we want to see the years afterwards where you owned execution without the resources and structure of a large institution.</p><p></p><p><strong>Particularly valuable</strong></p><p>Robotics, autonomous systems, telemetry, data platforms, developer infrastructure or applied AI. Translating between customers, commercial teams and engineers. Work spanning hardware, software and operations. Founder, board, fundraising or international expansion exposure.</p><p></p><p><strong>How we work</strong></p><p>We're building the company we always wanted to join: small, fast, and serious about the craft. The bar is work you'll be proud of in five years, shipped this week. Everyone owns outcomes end to end: the interesting problems don't come with instructions, and nobody will hand you a playbook. We question requirements, delete what shouldn't exist, and spend our energy where customers feel it. If you want clear lanes and a manager to set your week, we'll frustrate you. If you want real problems, real pace, and the best work of your career, you'll fit right in.</p><p></p><p><strong>Compensation</strong></p><ul><li><p>Competitive salary</p></li><li><p>Additional compensation and benefits may include equity and flexible working arrangements</p></li></ul><p>If this reads like you but you don't tick every box, apply anyway. We care more about trajectory than checklists.</p>",
+ "compensation_details": null,
+ "application_questions": [
+  {
+   "id": "977e1139-f2d9-4fdc-900e-721c434fabc2",
+   "question": "LinkedIn Profile URL",
+   "input_type": "SHORT_ANSWER",
+   "required": false,
+   "question_type": "LINKEDIN_URL",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 0
+  },
+  {
+   "id": "687d94db-7c9a-4939-a3a2-3fac15dfe52d",
+   "question": "Phone Number",
+   "input_type": "SHORT_ANSWER",
+   "required": false,
+   "question_type": "PHONE_NUMBER",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 1
+  },
+  {
+   "id": "32363295-be1d-47c9-b948-60d677b882e5",
+   "question": "Do you have the right to work in Australia?",
+   "input_type": "MULTIPLE_CHOICE",
+   "required": true,
+   "question_type": "CUSTOM",
+   "multiple_choice_options": [
+    "Yes",
+    "No"
+   ],
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 2
+  },
+  {
+   "id": "9ae27d0f-010b-4e94-88c7-574c50ffa6b5",
+   "question": "Resume",
+   "input_type": "FILE_UPLOAD",
+   "required": false,
+   "question_type": "RESUME",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": null
+  }
+ ],
+ "public_interview_plan_preview": [],
+ "locations": [
+  {
+   "location_type": "IN_OFFICE",
+   "location_option": {
+    "id": "9bcba4ca-ed85-4c5d-bf7f-a612e5e9f574",
+    "display_name": "Sydney, Australia",
+    "location_type": "CITY",
+    "city": "Sydney",
+    "state": "New South Wales",
+    "country": "AU"
+   },
+   "name": "Sydney, Australia",
+   "is_primary": true
+  }
+ ],
+ "workplace_type": "ONSITE",
+ "compensation": {
+  "upper_bound": null,
+  "lower_bound": null,
+  "currency_code": "USD",
+  "open_to_sharing_comp": false,
+  "equity_lower_bound": null,
+  "equity_upper_bound": null,
+  "open_to_sharing_equity": false,
+  "offers_equity": false,
+  "salary_range_type": "YEARLY",
+  "employment_type": "FULL_TIME"
+ },
+ "visa_support": false,
+ "created": "2026-08-11T05:49:15.618279Z",
+ "active": true,
+ "is_private": false,
+ "allow_docx_resumes_in_applications": false,
+ "is_notifiable_source": false
+}

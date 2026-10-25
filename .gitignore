@@ -1,0 +1,27 @@
+# Python / tooling
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Local run output and database (WAL files belong to the database)
+results.jsonl
+jobfilter.db
+jobfilter.db-wal
+jobfilter.db-shm
+jobfilter.db.bak-*
+
+# Raw pages saved from logged-in LinkedIn / Indeed sessions: may contain your
+# name, profile, messages. Scrubbed copies live in tests/fixtures/extension/.
+DownloadedPagesTest/
+
+# Secrets and personal settings. API keys live outside the repo, in the
+# environment or ~/.config/jobfilter/; these patterns are only a backstop.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+profile.json

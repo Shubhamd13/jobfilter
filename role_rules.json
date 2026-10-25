@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "note": "Role screening by job TITLE, kept apart from rules.json (citizenship / clearance). These rules only make the cuts a title makes certain; anything a title leaves in doubt goes on to the model. Categories are generic. Which ones to skip is a personal choice and lives in profile.json.",
+  "default_flags": "i",
+  "groups_note": "Each category belongs to one group; the funnel applies groups in this order, with the robotics focus check between 'seniority' and 'mech_elec'.",
+  "groups": [
+    "non_engineering",
+    "seniority",
+    "mech_elec"
+  ],
+  "categories": {
+    "hr_recruiting": {"group": "non_engineering", "name": "HR / recruiting"},
+    "finance_accounting": {"group": "non_engineering", "name": "Finance / accounting"},
+    "legal": {"group": "non_engineering", "name": "Legal / contracts"},
+    "sales_marketing": {"group": "non_engineering", "name": "Sales / marketing"},
+    "supply_ops": {"group": "non_engineering", "name": "Supply chain / logistics"},
+    "trades_technician": {"group": "non_engineering", "name": "Technician / operator"},
+    "admin_support": {"group": "non_engineering", "name": "Admin / support"},
+    "business_other": {"group": "non_engineering", "name": "Business / other"},
+    "people_management": {"group": "seniority", "name": "Manager / director"},
+    "staff_plus": {"group": "seniority", "name": "Staff / principal / architect"},
+    "senior": {"group": "seniority", "name": "Senior / lead"},
+    "internship": {"group": "seniority", "name": "Internship / co-op"},
+    "phd_title": {"group": "seniority", "name": "PhD in the title"},
+    "mechanical": {"group": "mech_elec", "name": "Mechanical"},
+    "electrical_hardware": {"group": "mech_elec", "name": "Electrical / hardware"},
+    "chip_design": {"group": "mech_elec", "name": "Chip design / verification"},
+    "manufacturing": {"group": "mech_elec", "name": "Manufacturing / quality"}
+  },
+  "unless_sets_note": "A title is read in parts: 'Senior Thermal Engineer, Expeditionary AI' is the role 'Senior Thermal Engineer' and the team 'Expeditionary AI'. A rule fires when its pattern matches a part, unless the unless_set matches that same part or the role (first) part. So 'Software Engineer, Manufacturing Test' is not manufacturing (the role is software), 'AI Solutions Engineer, Talent Acquisition' is not HR, and the thermal engineer above is still mechanical even though the team name says AI.",
+  "unless_sets": {
+    "engineering_title": "\\b(engineer(s|ing)?|developer|scientist|researcher|programmer|architect|swe|sde|sdet)\\b",
+    "software_title": "\\b(software|firmware|developer|programmer|swe|sde|sdet|sre|site reliability|autonomy|perception|machine learning|deep learning|ml|ai|algorithms?|simulation|data (engineer|scientist|platform|infrastructure|pipelines?)|devops|cloud|backend|front.?end|full.?stack|compilers?)\\b"
+  },
+  "title_rules": [
+    {"id": "hr-recruiting", "category": "hr_recruiting", "unless_set": "engineering_title", "pattern": "\\b(recruit(er|ers|ing|ment)|talent (acquisition|partner|sourcer|management)|sourcer|human resources|hr|hrbp|people (operations|ops|partner|business partner|team|programs?)|compensation|benefits|payroll|employee relations|learning (and|&) development)\\b"},
+    {"id": "finance-accounting", "category": "finance_accounting", "unless_set": "engineering_title", "pattern": "\\b(finance|financial|accountant|accounting|accounts (payable|receivable)|fp&a|treasury|tax|audit(or|ing)?|controller|bookkeep\\w*|billing|pricing|cost (analyst|estimator))\\b"},
+    {"id": "legal", "category": "legal", "unless_set": "engineering_title", "pattern": "\\b(legal|counsel|attorney|paralegal|contracts? (manager|administrator|specialist|negotiator)|subcontracts?|export control|trade compliance|import/export|government relations|policy)\\b"},
+    {"id": "sales-marketing", "category": "sales_marketing", "unless_set": "engineering_title", "pattern": "\\b(sales|marketing|account (executive|manager|director)|business development|partnerships?|public relations|communications|brand|customer success|go-to-market|gtm|social media|content (strategist|creator|producer)|copywriter|events?)\\b"},
+    {"id": "supply-core", "category": "supply_ops", "where": "role", "pattern": "\\b(sourcing|supply chain|procurement|purchasing|commodity|bom)\\b", "note": "No unless: a 'Product Sourcing Engineer' is still supply chain. Role part only, so 'Modeling Engineer, Supply Chain Optimization' is left alone."},
+    {"id": "supply-ops", "category": "supply_ops", "unless_set": "engineering_title", "pattern": "\\b(buyer|logistics|warehouse|inventory|shipping|receiving|materials?|planner|scheduler|expedit(er|or)|stockroom|kitting)\\b", "note": "'Materials Engineer' is saved by engineering_title and falls to the mechanical rule."},
+    {"id": "trades-technician", "category": "trades_technician", "unless_set": "engineering_title", "pattern": "\\b(technician|operator|assembler|machinist|welder|mechanic|inspector|driver|electrician|janitor|custodian|painter|fabricator|pilot|installer)\\b", "note": "'Device Driver Engineer' is saved by engineering_title."},
+    {"id": "admin-support", "category": "admin_support", "unless_set": "engineering_title", "pattern": "\\b(administrative|executive assistant|office (manager|coordinator|administrator)|receptionist|facilities|workplace|coordinator|concierge|chef|cook|security (officer|guard|specialist)|help ?desk|it support|desktop support)\\b"},
+    {"id": "business-other", "category": "business_other", "unless_set": "engineering_title", "pattern": "\\b(analyst|specialist|associate|representative|operations|immigration|strategy|strategic|chief of staff|writer|editor|instructional|trainer|training (specialist|developer)|curriculum|veterinar\\w*|pathologist|nurse|physician|surgeon|photographer|videographer|illustrator|(product|ux|ui|user experience|industrial|visual|graphic|interaction|experience) designer|general application|expression of interest)\\b"},
+    {"id": "people-management", "category": "people_management", "pattern": "\\b(manager|director|vp|vice president|head of|chief|supervisor|president|general manager|tpm|technical program|(program|product|project) management)\\b", "note": "Includes program and product managers. No unless: 'Engineering Manager' is still a management role."},
+    {"id": "staff-plus", "category": "staff_plus", "pattern": "\\b(staff|principal|distinguished|fellow|architect)\\b"},
+    {"id": "senior", "category": "senior", "pattern": "\\b(senior|sr|lead)\\b"},
+    {"id": "internship", "category": "internship", "pattern": "\\b(intern|interns|internship|internships|co-?op|apprentice(ship)?)\\b"},
+    {"id": "phd-title", "category": "phd_title", "pattern": "\\bph\\.?\\s?d\\b"},
+    {"id": "mechanical", "category": "mechanical", "unless_set": "software_title", "pattern": "\\b(mechanical|mechanisms?|structur(al|es)|thermal|propulsion|aerodynamic\\w*|aerothermal|fluids?|hydraulics?|pneumatics?|composites?|tooling|stress|opto-?mechanical|cad|gd&t|materials|mass properties|metrology|casting|sheet metal)\\b"},
+    {"id": "electrical-hardware", "category": "electrical_hardware", "unless_set": "software_title", "pattern": "\\b(electrical|electronics?|hardware|pcb|pcba|circuits?|analog|mixed.?signal|rf|antennas?|power (electronics|systems?|engineer|delivery|integrity|conversion|architecture|analysis|management|supply)|battery|harness(es)?|wiring|avionics|emc|emi|signal integrity|optical|optics|photonics|lasers?|magnetics|motor (drives?|design))\\b"},
+    {"id": "chip-design", "category": "chip_design", "unless_set": "software_title", "pattern": "\\b(asic|vlsi|rtl|soc|silicon|fpga|dft|eda|physical design|formal verification|design verification|verification engineer|circuit design|layout|timing|synthesis|place (and|&) route|emulation|post-silicon|tapeout|standard cell|serdes|ddr|pll|semiconductor|foundry|wafer|lithography|yield|signoff|cpu (design|architect\\w*|verification|rtl)|memory (subsystem|design|circuit|ip))\\b"},
+    {"id": "manufacturing", "category": "manufacturing", "unless_set": "software_title", "pattern": "\\b(manufacturing|production|industrial(ization)?|process (engineer|development)|quality (engineer|assurance|control|inspector)|supplier (quality|industrialization|development)|npi|assembly|fabrication|machining|weld\\w*|sustainment|maintenance)\\b"}
+  ],
+  "focus_note": "A posting is in focus for a group when (1) its title matches a title pattern, or (2) at least min_sentences separate sentences of its description mention a description term and at least min_terms different terms appear, or (3) its company is a focus company: one with at least company.min_postings postings of which the share company.min_share are in focus by (1) or (2). Counting sentences is what tells a robotics job from a posting whose company blurb lists 'autonomy, computer vision, sensor fusion' once; the company test catches a short 'Backend Engineer' posting at a humanoid-robot company.",
+  "focus": {
+    "robotics": {
+      "name": "Robotics / autonomy",
+      "min_sentences": 5,
+      "min_terms": 1,
+      "company": {
+        "min_share": 0.5,
+        "min_postings": 5
+      },
+      "title": [
+        {"id": "t-robot", "pattern": "\\brobot\\w*"},
+        {"id": "t-autonomy", "pattern": "\\b(autonom\\w*|self-driving|autopilot|adas)\\b"},
+        {"id": "t-perception", "pattern": "\\b(perception|computer vision|sensor fusion|state estimation|slam|locali[sz]ation|mapping|tracking)\\b"},
+        {"id": "t-planning-control", "pattern": "\\b((motion|path|behavior|trajectory|mission) planning|planning (and|&) controls?|controls|gnc|guidance|navigation|kinematics)\\b"},
+        {"id": "t-manipulation", "pattern": "\\b(manipulation|locomotion|humanoid|teleop\\w*|embodied|whole.?body)\\b"},
+        {"id": "t-aerial", "pattern": "\\b(drones?|uav|uas|suas|quadcopter|flight (software|controls?|autonomy)|swarm\\w*)\\b"},
+        {"id": "t-robot-learning", "pattern": "\\b(vla|reinforcement learning|imitation learning|sim-?to-?real|world models?|physical ai|foundation models?)\\b"},
+        {"id": "t-simulation", "pattern": "\\b(simulation|simulator|isaac|ros2?)\\b"},
+        {"id": "t-vehicle-software", "pattern": "\\b(mission|vehicle) software\\b"}
+      ],
+      "description": [
+        {"id": "d-robot", "pattern": "\\brobot\\w*"},
+        {"id": "d-autonomy", "pattern": "\\b(autonomy|autonomous)\\b"},
+        {"id": "d-perception", "pattern": "\\bperception\\b"},
+        {"id": "d-vision", "pattern": "\\bcomputer vision\\b"},
+        {"id": "d-slam", "pattern": "\\b(slam|locali[sz]ation)\\b"},
+        {"id": "d-planning", "pattern": "\\b(motion|path|trajectory|behavior) planning\\b"},
+        {"id": "d-control", "pattern": "\\b(control(s)? (systems?|theory|algorithms?)|mpc|model predictive control|kinematics|dynamics)\\b"},
+        {"id": "d-estimation", "pattern": "\\b(sensor fusion|state estimation|kalman)\\b"},
+        {"id": "d-sensors", "pattern": "\\b(lidar|imu|radar)\\b"},
+        {"id": "d-manipulation", "pattern": "\\b(manipulation|manipulator|locomotion|humanoid|gripper|end.?effector|actuators?)\\b"},
+        {"id": "d-aerial", "pattern": "\\b(drones?|uav|uas|quadcopter|unmanned)\\b"},
+        {"id": "d-ros", "pattern": "\\b(ros ?2?|gazebo|mujoco|isaac (sim|lab|gym)|moveit|nav2)\\b"},
+        {"id": "d-learning", "pattern": "\\b(reinforcement learning|imitation learning|behavior cloning|sim-?to-?real|embodied|vision-language-action|vla|teleoperation)\\b"},
+        {"id": "d-navigation", "pattern": "\\b(navigation|self-driving|autonomous (vehicles?|driving|systems?))\\b"}
+      ]
+    }
+  }
+}

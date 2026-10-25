@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Stops the browser auto-linking things like "8 U.S.C." inside evidence quotes. -->
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no">
+  <title>jobfilter</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div class="app">
+
+  <nav class="side" aria-label="Pages">
+    <h1>jobfilter</h1>
+    <a class="nav-link" href="#inbox" data-view="inbox">Inbox <span class="nav-count" id="nav-inbox-count"></span></a>
+    <a class="nav-link" href="#applications" data-view="applications">Applications <span class="nav-count" id="nav-applications-count"></span></a>
+    <a class="nav-link" href="#calendar" data-view="calendar">Calendar</a>
+    <a class="nav-link" href="#explore" data-view="explore">Explore <span class="nav-count" id="nav-explore-count"></span></a>
+    <a class="nav-link" href="#companies" data-view="companies">Companies <span class="nav-count" id="nav-companies-count"></span></a>
+    <a class="nav-link" href="#add" data-view="add">Add jobs</a>
+    <p class="sub">Which postings you may apply to, and which are worth reading.</p>
+  </nav>
+
+  <main class="wrap">
+    <p class="note error" id="app-error" role="alert" hidden></p>
+    <!-- New postings: place them with the role rules, then have the model read them. -->
+    <div class="process-bar" id="process-bar" role="status" hidden>
+      <span id="process-text"></span>
+      <button id="process-run">Screen and read</button>
+    </div>
+
+    <!-- Inbox: what passed your role rules, one posting at a time. -->
+    <section class="view" id="view-inbox" data-view="inbox">
+      <div class="page-head">
+        <h2>Inbox</h2>
+        <div class="tabs" id="inbox-tabs" role="tablist" aria-label="Your marks"></div>
+        <span class="note" id="inbox-verdicts"></span>
+        <span class="note hint">J / K move · A applied · M maybe · S skip · O open the posting</span>
+      </div>
+      <div class="inbox">
+        <div class="inbox-list" id="inbox-list" role="listbox" aria-label="Postings"></div>
+        <article class="reader" id="reader"></article>
+      </div>
+    </section>
+
+    <!-- Explore: every stored posting, every filter. -->
+    <section class="view" id="view-explore" data-view="explore" hidden>
+      <section class="kpis" id="kpis" aria-label="Summary"></section>
+
+      <h2>Postings</h2>
+      <div class="browse">
+
+        <aside class="pane" id="browse-pane" aria-label="Filters">
+          <div class="pane-section">
+            <label class="pane-title" for="q">Search</label>
+            <input type="search" id="q" placeholder="Title, company or evidence…" autocomplete="off">
+          </div>
+
+          <div class="pane-section">
+            <div class="pane-head">
+              <span class="pane-title">My list</span>
+              <button class="link" id="mine-clear" hidden>All</button>
+            </div>
+            <button id="for-me" title="Postings that passed the role rules and that you have not marked yet">For me</button>
+            <div class="check-list" id="status-list"></div>
+          </div>
+
+          <div class="pane-section">
+            <div class="pane-head">
+              <span class="pane-title">Role screening</span>
+              <button class="link" id="screen-run" title="Run the role rules over every stored posting again">Re-screen</button>
+            </div>
+            <div class="check-list" id="stage-list"></div>
+            <span class="pane-title">Model verdict</span>
+            <div class="check-list" id="verdict-list"></div>
+            <p class="note hint" id="screen-status" role="status"></p>
+          </div>
+
+          <div class="pane-section">
+            <div class="pane-head">
+              <span class="pane-title">Label</span>
+              <button class="link" id="labels-clear" hidden>All</button>
+            </div>
+            <div class="check-list" id="label-list"></div>
+          </div>
+
+          <div class="pane-section">
+            <span class="pane-title">Changes</span>
+            <label class="check-option">
+              <input type="checkbox" id="changed-only">
+              <span class="region-name">Changed in last refresh</span>
+            </label>
+          </div>
+
+          <div class="pane-section">
+            <span class="pane-title">Deadline</span>
+            <label class="check-option" title="An apply-by date in the next few days, or an &quot;accepted at least until&quot; date just past. Soonest first.">
+              <input type="checkbox" id="closing-only">
+              <span class="region-name">Closing soon (±<span id="closing-days">7</span> days)</span>
+            </label>
+          </div>
+
+          <div class="pane-section">
+            <span class="pane-title">Posted</span>
+            <div class="check-list" id="posted-list" title="When the posting went up, from its board's own date"></div>
+          </div>
+
+          <div class="pane-section">
+            <div class="pane-head">
+              <label class="pane-title" for="place-search">Location</label>
+              <button class="link" id="locations-clear" hidden>Clear</button>
+            </div>
+            <div class="check-list" id="region-list"></div>
+            <input type="search" id="place-search" placeholder="City, state or country…" autocomplete="off"
+                   role="combobox" aria-expanded="false" aria-controls="place-suggestions" aria-autocomplete="list">
+            <ul class="suggestions" id="place-suggestions" role="listbox" hidden></ul>
+            <p class="note hint">Enter shows only that place; <b>hide</b> (Shift-Enter) removes it. “USA” covers every US location and a state covers its cities, so “California” finds “San Francisco Bay Area”.</p>
+
+            <div class="chip-group" id="place-group" hidden>
+              <div class="chip-label">Only in</div>
+              <div class="chips" id="place-chips"></div>
+            </div>
+            <div class="chip-group" id="hidden-place-group" hidden>
+              <div class="chip-label">Not in</div>
+              <div class="chips" id="hidden-place-chips"></div>
+            </div>
+          </div>
+
+          <div class="pane-section">
+            <div class="pane-head">
+              <label class="pane-title" for="company-search">Companies</label>
+              <button class="link" id="companies-clear" hidden>Clear</button>
+            </div>
+            <input type="search" id="company-search" placeholder="Find a company…" autocomplete="off"
+                   role="combobox" aria-expanded="false" aria-controls="company-suggestions" aria-autocomplete="list">
+            <ul class="suggestions" id="company-suggestions" role="listbox" hidden></ul>
+            <p class="note hint">Enter hides the company; <b>only</b> (Shift-Enter) shows just that one.</p>
+
+            <div class="chip-group" id="only-group" hidden>
+              <div class="chip-label">Showing only</div>
+              <div class="chips" id="only-chips"></div>
+            </div>
+            <div class="chip-group" id="hidden-group" hidden>
+              <div class="chip-label">Hidden <span class="note" id="hidden-count"></span></div>
+              <div class="chips" id="hidden-chips"></div>
+            </div>
+          </div>
+
+          <button class="ghost" id="reset" title="Clears search, labels, locations and “only” companies. Hidden companies stay hidden.">Reset filters</button>
+        </aside>
+
+        <div class="results">
+          <div class="pager" id="pager-top"></div>
+
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Title</th>
+                  <th>Location</th>
+                  <th>Label</th>
+                  <th>Found</th>
+                  <th>Evidence</th>
+                  <th id="posted-head" title="When the posting went up. Click: newest first, oldest first, then back to last checked."><button class="sort">Posted<span class="sort-mark"></span></button></th>
+                  <th>Checked</th>
+                  <th>Mine</th>
+                </tr>
+              </thead>
+              <tbody id="rows"></tbody>
+            </table>
+          </div>
+
+          <div class="pager" id="pager-bottom"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="view" id="view-companies" data-view="companies" hidden>
+      <div class="section-head">
+        <h2>By company</h2>
+        <span class="note hint" id="company-sort-hint">Click a header to sort; Shift-click to add a tie-breaker.</span>
+        <button class="link" id="company-sort-reset" hidden>Reset sort</button>
+      </div>
+      <div class="row refresh-bar">
+        <button id="refresh-all">Refresh boards</button>
+        <label class="checkbox" title="Workday, Rippling and Dover need one request per job. Without this only jobs not seen before are read there, so edited descriptions go unnoticed.">
+          <input type="checkbox" id="refresh-deep">
+          Also re-read existing jobs (slow on Workday)
+        </label>
+        <span class="note" id="refresh-status" role="status"></span>
+      </div>
+      <p class="note" id="company-filter-note" role="status" hidden>
+        <span id="company-filter-text"></span>
+        <button class="link" id="company-filter-clear">Clear filters</button>
+      </p>
+      <p class="note hint">Re-reads each company's job board and shows what changed: new jobs, jobs no longer listed, edited descriptions, changed labels. LinkedIn and Indeed postings have no board and are skipped.</p>
+      <div class="table-scroll">
+        <table>
+          <thead id="company-head">
+            <tr>
+              <th data-key="company_slug"><button class="sort">Company<span class="sort-mark"></span></button></th>
+              <th data-key="platform"><button class="sort">Platform<span class="sort-mark"></span></button></th>
+              <th data-key="total" class="num"><button class="sort">Total<span class="sort-mark"></span></button></th>
+              <th data-key="restricted" class="num"><button class="sort">Restricted<span class="sort-mark"></span></button></th>
+              <th data-key="unclear" class="num"><button class="sort">Unclear<span class="sort-mark"></span></button></th>
+              <th data-key="info" class="num"><button class="sort">Info<span class="sort-mark"></span></button></th>
+              <th data-key="open_count" class="num"><button class="sort">Open<span class="sort-mark"></span></button></th>
+              <th data-key="changed"><button class="sort">Changes<span class="sort-mark"></span></button></th>
+              <th data-key="refreshed"><button class="sort">Refreshed<span class="sort-mark"></span></button></th>
+              <th><span class="visually-hidden">Refresh</span></th>
+            </tr>
+          </thead>
+          <tbody id="company-rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Calendar: per day, what you applied to or what was added. -->
+    <section class="view" id="view-calendar" data-view="calendar" hidden>
+      <div class="page-head">
+        <h2>Calendar</h2>
+        <div class="tabs" id="cal-kinds" role="tablist" aria-label="What to count"></div>
+        <div class="tabs" id="cal-sets" role="tablist" aria-label="Which added postings" hidden></div>
+      </div>
+      <div class="cal">
+        <div class="cal-month-box">
+          <div class="cal-nav">
+            <button class="ghost page" id="cal-prev" aria-label="Previous month">‹</button>
+            <h3 id="cal-month"></h3>
+            <button class="ghost page" id="cal-next" aria-label="Next month">›</button>
+            <button class="ghost" id="cal-today">This month</button>
+          </div>
+          <div class="cal-grid" id="cal-grid"></div>
+          <p class="note" id="cal-summary" role="status"></p>
+          <p class="note hint">Applied counts a posting on the day you marked it Applied. Added counts it on the day jobfilter first found it.</p>
+        </div>
+        <div class="cal-day">
+          <h3 id="cal-day-title"></h3>
+          <div class="cal-day-rows" id="cal-day-rows"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications: everything you applied to, and what came of each resume. -->
+    <section class="view" id="view-applications" data-view="applications" hidden>
+      <div class="page-head">
+        <h2>Applications</h2>
+        <div class="tabs" id="apps-tabs" role="tablist" aria-label="Where they stand"></div>
+        <span class="note" id="apps-narrowed" role="status" hidden>
+          <span id="apps-narrowed-text"></span>
+          <button class="link" id="apps-resume-clear">All resumes</button>
+        </span>
+      </div>
+      <div class="apps">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Title</th>
+                <th>Applied</th>
+                <th>Resume</th>
+                <th>What came of it</th>
+              </tr>
+            </thead>
+            <tbody id="apps-rows"></tbody>
+          </table>
+        </div>
+        <div class="apps-resumes">
+          <div class="section-head">
+            <h2>Resumes</h2>
+            <span class="note hint">Click a resume to see only its applications.</span>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Resume</th>
+                  <th class="num" title="Applications this resume went to">Sent</th>
+                  <th class="num" title="No step recorded yet">Waiting</th>
+                  <th class="num" title="Applications that reached an online assessment">OA</th>
+                  <th class="num" title="Applications that reached an interview">Interview</th>
+                  <th class="num" title="Applications that reached an offer">Offer</th>
+                  <th class="num" title="Applications that were rejected, at any point">Rejected</th>
+                  <th class="num" title="Applications that got an OA, an interview or an offer">Got a reply</th>
+                  <th><span class="visually-hidden">Rename or delete</span></th>
+                </tr>
+              </thead>
+              <tbody id="resume-rows"></tbody>
+            </table>
+          </div>
+          <p class="note hint">OA, Interview, Offer and Rejected count every application that reached that step, so one rejected after an interview is in both columns.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="view-add" data-view="add" hidden>
+      <h2>Check URLs</h2>
+      <section class="panel">
+        <label for="urls" class="note">One URL per line: Ashby, Greenhouse, Lever, Workday, Rippling, Dover, SmartRecruiters, Workable, Eightfold (careers.qualcomm.com, ...) or Amazon Jobs. A company's board, an Eightfold search or an Amazon team page adds every job on it. Already-checked URLs are re-fetched and updated.</label>
+        <textarea id="urls" spellcheck="false" placeholder="https://jobs.ashbyhq.com/&lt;company&gt;/&lt;job-id&gt;
+https://job-boards.greenhouse.io/&lt;company&gt;/jobs/&lt;job-id&gt;
+https://jobs.lever.co/&lt;company&gt;/&lt;job-id&gt;"></textarea>
+        <div class="row">
+          <button id="check">Check</button>
+          <label class="checkbox">
+            <input type="checkbox" id="expand">
+            Also check every other job at these companies
+          </label>
+          <span class="note" id="check-status"></span>
+        </div>
+        <p class="note hint">Ashby costs no extra request — its board arrives with the first job. Greenhouse and Lever cost one request per company.</p>
+      </section>
+
+      <h2>Could not be checked</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>URL</th><th>Status</th><th>Reason</th><th>When</th></tr>
+          </thead>
+          <tbody id="failure-rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<dialog id="detail">
+  <div class="dialog-head">
+    <div>
+      <h3 id="d-title"></h3>
+      <span class="note" id="d-company"></span>
+    </div>
+    <button class="close" id="d-close">Close</button>
+  </div>
+  <div class="dialog-body" id="d-body"></div>
+</dialog>
+
+<script src="/app.js"></script>
+<script src="/applications.js"></script>
+<script src="/calendar.js"></script>
+<script src="/pages.js"></script>
+</body>
+</html>

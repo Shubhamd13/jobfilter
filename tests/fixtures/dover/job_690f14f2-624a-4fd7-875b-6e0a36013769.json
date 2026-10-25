@@ -1,0 +1,96 @@
+{
+ "id": "690f14f2-624a-4fd7-875b-6e0a36013769",
+ "client_id": "f68b464a-4241-42fb-aecc-c9e6364b9bc9",
+ "client_name": "Alloy Robotics",
+ "client_logo": "https://dover-django.t3.tigrisbucket.io/client-logos/f68b464a-4241-42fb-aecc-c9e6364b9bc9-1776150568-logo.png",
+ "client_domain": "usealloy.ai",
+ "title": "Growth Marketer",
+ "location": null,
+ "require_linkedin_profile_url": false,
+ "user_provided_description": "<p><strong>About Alloy Robotics</strong></p><p>We believe robotics will be the largest industry in the history of our planet. <br>And data is its lifeblood.</p><p>Alloy is the AI-native data platform for robotics teams.</p><p>Robot fleets generate enormous volumes of logs, video, telemetry, and mission data, and most of it ends up in silos where nobody can use it.</p><p>Alloy turns those data sources into one unified layer of intelligence. Teams can understand what happened across their fleet, find patterns faster, and turn every mission into knowledge that improves the next one.</p><p>We've raised $16m, backed by Square Peg, Blackbird, and Airtree, with angels including senior leaders from OpenAI, Anthropic, Tesla, Waymo, Physical Intelligence and Halter.</p><p>We partner with robotics teams across defence, agriculture, maritime, humanoids, construction, and medical, including Advanced Navigation, DroneForge, Breaker Industries, Swarmfarm, Andromeda and Puralink.</p><p>We're a lean team building from Sydney, and are adding our first US hires.</p><p><strong>Where we are, and where we're heading</strong></p><p>Alloy is moving faster than we can tell the story.</p><p>Every week, we ship new agentic workflows and learn directly from the robotics teams pushing the industry forward. That gives us a view of where the market is going that almost nobody else has.</p><p>The opportunity is to turn that alpha into content people can’t get anywhere else and growth loops that bring the best robotics teams to Alloy.</p><p>There is no playbook yet. You’ll help write it, run it, and scale what works.</p><p></p><p><strong>About the role (Growth Marketer)</strong></p><p>Your job is to turn everything Alloy is building and learning into content people actually care about.</p><p><strong>You role will look like:</strong></p><ul><li><p>Turning product updates into launches, demos, explainers, and technical content</p></li><li><p>Taking ideas from zero to something we’re proud to publish</p></li><li><p>Finding the interesting story hiding inside customer calls, research, and product work</p></li><li><p>Making Alloy easy to understand without dumbing it down</p></li><li><p>Building repeatable formats across writing, video, interviews, and social</p></li><li><p>Studying why something worked, then use those lessons to make the next thing better<br></p></li></ul><p><strong>You may be a good fit if:</strong></p><ul><li><p>You have made something people chose to read, watch, or share</p></li><li><p>You can write about technical products without sounding like a LinkedIn chatbot</p></li><li><p>You’ve worked across product marketing, DevRel, or technical content, probably at a B2B tech company</p></li><li><p>You understand a product deeply enough to explain what it actually unlocks</p></li><li><p>You have strong instincts for stories, hooks, and distribution</p></li><li><p>You can take a half-formed idea and return with something publishable</p></li><li><p>You have a portfolio that makes us want to keep clicking</p></li></ul><p><strong>What we like seeing:</strong></p><ul><li><p>Proof of work &gt; Brand names</p></li><li><p>You find what needs doing and ship the work from zero to one (self-starter)</p></li><li><p>You’re heavily agent-pilled</p></li><li><p>You care deeply about the quality of what you put into the world</p></li><li><p>You want to understand robotics, the industry, market dynamics, who's who, why now etc</p></li><li><p>You prefer ownership and a blank page over waiting for somebody to write the playbook</p></li></ul><p><strong>How we work</strong></p><p>We’re a small team and assume you are high agency, low ego &amp; have strong bias for action.</p><p>Most problems here won’t come with a clean brief. You’ll be expected to work out what matters, question things that don’t make sense, and own the result end to end. We delete work that shouldn’t exist and spend our time on things customers will feel.</p><p><strong>Compensation</strong></p><ul><li><p>Competitive salary</p></li><li><p>Additional compensation and benefits may include equity and flexible working arrangements</p></li></ul><p>If one of these roles sounds like you but your CV doesn’t line up perfectly, apply anyway.</p><p>Show us something you’ve made, grown, or brought to life. Proof of work and rate of learning matter more to us than ticking every box.</p><p><br></p>",
+ "compensation_details": null,
+ "application_questions": [
+  {
+   "id": "397904e0-177d-43d4-a727-74ca220cd351",
+   "question": "LinkedIn Profile URL",
+   "input_type": "SHORT_ANSWER",
+   "required": false,
+   "question_type": "LINKEDIN_URL",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 0
+  },
+  {
+   "id": "681c9404-e0fd-4e17-8a8d-ae9113d57e6c",
+   "question": "Phone Number",
+   "input_type": "SHORT_ANSWER",
+   "required": false,
+   "question_type": "PHONE_NUMBER",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 1
+  },
+  {
+   "id": "c42d38a0-e30b-4df8-abaa-89a2f3e0d8ca",
+   "question": "Do you have the right to work in Australia?",
+   "input_type": "MULTIPLE_CHOICE",
+   "required": true,
+   "question_type": "CUSTOM",
+   "multiple_choice_options": [
+    "Yes",
+    "No"
+   ],
+   "max_selections": null,
+   "hidden": false,
+   "order_index": 2
+  },
+  {
+   "id": "3256a1a0-0cc3-4fb1-ad40-4cafa3c82497",
+   "question": "Resume",
+   "input_type": "FILE_UPLOAD",
+   "required": false,
+   "question_type": "RESUME",
+   "multiple_choice_options": null,
+   "max_selections": null,
+   "hidden": false,
+   "order_index": null
+  }
+ ],
+ "public_interview_plan_preview": [],
+ "locations": [
+  {
+   "location_type": "IN_OFFICE",
+   "location_option": {
+    "id": "9bcba4ca-ed85-4c5d-bf7f-a612e5e9f574",
+    "display_name": "Sydney, Australia",
+    "location_type": "CITY",
+    "city": "Sydney",
+    "state": "New South Wales",
+    "country": "AU"
+   },
+   "name": "Sydney, Australia",
+   "is_primary": true
+  }
+ ],
+ "workplace_type": "ONSITE",
+ "compensation": {
+  "upper_bound": null,
+  "lower_bound": null,
+  "currency_code": "USD",
+  "open_to_sharing_comp": false,
+  "equity_lower_bound": null,
+  "equity_upper_bound": null,
+  "open_to_sharing_equity": false,
+  "offers_equity": false,
+  "salary_range_type": "YEARLY",
+  "employment_type": "FULL_TIME"
+ },
+ "visa_support": false,
+ "created": "2026-08-11T05:20:25.165160Z",
+ "active": true,
+ "is_private": false,
+ "allow_docx_resumes_in_applications": false,
+ "is_notifiable_source": false
+}

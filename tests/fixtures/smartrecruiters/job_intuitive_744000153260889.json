@@ -1,0 +1,192 @@
+{
+ "id": "744000153260889",
+ "name": "Robotic Algorithm and Controls Engineer ",
+ "uuid": "0bac9631-2823-403e-8c8c-4bcb023f276b",
+ "jobId": "ce65ccfa-f8c0-4c24-8d2b-95b584f8777f",
+ "jobAdId": "0556032c-e6f8-4759-bd1f-2086c68df9fb",
+ "defaultJobAd": true,
+ "refNumber": "JOB218796",
+ "company": {
+  "name": "Intuitive",
+  "identifier": "Intuitive"
+ },
+ "location": {
+  "city": "Sunnyvale",
+  "region": "CA",
+  "country": "us",
+  "remote": false,
+  "hybrid": false,
+  "fullLocation": "Sunnyvale, CA, United States"
+ },
+ "customField": [
+  {
+   "fieldId": "61211c9b1fa63c2955669260",
+   "fieldLabel": "Req Type",
+   "valueId": "9b759e44-2d55-4506-a9ce-d575851c480e",
+   "valueLabel": "Professional"
+  },
+  {
+   "fieldId": "6121170e1fa63c295566925d",
+   "fieldLabel": "Company Name",
+   "valueId": "3100",
+   "valueLabel": "Intuitive Surgical OPS"
+  },
+  {
+   "fieldId": "61211320bc01bb71bbfc4a1a",
+   "fieldLabel": "Fixed/ Variable",
+   "valueId": "f108189e-76a0-4a13-9074-efcc3a12c5ab",
+   "valueLabel": "Fixed"
+  },
+  {
+   "fieldId": "61211d107c9ac71cd5f99177",
+   "fieldLabel": "Career Site Category",
+   "valueId": "70d5219c-fc03-4212-bcbe-f0b276c458ba",
+   "valueLabel": "Engineering"
+  },
+  {
+   "fieldId": "61dbc8e386045b73323f2e92",
+   "fieldLabel": "Ways of Working",
+   "valueId": "8500fc2b-5c36-4d89-b6e9-ebab6be4ab5d",
+   "valueLabel": "Set Schedule - This job will be onsite weekly, the percentage of onsite work will be defined by the leader."
+  },
+  {
+   "fieldId": "612111e01fa63c295566925a",
+   "fieldLabel": "Posting Type",
+   "valueId": "0750fadd-8943-4911-865a-0b5f4870b34a",
+   "valueLabel": "Public - Internal & External"
+  },
+  {
+   "fieldId": "6410bb26309ea26650581aaa",
+   "fieldLabel": "Min. Salary Region 1",
+   "valueId": "153300 USD",
+   "valueLabel": "153300 USD"
+  },
+  {
+   "fieldId": "6410bbab651dfc03edd37964",
+   "fieldLabel": "Min. Salary Region 2",
+   "valueId": "130300 USD",
+   "valueLabel": "130300 USD"
+  },
+  {
+   "fieldId": "612116e2bc01bb71bbfc4a1c",
+   "fieldLabel": "Shift",
+   "valueId": "d5adea7f-e29a-4609-9de6-f7b7a0cf285a",
+   "valueLabel": "Day"
+  },
+  {
+   "fieldId": "COUNTRY",
+   "fieldLabel": "Country/Region",
+   "valueId": "us",
+   "valueLabel": "United States"
+  },
+  {
+   "fieldId": "6121193bfb73b03a3f26c476",
+   "fieldLabel": "Functional Area (HCM)",
+   "valueId": "Engineering",
+   "valueLabel": "Engineering"
+  },
+  {
+   "fieldId": "6410bbd849b73721b73a38ec",
+   "fieldLabel": "Max. Salary Region 2",
+   "valueId": "187600 USD",
+   "valueLabel": "187600 USD"
+  },
+  {
+   "fieldId": "612116747c9ac71cd5f99171",
+   "fieldLabel": "Business Unit",
+   "valueId": "US",
+   "valueLabel": "United States BU"
+  },
+  {
+   "fieldId": "612117b30bb2e12534f85548",
+   "fieldLabel": "Job code",
+   "valueId": "10709",
+   "valueLabel": "10709"
+  },
+  {
+   "fieldId": "6410bb936ab3004eaed0458f",
+   "fieldLabel": "Max. Salary Region 1",
+   "valueId": "220700 USD",
+   "valueLabel": "220700 USD"
+  },
+  {
+   "fieldId": "6410b3786ab3004eaed0458e",
+   "fieldLabel": "Job Family Code (HCM)",
+   "valueId": "Engineering",
+   "valueLabel": "Engineering"
+  },
+  {
+   "fieldId": "612118931fa63c295566925f",
+   "fieldLabel": "Employee Type",
+   "valueId": "EMP1",
+   "valueLabel": "Employee"
+  },
+  {
+   "fieldId": "6121137e0bb2e12534f85545",
+   "fieldLabel": "Global Job Level (HCM)",
+   "valueId": "P3",
+   "valueLabel": "Professional 3 (9)"
+  },
+  {
+   "fieldId": "612108ea7c9ac71cd5f9916c",
+   "fieldLabel": "Brands",
+   "valueId": "default",
+   "valueLabel": "Intuitive"
+  },
+  {
+   "fieldId": "6121133f7c9ac71cd5f99170",
+   "fieldLabel": "Finance TBH#",
+   "valueLabel": "TBH00339217"
+  }
+ ],
+ "releasedDate": "2026-10-02T19:26:00.152Z",
+ "creator": {
+  "name": "Redacted"
+ },
+ "postingUrl": "https://jobs.smartrecruiters.com/Intuitive/744000153260889-robotic-algorithm-and-controls-engineer-",
+ "applyUrl": "https://jobs.smartrecruiters.com/Intuitive/744000153260889-robotic-algorithm-and-controls-engineer-?oga=true",
+ "referralUrl": "https://jobs.smartrecruiters.com/external-referrals/company/Intuitive/publication/0bac9631-2823-403e-8c8c-4bcb023f276b?dcr_ci=Intuitive",
+ "jobAd": {
+  "sections": {
+   "companyDescription": {
+    "title": "Company Description",
+    "text": "<p>It started with a simple idea: what if surgery could be less invasive and recovery less painful? Nearly 30 years later, that question still fuels everything we do at <strong>Intuitive</strong>. As a global leader in <strong>robotic-assisted surgery</strong> and <strong>minimally invasive care</strong>, our technologies—like the <strong>da Vinci surgical system</strong> and <strong>Ion</strong>—have transformed how care is delivered for millions of patients worldwide.</p><p>We’re a team of engineers, clinicians, and innovators united by one purpose: to make surgery smarter, safer, and more human. Every day, our work helps care teams perform with greater precision and patients recover faster, improving outcomes around the world.</p><p>The problems we solve demand creativity, rigor, and collaboration. The work is challenging, but deeply meaningful—because every improvement we make has the potential to change a life.</p><p>If you’re ready to contribute to something bigger than yourself and help <strong>transform the future of healthcare</strong>, you’ll find your purpose here.</p>"
+   },
+   "jobDescription": {
+    "title": "Job Description",
+    "text": "<p><strong>Primary Function of Position&#xa0;</strong></p><p>Systems Analysts (Robotic Algorithms and Controls Engineers) at Intuitive Surgical strive to create the safest and highest quality robotic system for minimally invasive surgery though rigorous and robust technical analysis. &#xa0;This position is responsible for robotic algorithms and controls required to support the development and production of new instruments for the da Vinci Surgical System.<strong>&#xa0; </strong></p><p><strong>Essential Job Duties&#xa0;</strong></p><ul><li>Develop and own the tele-operated motion performance of robotic surgical instruments.&#xa0; Ensuring motion fidelity will involve:<ul><li>Working&#xa0;closely with the clinical development team to understand performance requirements;</li><li>Working closely with the mechanical design team to optimize the mechanism for motion fidelity;</li><li>Using analysis and experimentation to develop a deep understanding of the behavior and limitations of the instrument mechanism;</li><li>Modifying and tuning the algorithms to optimize motion fidelity and ensure consistent performance in the clinical environment.</li></ul></li><li>Implement features and algorithms to support new instrument development, including collaboration with the design team to iterate through prototypes, analyze performance, and assess feasibility.</li><li>Perform risk analysis and implement safety algorithms. This includes documentation of risks, requirements, and test protocols to support requests for approval by regulatory agencies such as the FDA.</li><li>Analyze field data to continuously improve the performance and stability of the surgical instrument.</li><li>Collaborate with the manufacturing team to develop automated fixtures for calibrating, testing, and aiding assembly of the instrument.&#xa0; Additionally, determine manufacturing test specifications that will ensure instrument performance.</li><li>Lead by having a breadth of technical knowledge that enables a top-level view of the entire project.&#xa0; Using this perspective, you will act as an interface between various technical specialties; Take ownership of issues that cross disciplinary boundaries and use your broad skillset to ensure the success of the project.</li></ul>"
+   },
+   "qualifications": {
+    "title": "Qualifications",
+    "text": "<p><strong>Required Skills and Experience</strong>&#xa0;</p><ul><li>Knowledge of classical and modern servo control systems</li><li>Knowledge of serial-arm robot kinematics</li><li>C/C++, MATLAB programming skills</li><li>Hardware, software, and mechanism integration skills</li><li>Intuitive understanding of mechanical phenomena with ability to do rigorous analysis</li><li>Excellent communication skills both written and verbal</li><li>Ability to work independently and the determination to solve challenging problems</li></ul><p><strong>Required Education and Training&#xa0;</strong></p><ul><li>PhD (preferred) or MS with Minimum 2&#xa0;years of experience in robotics-related field.</li></ul><p><strong>Preferred Skills and Experience</strong></p><ul><li>Knowledge of Python and basic SQL</li><li>Knowledge of statistics and probabilistic reasoning</li><li>Knowledge of electrical and mechanical design principles and CAD tools</li><li>Experience conducting research with human subjects</li><li>Experience launching real-world, commercially successful products</li></ul>"
+   },
+   "additionalInformation": {
+    "title": "Additional Information",
+    "text": "<div sr-tagline=\"\"></div><p>Due to the nature of our business and the role, please note that Intuitive and/or your customer(s) may require that you show current proof of vaccination against certain diseases including COVID-19.&#xa0; Details can vary by role.</p><p>Intuitive is an Equal Opportunity Employer.&#xa0;We provide equal employment opportunities to all qualified applicants and employees, and prohibit discrimination and harassment of any type, without regard to race, sex, pregnancy, sexual orientation, gender identity, national origin, color, age, religion, protected veteran or disability status, genetic information or any other status protected under federal, state, or local applicable laws.</p><p><a href=\"https://careers.intuitive.com/en/eeo-and-aap/\" rel=\"noopener noreferrer\">Mandatory Notices</a></p><p>U.S. Export Controls Disclaimer:&#xa0;&#xa0;In accordance with the U.S. Export Administration Regulations (15 CFR §743.13(b)), some roles at Intuitive Surgical may be subject to U.S. export controls for prospective employees who are nationals from countries currently on embargo or sanctions status.</p><p>Certain information you provide as part of the application will be used for purposes of determining whether Intuitive Surgical will need to (i) obtain an export license from the U.S. Government on your behalf (note: the government’s licensing process can take 3 to 6+ months) or (ii) implement a Technology Control Plan (“TCP”) (note: typically adds 2 weeks to the hiring process).&#xa0;&#xa0;</p><p>For any Intuitive role subject to export controls, final offers are contingent upon obtaining an approved export license and/or an executed TCP prior to the prospective employee’s start date, which may or may not be flexible, and within a timeframe that does not unreasonably impede the hiring need. If applicable, candidates will be notified and instructed on any requirements for these purposes.&#xa0;</p><p>We will consider for employment qualified applicants with arrest and conviction records in accordance with fair chance laws.</p><p>Preference will be given to qualified candidates who do not reside, or plan to reside, in Alabama, Arkansas, Delaware, Florida, Indiana, Iowa, Louisiana, Maryland, Mississippi, Missouri, Oklahoma, Pennsylvania, South Carolina, or Tennessee.</p><p>This position may be filled at a different job level than listed here depending on<br>\nbusiness need and/or on the selected candidate’s experience, knowledge and skills.<br>\nCompensation will be based primarily on the job level at which the role is filled and the<br>\ncandidate’s qualifications, consistent with applicable law.</p><p>Accommodation &amp; Accessibility Notice:</p><p>Intuitive is committed to providing reasonable accommodations to qualified individuals with disabilities. If you require assistance or an accommodation during any part of the application or interview process, please contact People Services at HRHelpNow@intusurg.com.</p><p>We provide market-competitive compensation packages, inclusive of base pay, incentives, benefits, and equity. It would not be typical for someone to be hired at the top end of range for the role, as actual pay will be determined based on several factors, including experience, skills, and qualifications. The target compensation ranges are listed.</p>"
+   }
+  }
+ },
+ "active": true,
+ "visibility": "PUBLIC",
+ "industry": {
+  "id": "medical_device",
+  "label": "Medical Device"
+ },
+ "function": {
+  "id": "engineering",
+  "label": "Engineering"
+ },
+ "experienceLevel": {
+  "id": "associate",
+  "label": "Associate"
+ },
+ "typeOfEmployment": {
+  "id": "permanent",
+  "label": "Full-time"
+ },
+ "language": {
+  "code": "en",
+  "label": "English",
+  "labelNative": "English (US)"
+ }
+}

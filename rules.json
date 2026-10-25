@@ -1,0 +1,646 @@
+{
+  "version": 4,
+  "note": "Shared by the Python RuleClassifier and (Phase 2c) a JS browser extension. Patterns use only syntax valid in both engines: no named groups, no variable-length lookbehind, no possessive quantifiers. Matching is per-sentence, so `.` never needs to cross a newline.",
+  "default_flags": "i",
+  "severity": {
+    "RESTRICTED_CLEARANCE": 5,
+    "RESTRICTED_CITIZEN": 4,
+    "RESTRICTED_US_PERSON": 3,
+    "UNCLEAR": 2,
+    "INFO_NO_SPONSORSHIP": 1,
+    "OPEN": 0
+  },
+  "severity_note": "Applied ACROSS sentences to pick the most restrictive label. Clearance ranks highest because it is the narrowest pool (it implies citizenship plus an active clearance); citizen-only is narrower than US-person, which also admits green-card holders, refugees and asylees.",
+  "supersedes": {
+    "RESTRICTED_US_PERSON": [
+      "RESTRICTED_CITIZEN"
+    ]
+  },
+  "supersedes_note": "Applied WITHIN one sentence. 'Must be a U.S. citizen or lawful permanent resident' matches both rules, but listing permanent residents means the posting is not citizen-only, so US_PERSON wins regardless of severity.",
+  "sentence_splitter": {
+    "protect_suffix_patterns": [
+      {
+        "id": "abbrev-initials",
+        "pattern": "(?:^|[^A-Za-z])(?:[A-Za-z]\\.){1,4}$",
+        "flags": "i",
+        "note": "U.S. / U.S.C. / i.e. / e.g. / Ph.D. -- a run of single letters each followed by a period, preceded by a non-letter. The non-letter prefix is what stops it matching the final 'e.' of 'experience.'"
+      },
+      {
+        "id": "abbrev-words",
+        "pattern": "\\b(?:Inc|Ltd|Corp|LLC|Co|Mr|Mrs|Ms|Dr|Prof|Jr|Sr|St|No|Sec|Fig|Ref|Dept|Est|vs|etc|approx|min|max)\\.$",
+        "flags": "",
+        "note": "Common abbreviations. Case-sensitive so a sentence ending in 'no.' or 'St.' at the start of a word is not over-protected."
+      },
+      {
+        "id": "abbrev-number",
+        "pattern": "\\b\\d+\\.$",
+        "flags": "i",
+        "note": "Numbered list markers and statute numbers: '8.' , '1157.'"
+      }
+    ]
+  },
+  "exclusions": [
+    {
+      "id": "eeo-without-regard",
+      "pattern": "\\bwithout regard to\\b",
+      "flags": "i",
+      "note": "EEO boilerplate opener."
+    },
+    {
+      "id": "eeo-regardless-of-protected-class",
+      "pattern": "\\bregardless of\\s+(?:race|color|colour|religion|sex|age|gender|disability)\\b",
+      "flags": "i",
+      "note": "EEO boilerplate."
+    },
+    {
+      "id": "eeo-protected-veteran",
+      "pattern": "\\bprotected veterans?\\b",
+      "flags": "i",
+      "note": "EEO boilerplate; named in CLAUDE.md as a must-not-trigger."
+    },
+    {
+      "id": "eeo-national-origin",
+      "pattern": "\\bnational origin\\b",
+      "flags": "i",
+      "note": "EEO boilerplate; named in CLAUDE.md as a must-not-trigger."
+    },
+    {
+      "id": "eeo-equal-opportunity",
+      "pattern": "\\bequal (?:employment )?opportunit(?:y|ies)\\b",
+      "flags": "i",
+      "note": "EEO boilerplate."
+    },
+    {
+      "id": "eeo-non-discrimination",
+      "pattern": "\\b(?:does not|do not|will not|prohibits?|prohibit)\\b.{0,40}\\bdiscriminat",
+      "flags": "i",
+      "note": "EEO boilerplate."
+    },
+    {
+      "id": "eeo-affirmative-action",
+      "pattern": "\\baffirmative action\\b",
+      "flags": "i",
+      "note": "EEO boilerplate."
+    },
+    {
+      "id": "eeo-sexual-orientation",
+      "pattern": "\\bsexual orientation\\b",
+      "flags": "i",
+      "note": "EEO boilerplate."
+    },
+    {
+      "id": "eeo-acronym",
+      "pattern": "\\bEEO\\b",
+      "flags": "",
+      "note": "EEO boilerplate. Case-sensitive acronym."
+    }
+  ],
+  "exclusions_note": "A sentence matching any of these is EEO boilerplate and is skipped -- for rules AND for open_signals, so 'without regard to ... citizenship status' cannot be read as an open signal. If a restriction rule ALSO fires on an excluded sentence the classifier returns UNCLEAR rather than dropping it.",
+  "negations": [
+    {
+      "id": "neg-no-clearance",
+      "pattern": "\\b(?:no|without)\\s+(?:an?\\s+)?(?:active\\s+|existing\\s+|current\\s+)?(?:security\\s+|government\\s+)?clearance\\b",
+      "flags": "i",
+      "note": "'no security clearance' / 'without a clearance'.",
+      "applies_to": [
+        "RESTRICTED_CLEARANCE"
+      ],
+      "suppresses_rules": [
+        "clearance-mention",
+        "able-to-obtain-clearance"
+      ]
+    },
+    {
+      "id": "neg-clearance-not-required",
+      "pattern": "\\bclearance\\b.{0,30}\\bnot\\s+(?:required|necessary|needed|a requirement)\\b",
+      "flags": "i",
+      "note": "'clearance is not required' -- named in CLAUDE.md.",
+      "applies_to": [
+        "RESTRICTED_CLEARANCE"
+      ],
+      "suppresses_rules": [
+        "clearance-mention",
+        "able-to-obtain-clearance"
+      ]
+    },
+    {
+      "id": "neg-no-clearance-required",
+      "pattern": "\\bno\\s+(?:security\\s+)?clearance\\s+(?:is\\s+)?(?:required|necessary|needed)\\b",
+      "flags": "i",
+      "note": "'no security clearance required' -- named in CLAUDE.md.",
+      "applies_to": [
+        "RESTRICTED_CLEARANCE"
+      ],
+      "suppresses_rules": [
+        "clearance-mention",
+        "able-to-obtain-clearance"
+      ]
+    },
+    {
+      "id": "neg-does-not-require-clearance",
+      "pattern": "\\b(?:do(?:es)?\\s+not|don't|doesn't|will\\s+not|won't)\\s+require\\b.{0,40}\\bclearance\\b",
+      "flags": "i",
+      "note": "'this role does not require a security clearance'.",
+      "applies_to": [
+        "RESTRICTED_CLEARANCE"
+      ],
+      "suppresses_rules": [
+        "clearance-mention",
+        "able-to-obtain-clearance"
+      ]
+    },
+    {
+      "id": "neg-citizenship-not-required",
+      "pattern": "\\bcitizenship\\b.{0,30}\\bnot\\s+(?:required|necessary|a requirement)\\b",
+      "flags": "i",
+      "note": "'U.S. citizenship is not required'.",
+      "applies_to": [
+        "RESTRICTED_CITIZEN",
+        "RESTRICTED_US_PERSON"
+      ],
+      "suppresses_rules": [
+        "citizenship-mention"
+      ]
+    },
+    {
+      "id": "neg-no-citizenship-requirement",
+      "pattern": "\\bno\\s+(?:U\\.?S\\.?\\s+)?citizenship\\s+(?:requirement|restriction)s?\\b",
+      "flags": "i",
+      "note": "'no citizenship requirement'.",
+      "applies_to": [
+        "RESTRICTED_CITIZEN",
+        "RESTRICTED_US_PERSON"
+      ],
+      "suppresses_rules": [
+        "citizenship-mention"
+      ]
+    },
+    {
+      "id": "neg-regardless-of-citizenship",
+      "pattern": "\\bregardless of\\b.{0,40}\\b(?:citizenship|nationality|immigration status|visa status)\\b",
+      "flags": "i",
+      "note": "'open to all regardless of citizenship'.",
+      "applies_to": [
+        "RESTRICTED_CITIZEN",
+        "RESTRICTED_US_PERSON"
+      ],
+      "suppresses_rules": [
+        "citizenship-mention",
+        "work-authorization"
+      ]
+    },
+    {
+      "id": "neg-not-subject-to-export-control",
+      "pattern": "\\bnot\\s+subject\\s+to\\b.{0,40}\\b(?:ITAR|EAR|export[\\s-]control)",
+      "flags": "i",
+      "note": "'this role is not subject to ITAR'.",
+      "applies_to": [
+        "RESTRICTED_US_PERSON"
+      ],
+      "suppresses_rules": [
+        "itar-mention",
+        "export-control-mention"
+      ]
+    },
+    {
+      "id": "neg-no-export-restrictions",
+      "pattern": "\\bno\\s+export[\\s-]control\\s+(?:restriction|requirement)s?\\b",
+      "flags": "i",
+      "note": "'no export control restrictions apply'.",
+      "applies_to": [
+        "RESTRICTED_US_PERSON"
+      ],
+      "suppresses_rules": [
+        "itar-mention",
+        "export-control-mention"
+      ]
+    }
+  ],
+  "negations_note": "Sentence-local: a negation only suppresses labels in the sentence it matched. `suppresses_rules` additionally cancels named rules -- the bare 'clearance is mentioned' UNCLEAR rules would otherwise survive a negation and turn 'No security clearance required.' into UNCLEAR instead of OPEN.",
+  "rules": [
+    {
+      "id": "clearance-required",
+      "pattern": "\\b(?:security\\s+|government\\s+|DoD\\s+|DOE\\s+)?clearance\\b(?:\\s+or\\s+(?:above|higher)|\\s+level|\\s+status)?[\\s:(]*(?:is\\s+|are\\s+)?(?:required|mandatory|a\\s+requirement)\\b(?!\\s+(?:by|for|if|when|depending))",
+      "flags": "i",
+      "note": "'an active security clearance is required', 'Secret Clearance Required', 'Clearance required:'. 'required' must follow the clearance directly: the old 40-character gap read 'clearance eligibility may be required', 'clearance, as required' and 'clearance; U.S. citizenship required' as clearance requirements. 'required by the customer / for the program' is conditional and left to the weaker rules.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "must-hold-clearance",
+      "pattern": "\\bmust\\s+(?:currently\\s+)?(?:have|hold|possess|maintain)\\b.{0,40}\\bclearance\\b",
+      "flags": "i",
+      "note": "'must currently hold a TS/SCI clearance'.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "requires-clearance",
+      "pattern": "\\b(?:requires?|requiring)\\s+(?:an?\\s+|the\\s+)?(?:(?:active|current|valid|minimum|final|interim|U\\.?S\\.?|DoD|DOE|government|Top\\s+Secret|Secret|TS/SCI|TS|SCI)\\s+)*(?:security\\s+)?clearance\\b|\\brequires?\\s+(?:the\\s+)?(?:candidate|applicant|you|employee|individual)s?\\s+to\\s+(?:hold|have|possess|maintain)\\b.{0,40}\\bclearance\\b",
+      "flags": "i",
+      "note": "'this position requires a security clearance', 'requires active clearance'. Was any 'requir*' within 40 characters, which matched 'travel as required, and obtain ... a clearance' and 'the requirements of security clearance holders'.",
+      "label": "RESTRICTED_CLEARANCE"
+    },
+    {
+      "id": "active-clearance",
+      "pattern": "\\b(?:active|current|existing)\\s+(?:(?:U\\.?S\\.?|TS|DoD|DOE|Top\\s+Secret|Secret|SCI|TS/SCI|Q|L|or|and|above|higher)\\s+)*(?:security\\s+)?clearance\\b",
+      "flags": "i",
+      "note": "'active Secret clearance', 'active U.S. Secret security clearance', 'Active U.S. Secret or TS clearance'. Not when the sentence only prefers it ('TS/SCI clearance desired', 'Active Secret clearance preferred', '... is a plus') and nothing in it says required, must, holds or currently possesses ('Currently possesses an active Secret clearance (Top Secret preferred)' still requires Secret); the bare clearance-mention rule then makes it UNCLEAR.",
+      "label": "RESTRICTED_CLEARANCE",
+      "unless": "^(?!.*\\b(?:required|must|mandatory|currently|possess\\w*|holds?)\\b).*\\b(?:prefer\\w*|desired|desirable|a\\s+plus|nice\\s+to\\s+have|bonus)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "named-clearance",
+      "pattern": "\\b(?:TS/SCI|Top\\s+Secret(?:/SCI)?|Secret\\s+(?:security\\s+)?clearance|SCI\\s+clearance|Q\\s+clearance|L\\s+clearance|Public\\s+Trust\\s+(?:clearance|position|investigation|eligib\\w*|background|suitability|level|determination))\\b|\\b(?:active|current|obtain|hold|maintain|possess)\\b.{0,30}\\bPublic\\s+Trust\\b",
+      "flags": "i",
+      "note": "A named clearance level is itself the requirement. 'Public Trust' counts only next to clearance wording -- Nuro's 'Legal and Public Trust teams' is a department. Not when the sentence only prefers it ('TS/SCI clearance desired', 'Active Secret clearance preferred', '... is a plus') and nothing in it says required, must, holds or currently possesses ('Currently possesses an active Secret clearance (Top Secret preferred)' still requires Secret); the bare clearance-mention rule then makes it UNCLEAR.",
+      "label": "RESTRICTED_CLEARANCE",
+      "unless": "^(?!.*\\b(?:required|must|mandatory|currently|possess\\w*|holds?)\\b).*\\b(?:prefer\\w*|desired|desirable|a\\s+plus|nice\\s+to\\s+have|bonus)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "clearance-eligible-term",
+      "pattern": "\\b(?:clearable|clearance[\\s-]eligible)\\b",
+      "flags": "i",
+      "note": "'must be clearable'. Not when the sentence only prefers it ('TS/SCI clearance desired', 'Active Secret clearance preferred', '... is a plus') and nothing in it says required, must, holds or currently possesses ('Currently possesses an active Secret clearance (Top Secret preferred)' still requires Secret); the bare clearance-mention rule then makes it UNCLEAR.",
+      "label": "RESTRICTED_CLEARANCE",
+      "unless": "^(?!.*\\b(?:required|must|mandatory|currently|possess\\w*|holds?)\\b).*\\b(?:prefer\\w*|desired|desirable|a\\s+plus|nice\\s+to\\s+have|bonus)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "us-citizens-only",
+      "pattern": "\\b(?:U\\.?S\\.?|United\\s+States|American)\\s+citizens?\\s+only\\b",
+      "flags": "i",
+      "note": "'U.S. citizens only'.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "only-us-citizens",
+      "pattern": "\\bonly\\s+(?:U\\.?S\\.?|United\\s+States|American)\\s+citizens\\b",
+      "flags": "i",
+      "note": "'only U.S. citizens may apply'.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "must-be-us-citizen",
+      "pattern": "\\bmust\\s+be\\s+(?:an?\\s+)?(?:U\\.?S\\.?|United\\s+States|American)\\s+citizens?\\b",
+      "flags": "i",
+      "note": "'must be a U.S. citizen'.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "must-be-citizen-of-us",
+      "pattern": "\\bmust\\s+be\\s+a\\s+citizen\\s+of\\s+the\\s+(?:U\\.?S\\.?|United\\s+States)\\b",
+      "flags": "i",
+      "note": "'must be a citizen of the United States'.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "us-citizenship-required",
+      "pattern": "\\b(?:U\\.?S\\.?|United\\s+States)\\s+citizen(?:ship)?\\s+(?:status\\s+)?(?:is\\s+)?(?:required|mandatory|a\\s+requirement)\\b",
+      "flags": "i",
+      "note": "'U.S. citizenship is required', 'US Citizen is required'.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "requires-us-citizenship",
+      "pattern": "\\brequir(?:e|es|ed|ement|ements)\\b[^;]{0,40}\\b(?:U\\.?S\\.?|United\\s+States)\\s+citizenship\\b",
+      "flags": "i",
+      "note": "'this role requires U.S. citizenship'. Not across a ';' -- 'ITAR data is required; U.S. citizenship or other authorization ...' requires the data access, not citizenship.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "restricted-to-us-citizens",
+      "pattern": "\\b(?:restricted|limited|open|available)\\s+(?:only\\s+)?to\\s+(?:U\\.?S\\.?|United\\s+States|American)\\s+citizens\\b",
+      "flags": "i",
+      "note": "'open only to U.S. citizens'.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "sole-us-citizenship",
+      "pattern": "\\bsole\\s+(?:U\\.?S\\.?|United\\s+States)\\s+citizenship\\b",
+      "flags": "i",
+      "note": "'sole U.S. citizenship required' (excludes dual nationals).",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "us-citizenship-qualification",
+      "pattern": "^\\W*(?:U\\.?S\\.?|United\\s+States)\\s+citizen(?:ship)?\\b(?!\\s+(?:or|and)\\s+(?:lawful|permanent|green|U\\.?S\\.?\\s+person))",
+      "flags": "i",
+      "note": "A qualification line that opens with it: '- U.S. Citizenship and active security clearance'. Not when it goes on to list permanent residents (that is US_PERSON), and not when hedged or merely preferred.",
+      "label": "RESTRICTED_CITIZEN",
+      "unless": "\\b(?:may|might|could)\\s+(?:require|be|involve|need|include)\\b|\\b(?:potentially|possibly)\\b|\\b(?:prefer\\w*|desired|desirable|a\\s+plus|nice\\s+to\\s+have|bonus)\\b|\\bnot\\s+(?:required|necessary)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "citizenship-required-bare",
+      "pattern": "\\bcitizenship\\s+(?:is\\s+)?(?:required|mandatory|a\\s+requirement)\\b",
+      "flags": "i",
+      "note": "'citizenship is required' with no country named.",
+      "label": "RESTRICTED_CITIZEN"
+    },
+    {
+      "id": "us-person",
+      "pattern": "\\b(?:U\\.?S\\.?|United\\s+States)\\s+persons?\\b",
+      "flags": "i",
+      "note": "The ITAR/EAR term of art.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "lawful-permanent-resident",
+      "pattern": "\\blawful(?:ly)?\\s+permanent\\s+residen(?:t|ts|cy)\\b",
+      "flags": "i",
+      "note": "Green-card wording in the statutory form.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "permanent-resident",
+      "pattern": "\\bpermanent\\s+residents?\\b",
+      "flags": "i",
+      "note": "Shorter form of the same.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "green-card-holder",
+      "pattern": "\\bgreen[\\s-]?card\\s+holders?\\b",
+      "flags": "i",
+      "note": "Colloquial form.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "protected-individual",
+      "pattern": "\\bprotected\\s+individuals?\\b",
+      "flags": "i",
+      "note": "8 U.S.C. 1324b(a)(3) term used in EAR notices.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "refugee-and-asylee",
+      "pattern": "\\brefugees?\\b.{0,200}\\basylees?\\b|\\basylees?\\b.{0,200}\\brefugees?\\b",
+      "flags": "i",
+      "note": "Both together is the ITAR category-list signature; either alone is not.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "itar-with-requirement",
+      "pattern": "\\b(?:ITAR|International\\s+Traffic\\s+in\\s+Arms\\s+Regulations?|Export\\s+Administration\\s+Regulations)\\b.{0,80}\\b(?:requir\\w*|eligib\\w*|must|restrict\\w*|subject|governed)\\b",
+      "flags": "i",
+      "note": "ITAR plus requirement wording. Hedged wording ('may require access to export-controlled information') is downgraded to UNCLEAR rather than treated as a bar -- found in a real Greenhouse posting. Also not when the sentence lists regimes the job works within ('familiarity with FAR, DFARS, ITAR ... requirements', 'ensure compliance with ... export control requirements'): that is a duty, so ITAR/export-control mention rules make it UNCLEAR.",
+      "label": "RESTRICTED_US_PERSON",
+      "unless": "\\b(?:may|might|could)\\s+(?:require|be|involve|need|include)\\b|\\b(?:potentially|possibly)\\b|\\b(?:familiar\\w*|knowledge|experience\\w*|understanding|ensur\\w*|complian\\w*|navigat\\w*|collaborat\\w*|align\\w*|oversee\\w*|handl\\w*|meet\\s+applicable|environments?)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "requirement-with-itar",
+      "pattern": "\\b(?:requir\\w*|eligib\\w*|must|restrict\\w*|subject\\s+to|governed\\s+by)\\b.{0,80}\\b(?:ITAR|International\\s+Traffic\\s+in\\s+Arms\\s+Regulations?|Export\\s+Administration\\s+Regulations)\\b",
+      "flags": "i",
+      "note": "Requirement wording plus ITAR. Hedged wording ('may require access to export-controlled information') is downgraded to UNCLEAR rather than treated as a bar -- found in a real Greenhouse posting. Also not when the sentence lists regimes the job works within ('familiarity with FAR, DFARS, ITAR ... requirements', 'ensure compliance with ... export control requirements'): that is a duty, so ITAR/export-control mention rules make it UNCLEAR.",
+      "label": "RESTRICTED_US_PERSON",
+      "unless": "\\b(?:may|might|could)\\s+(?:require|be|involve|need|include)\\b|\\b(?:potentially|possibly)\\b|\\b(?:familiar\\w*|knowledge|experience\\w*|understanding|ensur\\w*|complian\\w*|navigat\\w*|collaborat\\w*|align\\w*|oversee\\w*|handl\\w*|meet\\s+applicable|environments?)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "export-control-with-eligibility",
+      "pattern": "\\bexport[\\s-]control\\w*\\b.{0,120}\\b(?:eligib\\w*|citizens?|permanent\\s+resident|U\\.?S\\.?\\s+person|must\\s+be|requir\\w*)\\b",
+      "flags": "i",
+      "note": "Export control tied to who may apply. Hedged wording ('may require access to export-controlled information') is downgraded to UNCLEAR rather than treated as a bar -- found in a real Greenhouse posting. Also not when the sentence lists regimes the job works within ('familiarity with FAR, DFARS, ITAR ... requirements', 'ensure compliance with ... export control requirements'): that is a duty, so ITAR/export-control mention rules make it UNCLEAR.",
+      "label": "RESTRICTED_US_PERSON",
+      "unless": "\\b(?:may|might|could)\\s+(?:require|be|involve|need|include)\\b|\\b(?:potentially|possibly)\\b|\\b(?:familiar\\w*|knowledge|experience\\w*|understanding|ensur\\w*|complian\\w*|navigat\\w*|collaborat\\w*|align\\w*|oversee\\w*|handl\\w*|meet\\s+applicable|environments?)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "eligibility-with-export-control",
+      "pattern": "\\b(?:eligib\\w*|must\\s+be|requir\\w*)\\b.{0,120}\\bexport[\\s-]control\\w*\\b",
+      "flags": "i",
+      "note": "The same, reversed. Hedged wording ('may require access to export-controlled information') is downgraded to UNCLEAR rather than treated as a bar -- found in a real Greenhouse posting. Also not when the sentence lists regimes the job works within ('familiarity with FAR, DFARS, ITAR ... requirements', 'ensure compliance with ... export control requirements'): that is a duty, so ITAR/export-control mention rules make it UNCLEAR.",
+      "label": "RESTRICTED_US_PERSON",
+      "unless": "\\b(?:may|might|could)\\s+(?:require|be|involve|need|include)\\b|\\b(?:potentially|possibly)\\b|\\b(?:familiar\\w*|knowledge|experience\\w*|understanding|ensur\\w*|complian\\w*|navigat\\w*|collaborat\\w*|align\\w*|oversee\\w*|handl\\w*|meet\\s+applicable|environments?)\\b|\\b(?:U\\.?S\\.?|United\\s+States)\\s+citizen(?:ship)?\\s+(?:is\\s+)?required\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "export-regulations-categories",
+      "pattern": "\\bexport\\s+regulations\\b.{0,160}\\b(?:categor\\w*|citizens?|permanent\\s+resident|refugee|asylee)\\b",
+      "flags": "i",
+      "note": "The GrayMatter phrasing: export regulations + a person-category list.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "ear-with-requirement",
+      "pattern": "\\bEAR\\b.{0,80}\\b(?:[Rr]equir\\w*|REQUIR\\w*|[Ee]ligib\\w*|[Mm]ust|MUST|[Rr]estrict\\w*|[Ss]ubject|[Gg]overned)\\b",
+      "flags": "",
+      "note": "EAR plus requirement wording, as itar-with-requirement. Case-SENSITIVE for EAR, so the requirement words list both cases.",
+      "label": "RESTRICTED_US_PERSON",
+      "unless": "\\b(?:may|might|could)\\s+(?:require|be|involve|need|include)\\b|\\b(?:potentially|possibly)\\b|\\b(?:familiar\\w*|knowledge|experience\\w*|understanding|ensur\\w*|complian\\w*|navigat\\w*|collaborat\\w*|align\\w*|oversee\\w*|handl\\w*|meet\\s+applicable|environments?)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "requirement-with-ear",
+      "pattern": "\\b(?:[Rr]equir\\w*|REQUIR\\w*|[Ee]ligib\\w*|[Mm]ust|MUST|[Rr]estrict\\w*|[Ss]ubject\\s+to|[Gg]overned\\s+by)\\b.{0,80}\\bEAR\\b",
+      "flags": "",
+      "note": "Requirement wording plus EAR ('Subject to the EAR'), as requirement-with-itar.",
+      "label": "RESTRICTED_US_PERSON",
+      "unless": "\\b(?:may|might|could)\\s+(?:require|be|involve|need|include)\\b|\\b(?:potentially|possibly)\\b|\\b(?:familiar\\w*|knowledge|experience\\w*|understanding|ensur\\w*|complian\\w*|navigat\\w*|collaborat\\w*|align\\w*|oversee\\w*|handl\\w*|meet\\s+applicable|environments?)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "ear-acronym",
+      "pattern": "\\bEAR\\b",
+      "flags": "",
+      "note": "Export Administration Regulations. Case-SENSITIVE: lowercase would match the body part. A bare mention ('Familiarity with ITAR/EAR') is a duty, so UNCLEAR like bare ITAR; requirement wording is caught by the ITAR rules, which EAR nearly always appears beside.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "export-administration-regulations",
+      "pattern": "\\bExport\\s+Administration\\s+Regulations\\b",
+      "flags": "i",
+      "note": "EAR spelled out. A bare mention, so UNCLEAR like bare ITAR; with requirement wording the ITAR coupling rules match it.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "international-traffic-in-arms",
+      "pattern": "\\bInternational\\s+Traffic\\s+in\\s+Arms\\b",
+      "flags": "i",
+      "note": "ITAR spelled out. A bare mention, so UNCLEAR like bare ITAR; with requirement wording the ITAR coupling rules match it.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "deemed-export",
+      "pattern": "\\bdeemed\\s+export\\b",
+      "flags": "i",
+      "note": "Deemed-export rules gate non-US-persons.",
+      "label": "RESTRICTED_US_PERSON"
+    },
+    {
+      "id": "no-sponsorship",
+      "pattern": "\\bno\\s+(?:visa\\s+|work\\s+|immigration\\s+)?sponsorship\\b",
+      "flags": "i",
+      "note": "'no visa sponsorship'.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "unable-to-sponsor",
+      "pattern": "\\b(?:unable|not\\s+able|cannot|can't|will\\s+not|do(?:es)?\\s+not)\\s+(?:to\\s+)?sponsor\\b",
+      "flags": "i",
+      "note": "'we are unable to sponsor'.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "not-offer-sponsorship",
+      "pattern": "\\b(?:do(?:es)?\\s+not|will\\s+not|cannot|unable\\s+to)\\b.{0,30}\\b(?:offer|provide)\\b.{0,20}\\bsponsorship\\b",
+      "flags": "i",
+      "note": "'we do not offer visa sponsorship'.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "sponsorship-not-available",
+      "pattern": "\\bsponsorship\\s+(?:is\\s+)?not\\s+(?:available|offered|provided)\\b",
+      "flags": "i",
+      "note": "'sponsorship is not available'.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "without-sponsorship",
+      "pattern": "\\bwithout\\s+(?:the\\s+need\\s+for\\s+|requiring\\s+|needing\\s+)?(?:(?:current\\s+or\\s+future|present\\s+or\\s+future|visa|work|employment|employer|immigration|company)\\s+)*sponsorship\\b",
+      "flags": "i",
+      "note": "'authorized to work without sponsorship', '... without the need for current or future visa sponsorship'.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "no-h1b",
+      "pattern": "\\bno\\s+H-?1\\s?B\\b",
+      "flags": "i",
+      "note": "'no H1B'.",
+      "label": "INFO_NO_SPONSORSHIP"
+    },
+    {
+      "id": "able-to-obtain-clearance",
+      "pattern": "\\b(?:ability|able|eligib\\w*)\\s+(?:to\\s+(?:[^.;]{0,40}\\s+(?:and|or)\\s+(?:to\\s+)?)?(?:obtain|receive|get|acquire|attain|secure|gain)|for)\\b.{0,80}\\bclearance\\b",
+      "flags": "i",
+      "note": "'Eligible to obtain and maintain an active U.S. Secret security clearance', 'must be able to obtain a clearance', 'eligible for a security clearance'. Was UNCLEAR until version 3: it states no clearance held today, but a clearance is only granted to U.S. citizens, so for anyone else the line is a bar. Still UNCLEAR, through the bare clearance-mention rule, when the clearance is conditional ('... if required by the program', 'may be required') or only preferred ('ability to obtain a clearance desired').",
+      "label": "RESTRICTED_CLEARANCE",
+      "unless": "\\bclearance\\b.{0,60}\\b(?:if|as|when|where)\\s+(?:required|needed|necessary)\\b|\\b(?:may|might|could)\\s+(?:be\\s+)?(?:require|need)\\w*\\b|\\b(?:potentially|possibly)\\b|^(?!.*\\b(?:required|must|mandatory|currently|possess\\w*|holds?)\\b).*\\b(?:prefer\\w*|desired|desirable|a\\s+plus|nice\\s+to\\s+have|bonus)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "itar-mention",
+      "pattern": "\\bITAR\\b",
+      "flags": "i",
+      "note": "Bare ITAR. Could be 'experience with ITAR-controlled programs' -- a duty, not a bar.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "export-control-mention",
+      "pattern": "\\bexport[\\s-]control\\w*\\b",
+      "flags": "i",
+      "note": "Bare export-control mention, including section headings.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "clearance-mention",
+      "pattern": "\\b(?:security\\s+)?clearance\\b",
+      "flags": "i",
+      "note": "Bare clearance mention. Not when the clearance is physical or an approval of goods or flights ('creepage and clearance', 'flight clearance', 'customs clearance') and nothing else in the sentence makes it a personnel clearance -- found in real Nimble and Anduril postings.",
+      "label": "UNCLEAR",
+      "unless": "^(?!.*\\b(?:security|secret|TS|SCI|DoD|DOE|government|personnel|obtain|eligib\\w*)\\b).*(?:\\b(?:creepage|customs|trace|tool|flight|separation|trajectory|release|routing|packaging|load|vibration|overhead|ground|EHS|FDA|510\\(k\\)|regulatory|mechanical|electrical)[\\s,]+(?:and\\s+)?clearances?\\b|\\bclearances?[\\s,]+(?:and\\s+creepage|assessments?|envelopes?|analys[ie]s|holes?|fits?|checks?)\\b)",
+      "unless_flags": "i"
+    },
+    {
+      "id": "citizenship-mention",
+      "pattern": "\\bcitizenship\\b",
+      "flags": "i",
+      "note": "Bare citizenship mention.",
+      "label": "UNCLEAR"
+    },
+    {
+      "id": "work-authorization",
+      "pattern": "\\bwork\\s+authorization\\b",
+      "flags": "i",
+      "note": "Bare work-authorization mention ('maintain ongoing work authorization', 'proof of work authorization'). The plain requirement to be 'authorized to work in the United States' is not matched at all since version 4: anyone with a work permit meets it, so it restricts nobody and the posting is OPEN unless something else in it says otherwise.",
+      "label": "UNCLEAR"
+    }
+  ],
+  "open_signals": [
+    {
+      "id": "open-sponsorship-available",
+      "pattern": "\\b(?:visa\\s+)?sponsorship\\s+(?:is\\s+)?(?:available|offered|provided|possible)\\b",
+      "flags": "i",
+      "note": "'visa sponsorship is available'.",
+      "conflicts_with": [
+        "INFO_NO_SPONSORSHIP"
+      ],
+      "unless": "\\b(?:no|not|cannot|can't|unable|without|never)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "open-we-sponsor",
+      "pattern": "\\bwe\\s+(?:can|do|will|are\\s+able\\s+to|are\\s+happy\\s+to|are\\s+willing\\s+to)\\s+sponsor\\b",
+      "flags": "i",
+      "note": "'we do sponsor visas'.",
+      "conflicts_with": [
+        "INFO_NO_SPONSORSHIP"
+      ],
+      "unless": "\\b(?:not|cannot|can't|unable|never)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "open-willing-to-sponsor",
+      "pattern": "\\bwilling\\s+to\\s+sponsor\\b",
+      "flags": "i",
+      "note": "'willing to sponsor the right candidate'.",
+      "conflicts_with": [
+        "INFO_NO_SPONSORSHIP"
+      ],
+      "unless": "\\b(?:not|cannot|can't|unable|never)\\b",
+      "unless_flags": "i"
+    },
+    {
+      "id": "open-no-clearance-required",
+      "pattern": "\\bno\\s+(?:security\\s+)?clearance\\s+(?:is\\s+)?(?:required|necessary|needed)\\b",
+      "flags": "i",
+      "note": "'no clearance required'.",
+      "conflicts_with": [
+        "RESTRICTED_CLEARANCE"
+      ]
+    },
+    {
+      "id": "open-clearance-not-required",
+      "pattern": "\\bclearance\\b.{0,30}\\bnot\\s+(?:required|necessary|needed)\\b",
+      "flags": "i",
+      "note": "'a clearance is not required'.",
+      "conflicts_with": [
+        "RESTRICTED_CLEARANCE"
+      ]
+    },
+    {
+      "id": "open-regardless-of-citizenship",
+      "pattern": "\\bregardless of\\b.{0,40}\\b(?:citizenship|nationality|immigration status)\\b",
+      "flags": "i",
+      "note": "'regardless of citizenship'.",
+      "conflicts_with": [
+        "RESTRICTED_CITIZEN",
+        "RESTRICTED_US_PERSON"
+      ]
+    },
+    {
+      "id": "open-no-citizenship-requirement",
+      "pattern": "\\bno\\s+(?:U\\.?S\\.?\\s+)?citizenship\\s+(?:requirement|restriction)s?\\b",
+      "flags": "i",
+      "note": "'no citizenship requirement'.",
+      "conflicts_with": [
+        "RESTRICTED_CITIZEN",
+        "RESTRICTED_US_PERSON"
+      ]
+    },
+    {
+      "id": "open-all-nationalities",
+      "pattern": "\\bopen\\s+to\\s+(?:applicants\\s+of\\s+)?all\\s+nationalities\\b",
+      "flags": "i",
+      "note": "'open to all nationalities'.",
+      "conflicts_with": [
+        "RESTRICTED_CITIZEN",
+        "RESTRICTED_US_PERSON"
+      ]
+    }
+  ],
+  "open_signals_note": "Found ANYWHERE in the posting (unlike negations, which are sentence-local). A restriction plus a conflicting open signal means the posting contradicts itself, which is UNCLEAR -- a human has to read it.",
+  "unless_note": "Optional on any pattern: if `unless` also matches the sentence, the pattern does not fire. Used to stop a negated phrase reading as its opposite ('no sponsorship is offered' is not 'sponsorship is offered')."
+}

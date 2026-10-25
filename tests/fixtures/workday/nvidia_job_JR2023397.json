@@ -1,0 +1,36 @@
+{
+ "jobPostingInfo": {
+  "id": "be21dd7774261034ccd480e7b92d0000",
+  "title": "Robotics Research Engineer - Robot Simulation and Evaluation",
+  "jobDescription": "<p>In the NVIDIA Isaac team, we build tools that bring the power of the GPU to bear on one of today’s grand challenges: physical AI. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in an inclusive, encouraging environment where we all work together to advance the frontiers of accelerated computing.</p><p></p><p>We’re looking for a research engineer to join our team to develop simulation tools built for scientists and companies that are using machine learning to solve the future of robotics. In this role, you will drive cross-team collaboration between Isaac product engineering and NVIDIA Robotics research: translating research ideas into product-ready Isaac Lab Arena capabilities, bringing product and user feedback back into the research loop, and driving adoption with research users. You&#39;ll join a team of robotics engineers who work at the intersection of simulation and machine learning. Our goal is to build the industry&#39;s leading tool for evaluating robot foundation models in simulation. This mission builds on NVIDIA&#39;s history of creating virtual worlds using its groundbreaking technology on photorealistic rendering and physics simulation technologies.</p><p></p><p><b>What you&#39;ll be doing:</b></p><ul><li><p>Building simulation frameworks for training and evaluating robot foundation models on top of NVIDIA&#39;s Omniverse platform.</p></li><li><p>Partner directly with research to design, implement, and evaluate novel algorithms for robot learning.</p></li><li><p>Driving technical architecture, setting evaluation standards, and cross-team leadership between Research and Product.</p></li><li><p>Working as part of a high-paced software engineering team: design/code reviews, testing, continuous integration, deployment.</p></li><li><p>Training and evaluating robot foundation models.</p></li><li><p>Integrating modern LLM and agentic workflows into simulation and robotics workflows.</p></li><li><p>Working with researchers and product engineers to translate research ideas into Isaac Lab Arena capabilities that can scale to NVIDIA&#39;s user base.</p></li><li><p>Keeping up to date with the state-of-the-art in robotics research.</p></li></ul><p></p><p><b>What we need to see:</b></p><ul><li><p>PhD degree in Computer Science, Robotics, or a related field (or equivalent experience).</p></li><li><p>8&#43; years of relevant industry or post-degree research engineering experience in robotics, simulation, or robot learning, with ability to translate research prototypes into product or platform capabilities.</p></li><li><p>Proven track record of software design and translating research prototypes into production-ready software platforms.</p></li><li><p>Proficiency using Python and development experience with deep learning software stacks (Pytorch, Jax, etc.).</p></li></ul><p></p><p><b>Ways to stand out from the crowd:</b></p><ul><li><p>High-impact publications at top robotics and machine learning venues (e.g., CoRL, RSS, ICRA, NeurIPS).</p></li><li><p>Robot learning expertise with reinforcement learning and/or imitation learning,</p></li><li><p>Deep expertise in GPU-accelerated physics simulation engines (e.g., PhysX, Isaac Gym/Isaac Lab, Newton).</p></li><li><p>Experience with NVIDIA robotics ecosystem tools (CUDA, warp, Isaac Lab, ROS).</p></li><li><p>Developing and maintaining open-source projects.</p></li></ul><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p>Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD for Level 4, and 224,000 USD - 356,500 USD for Level 5.<div><div><div><div><div><div><div><p></p><p><span>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\" target=\"_blank\">benefits</a>.</span></p><p></p></div></div></div></div></div></div></div>Applications for this job will be accepted at least until August 22, 2026.<p></p><p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p><p></p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.<p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p>",
+  "location": "US, CA, Santa Clara",
+  "postedOn": "Posted 30+ Days Ago",
+  "startDate": "2026-08-18",
+  "timeType": "Full time",
+  "jobReqId": "JR2023397",
+  "jobPostingId": "Robotics-Research-Engineer---Robot-Simulation-and-Evaluation_JR2023397",
+  "jobPostingSiteId": "NVIDIAExternalCareerSite",
+  "country": {
+   "descriptor": "United States of America",
+   "id": "bc33aa3152ec42d4995f4791a106ed09"
+  },
+  "canApply": true,
+  "posted": true,
+  "includeResumeParsing": true,
+  "jobRequisitionLocation": {
+   "descriptor": "US, CA, Santa Clara",
+   "country": {
+    "descriptor": "United States of America",
+    "id": "bc33aa3152ec42d4995f4791a106ed09",
+    "alpha2Code": "US"
+   }
+  },
+  "externalUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Robotics-Research-Engineer---Robot-Simulation-and-Evaluation_JR2023397",
+  "questionnaireId": "2f2764b3a82910064296831695150000"
+ },
+ "hiringOrganization": {
+  "name": "2100 NVIDIA USA",
+  "url": ""
+ },
+ "userAuthenticated": false
+}
